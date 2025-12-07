@@ -1,0 +1,9 @@
+**/__pycache__
+**/*.pyc
+.venv/
+trash/
+data/radio_messages/*
+data/audio_features/*
+data/trans*
+label-studio/
+!**/.gitkeep

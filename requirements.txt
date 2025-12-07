@@ -1,0 +1,17 @@
+transformers
+accelerate
+torch
+espnet
+editdistance
+datasets[audio]
+librosa
+openai-whisper
+jiwer
+pandas
+numpy
+matplotlib
+tqdm
+ffmpeg-python
+ipython
+ipywidgets
+ipykernel
