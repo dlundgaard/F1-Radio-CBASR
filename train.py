@@ -112,7 +112,6 @@ for epoch in range(args.nepochs):
     start = time.time()
     totalloss = 0
     for idx, data in enumerate(trainloader):
-        print("x")
         uttnames, fbank, tgt, blist = data
         lextree = biasproc.get_lextree(blist)
         fbank = fbank.to(args.compute_device)
