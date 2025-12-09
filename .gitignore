@@ -6,4 +6,5 @@ data/radio_messages/*
 data/audio_features/*
 data/trans*
 label-studio/
+exports/
 !**/.gitkeep
