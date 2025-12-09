@@ -22,20 +22,20 @@ parser.add_argument('--seed', type=int, default=0)
 parser.add_argument('--biasinglist', type=str, default="data/biasing_list.txt")
 parser.add_argument('--modeltype', type=str, default="turbo")
 parser.add_argument('--loadfrom', type=str, default="")
-parser.add_argument('--compute_device', type=str, default="cpu")
+parser.add_argument('--compute_device', type=str, default="cuda")
 parser.add_argument('--train_json', type=str, default="data/transcriptions_with_context.json")
 parser.add_argument('--evaluation_json', type=str, default="data/transcriptions_with_context.json")
 parser.add_argument('--expdir', type=str, default="exports/")
 parser.add_argument('--logfile', type=str, default="exports/log")
 parser.add_argument('--log_interval', type=int, default=10)
 parser.add_argument('--nepochs', type=int, default=10)
-parser.add_argument('--batch_size', type=int, default=16)
+parser.add_argument('--batch_size', type=int, default=4)
 parser.add_argument('--lr', type=float, default=0.0005)
 parser.add_argument('--decay_pct', type=float, default=1)
 parser.add_argument('--warmup_pct', type=float, default=0.0)
 parser.add_argument('--accumgrad', type=int, default=5)
 parser.add_argument('--dropentry', type=float, default=0.1)
-parser.add_argument('--maxKBlen', type=int, default=200)
+parser.add_argument('--maxKBlen', type=int, default=100)
 parser.add_argument('--attndim', type=int, default=256)
 parser.add_argument('--GNNtype', type=str, default="gcn2")
 parser.add_argument('--GNNdim', type=int, default=256)
@@ -163,9 +163,7 @@ for epoch in range(args.nepochs):
             optimiser.step()
 
         if idx != 0 and idx % args.log_interval == 0:
-            logging("{} / {} steps finished in {} | Loss: {} | lr: {}".format(
-                idx, len(trainloader), time.time()-start, totalloss/args.log_interval, optimiser.param_groups[0]['lr']),
-                 args.logfile)
+            logging(f"{idx:>3} / {len(trainloader):>3} steps | time elapsed: {time.time()-start:4.1f} sec | loss: {totalloss/args.log_interval:5.3f} | lr: {optimiser.param_groups[0]['lr']:5.3f}", args.logfile)
             totalloss = 0
 
     # Validation
@@ -212,9 +210,10 @@ for epoch in range(args.nepochs):
 
             # result = whisper.decode(model, fbank, options)
             if idx % 50 == 0 and idx > 0:
+                logging(f"{idx:>3} / {len(trainloader):>3} | time elapsed: {time.time()-start:4.1f} sec | accuracy: {totalvalacc/totalvalset:5.3f}", args.logfile)
                 logging("{} out of {} finished | time elapsed {} | ACC: {}".format(
                     idx, len(devloader), time.time()-start, totalvalacc/totalvalset), args.logfile)
-        logging("Total ACC: {}".format(totalvalacc/totalvalset), args.logfile)
+        logging(f"Total ACC: {totalvalacc/totalvalset:5.3f}", args.logfile)
 
         totalacc = totalvalacc / totalvalset
     if totalacc > bestacc:
