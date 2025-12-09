@@ -13,16 +13,17 @@ from torch.optim import SGD, Adam
 from transformers import WhisperTokenizer
 from transformers import GPT2Tokenizer, GPT2Model, GPT2LMHeadModel
 
-parser = argparse.ArgumentParser(description='Running Whisper Contextual Biasing experiments')
+import pprint
+
+parser = argparse.ArgumentParser(description='Whisper Contextual Biasing')
 
 os.makedirs("exports/", exist_ok=True)
 
-# set arguments for training and decoding
 parser.add_argument('--seed', type=int, default=0)
 parser.add_argument('--biasinglist', type=str, default="data/biasing_list.txt")
-parser.add_argument('--modeltype', type=str, default="turbo")
+parser.add_argument('--modeltype', type=str, default="base.en")
 parser.add_argument('--loadfrom', type=str, default="")
-parser.add_argument('--compute_device', type=str, default="cuda")
+parser.add_argument('--device', type=str, default="cuda" if torch.cuda.is_available() else "cpu")
 parser.add_argument('--train_json', type=str, default="data/transcriptions_with_context.json")
 parser.add_argument('--evaluation_json', type=str, default="data/transcriptions_with_context.json")
 parser.add_argument('--expdir', type=str, default="exports/")
@@ -31,6 +32,7 @@ parser.add_argument('--log_interval', type=int, default=10)
 parser.add_argument('--nepochs', type=int, default=10)
 parser.add_argument('--batch_size', type=int, default=4)
 parser.add_argument('--lr', type=float, default=0.0005)
+parser.add_argument("--beamsize", type=int, default=3)
 parser.add_argument('--decay_pct', type=float, default=1)
 parser.add_argument('--warmup_pct', type=float, default=0.0)
 parser.add_argument('--accumgrad', type=int, default=5)
@@ -42,7 +44,6 @@ parser.add_argument('--GNNdim', type=int, default=256)
 parser.add_argument('--useGPT', action="store_true")
 
 args = parser.parse_args()
-args.biasing = True
 
 def logging(s, logfile, logging_=True, log_=True):
     print(s)
@@ -61,13 +62,13 @@ else:
     model = whisper.load_model(args.modeltype)
 model.train()
 if args.useGPT:
-    GPTmodel = GPT2LMHeadModel.from_pretrained('gpt2', output_hidden_states=True).to(args.compute_device)
+    GPTmodel = GPT2LMHeadModel.from_pretrained('gpt2', output_hidden_states=True).to(args.device)
     GPThiddim = GPTmodel.config.n_embd
     GPTtokenizer = GPT2Tokenizer.from_pretrained('gpt2')
 else:
     GPThiddim = 0
 
-options = whisper.DecodingOptions(task="transcribe", language="en", fp16=False, without_timestamps=True)
+options = whisper.DecodingOptions(task="transcribe", language="en", fp16=False, without_timestamps=True, beam_size=args.beamsize)
 tokenizer = whisper.tokenizer.get_tokenizer(model.is_multilingual, language="en")
 decodetask = whisper.decoding.DecodingTask(model, options)
 logit_filters = decodetask.logit_filters
@@ -82,19 +83,19 @@ if args.loadfrom == "":
         args.attndim,
         model.dims.n_vocab,
         Bdrop=0.1,
-        biasing=args.biasing,
+        biasing=True,
         GNNtype=args.GNNtype,
         GNNdim=args.GNNdim,
         useGPT=args.useGPT,
         GPThiddim=GPThiddim,
-    ).to(args.compute_device)
+    ).to(args.device)
 whisperbiasing.train()
 
 ##################
 # Data Loader
 ##################
-trainloader = get_dataloader(args.train_json, args.batch_size, loadtarget=True, tokenizer=tokenizer, biasing=args.biasing)
-devloader = get_dataloader(args.evaluation_json, args.batch_size, loadtarget=True, tokenizer=tokenizer, biasing=args.biasing)
+trainloader = get_dataloader(args.train_json, args.batch_size, loadtarget=True, tokenizer=tokenizer, biasing=True)
+devloader = get_dataloader(args.evaluation_json, args.batch_size, loadtarget=True, tokenizer=tokenizer, biasing=True)
 biasproc = BiasingProcessor(tokenizer, args.biasinglist, ndistractors=args.maxKBlen, drop=args.dropentry)
 
 ##################
@@ -106,7 +107,7 @@ optimiser = Adam(whisperbiasing.parameters(), lr=args.lr)
 ##################
 # Start Training
 ##################
-logging("Start of training", args.logfile)
+logging("Training with" + "\n" + pprint.pformat(vars(args)), args.logfile)
 bestacc = 0
 for epoch in range(args.nepochs):
     start = time.time()
@@ -114,11 +115,11 @@ for epoch in range(args.nepochs):
     for idx, data in enumerate(trainloader):
         uttnames, fbank, tgt, blist = data
         lextree = biasproc.get_lextree(blist)
-        fbank = fbank.to(args.compute_device)
+        fbank = fbank.to(args.device)
         origtarget = [torch.tensor(list(sot_sequence) + y, dtype=torch.long) for y in tgt]
         GPT_last_hidden = None
         GPT_distribution = None
-        target = pad_sequence(origtarget, batch_first=True, padding_value=-100).to(args.compute_device)
+        target = pad_sequence(origtarget, batch_first=True, padding_value=-100).to(args.device)
         targetmask = target != -100
         if args.useGPT:
             with torch.no_grad():
@@ -138,7 +139,7 @@ for epoch in range(args.nepochs):
                 GPT_distribution = torch.cat([GPT_distribution, zeropadding_dist], dim=-1)
 
                 # Need to pad the sequence with zeros
-                zeropadding = torch.zeros(GPT_last_hidden.size(0), 1, GPT_last_hidden.size(-1)).to(args.compute_device)
+                zeropadding = torch.zeros(GPT_last_hidden.size(0), 1, GPT_last_hidden.size(-1)).to(args.device)
                 GPT_last_hidden = torch.cat([zeropadding for _ in range(sotlen-1)] + [GPT_last_hidden, zeropadding], dim=1)
 
         optimiser.zero_grad()
@@ -174,10 +175,10 @@ for epoch in range(args.nepochs):
         for idx, data in enumerate(devloader):
             uttnames, fbank, tgt, blist = data
             lextree = biasproc.get_lextree(blist)
-            fbank = fbank.to(args.compute_device)
+            fbank = fbank.to(args.device)
             target = [torch.tensor(list(sot_sequence) + y, dtype=torch.long) for y in tgt]
             # target = [torch.tensor(y, dtype=torch.long) for y in tgt]
-            target = pad_sequence(target, batch_first=True, padding_value=-100).to(args.compute_device)
+            target = pad_sequence(target, batch_first=True, padding_value=-100).to(args.device)
             targetmask = target != -100
             if args.useGPT:
                 # Replace Whisper bos token with GPT2 bos token
@@ -196,7 +197,7 @@ for epoch in range(args.nepochs):
                 GPT_distribution = torch.cat([GPT_distribution, zeropadding_dist], dim=-1)
 
                 # Need to pad the sequence with zeros
-                zeropadding = torch.zeros(GPT_last_hidden.size(0), 1, GPT_last_hidden.size(-1)).to(args.compute_device)
+                zeropadding = torch.zeros(GPT_last_hidden.size(0), 1, GPT_last_hidden.size(-1)).to(args.device)
                 GPT_last_hidden = torch.cat([zeropadding for _ in range(sotlen-1)] + [GPT_last_hidden, zeropadding], dim=1)
 
             # Forward biasing model
@@ -209,7 +210,7 @@ for epoch in range(args.nepochs):
             totalvalset += targetmask[:, sotlen:].sum()
 
             # result = whisper.decode(model, fbank, options)
-            if idx % 50 == 0 and idx > 0:
+            if idx % 10 == 0:
                 logging(f"{idx:>3} / {len(trainloader):>3} | time elapsed: {time.time()-start:4.1f} sec | accuracy: {totalvalacc/totalvalset:5.3f}", args.logfile)
                 logging("{} out of {} finished | time elapsed {} | ACC: {}".format(
                     idx, len(devloader), time.time()-start, totalvalacc/totalvalset), args.logfile)

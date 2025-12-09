@@ -22,7 +22,7 @@ class DatasetContainer(Dataset):
     ):
         with open(path) as f:
             self.data = json.load(f)
-        self.data_idx = list(self.data.keys())
+        self.data_indices = list(self.data.keys())
         self.loadtarget = loadtarget
         self.tokenizer = tokenizer
         self.biasing = biasing
@@ -31,10 +31,9 @@ class DatasetContainer(Dataset):
         return len(self.data)
 
     def __getitem__(self, index):
-        uttname = self.data_idx[index]
-        data = self.data[uttname]
-        data_path = data["fbank"]
-        fbank = torch.load(data_path)
+        example_identifier = self.data_indices[index]
+        data = self.data[example_identifier]
+        fbank = torch.load(data["fbank"])
         target = data["words"].lower()
         tokenized_words = []
         if self.loadtarget and self.tokenizer is not None:
@@ -47,7 +46,7 @@ class DatasetContainer(Dataset):
                     else:
                         targetwords.append(word)
                 target = " ".join(targetwords)
-            target = self.tokenizer.encode(" "+target) + [self.tokenizer.tokenizer.eos_token_id]
+            target = self.tokenizer.encode(" "+target) + [self.tokenizer.encoding.eot_token]
         if self.biasing:
             tokenized_words = []
             for word in data["blist"]:
@@ -58,7 +57,7 @@ class DatasetContainer(Dataset):
                 tokenized_words.append(tuple(self.tokenizer.encode(" "+wordcap)))
         elif self.loadtarget:
             raise Exception("No tokenizer provided to dataloader")
-        return uttname, fbank, target, tokenized_words
+        return example_identifier, fbank, target, tokenized_words
 
 
 def check_in_utt(tok_word, target):
@@ -90,7 +89,7 @@ def make_lexical_tree(word_dict, subword_dict, word_unk):
 
 
 def collate_wrapper(batch):
-    uttnames = [i[0] for i in batch]
+    example_identifiers = [i[0] for i in batch]
     fbank = torch.stack([i[1] for i in batch])
     tgt = [i[2] for i in batch]
     blist = []
@@ -98,7 +97,7 @@ def collate_wrapper(batch):
         for word in i[3]:
             if word not in blist:
                 blist.append(word)
-    return uttnames, fbank, tgt, blist
+    return example_identifiers, fbank, tgt, blist
 
 
 def get_dataloader(path, bs, shuffle=True, loadtarget=True, tokenizer=None, biasing=False):
@@ -113,7 +112,7 @@ def get_dataloader(path, bs, shuffle=True, loadtarget=True, tokenizer=None, bias
         batch_size=bs,
         shuffle=shuffle,
         collate_fn=collate_wrapper,
-        pin_memory=True,
+        pin_memory=torch.cuda.is_available(),
     )
 
 
@@ -129,7 +128,7 @@ class BiasingProcessor(object):
                 self.all_rare_words.append(tuple(tokenizer.encode(' '+wordcap)))
         self.ndistractors = ndistractors
         self.drop = drop
-        self.chardict = {idx:idx for idx in range(tokenizer.tokenizer.vocab_size)}
+        self.chardict = {idx:idx for idx in range(tokenizer.encoding.n_vocab)}
 
     def insert_distractors(self, uttblist):
         if self.drop > 0:
