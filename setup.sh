@@ -7,6 +7,6 @@ echo "[INFO] setting up Python virtual enviroment"
 pip install uv
 uv venv .venv --seed --allow-existing
 source .venv/bin/activate
-uv pip install -r requirements.txt
+uv pip install --link-mode=copy -r requirements.txt
 python -m ipykernel install --user --name=project_kernel
 echo "[SUCCESS] setup completed"
