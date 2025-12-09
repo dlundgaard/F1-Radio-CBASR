@@ -12,8 +12,14 @@ from transformers import WhisperTokenizer
 
 random.seed(0)
 
-class LibriDataset(Dataset):
-    def __init__(self, path, loadtarget=True, tokenizer=None, biasing=True):
+class DatasetContainer(Dataset):
+    def __init__(
+        self, 
+        path, 
+        loadtarget=True, 
+        tokenizer=None, 
+        biasing=True,
+    ):
         with open(path) as f:
             self.data = json.load(f)
         self.data_idx = list(self.data.keys())
@@ -96,7 +102,12 @@ def collate_wrapper(batch):
 
 
 def get_dataloader(path, bs, shuffle=True, loadtarget=True, tokenizer=None, biasing=False):
-    dataset = LibriDataset(path, loadtarget=loadtarget, tokenizer=tokenizer, biasing=biasing)
+    dataset = DatasetContainer(
+        path, 
+        loadtarget=loadtarget, 
+        tokenizer=tokenizer, 
+        biasing=biasing,
+    )
     return DataLoader(
         dataset,
         batch_size=bs,
