@@ -22,7 +22,7 @@ os.makedirs("exports/", exist_ok=True)
 parser.add_argument('--seed', type=int, default=0)
 parser.add_argument('--biasinglist', type=str, default="data/biasing_list.txt")
 parser.add_argument('--modeltype', type=str, default="base.en")
-parser.add_argument('--loadfrom', type=str, default="")
+parser.add_argument('--runidentifier', type=str, default="")
 parser.add_argument('--device', type=str, default="cuda" if torch.cuda.is_available() else "cpu")
 parser.add_argument('--train_json', type=str, default="data/transcriptions_with_context.json")
 parser.add_argument('--evaluation_json', type=str, default="data/transcriptions_with_context.json")
@@ -55,11 +55,8 @@ def logging(s, logfile, logging_=True, log_=True):
 # Model
 ##################
 torch.manual_seed(args.seed)
-if args.loadfrom != "":
-    whisperbiasing = torch.load(args.loadfrom)
-    model = whisperbiasing.whisper
-else:
-    model = whisper.load_model(args.modeltype)
+
+model = whisper.load_model(args.modeltype)
 model.train()
 if args.useGPT:
     GPTmodel = GPT2LMHeadModel.from_pretrained('gpt2', output_hidden_states=True).to(args.device)
@@ -74,28 +71,36 @@ decodetask = whisper.decoding.DecodingTask(model, options)
 logit_filters = decodetask.logit_filters
 sot_sequence = decodetask.sot_sequence
 sotlen = len(sot_sequence)
-if args.loadfrom == "":
-    whisperbiasing = WhisperBiasing(
-        model,
-        tokenizer,
-        model.dims.n_text_state,
-        model.dims.n_text_state,
-        args.attndim,
-        model.dims.n_vocab,
-        Bdrop=0.1,
-        biasing=True,
-        GNNtype=args.GNNtype,
-        GNNdim=args.GNNdim,
-        useGPT=args.useGPT,
-        GPThiddim=GPThiddim,
-    ).to(args.device)
+whisperbiasing = WhisperBiasing(
+    model,
+    tokenizer,
+    model.dims.n_text_state,
+    model.dims.n_text_state,
+    args.attndim,
+    model.dims.n_vocab,
+    Bdrop=0.1,
+    biasing=True,
+    GNNtype=args.GNNtype,
+    GNNdim=args.GNNdim,
+    useGPT=args.useGPT,
+    GPThiddim=GPThiddim,
+).to(args.device)
 whisperbiasing.train()
 
 ##################
 # Data Loader
 ##################
-trainloader = get_dataloader(args.train_json, args.batch_size, loadtarget=True, tokenizer=tokenizer, biasing=True)
-devloader = get_dataloader(args.evaluation_json, args.batch_size, loadtarget=True, tokenizer=tokenizer, biasing=True)
+# trainloader = get_dataloader(args.train_json, args.batch_size, loadtarget=True, tokenizer=tokenizer, biasing=True)
+# devloader = get_dataloader(args.evaluation_json, args.batch_size, loadtarget=True, tokenizer=tokenizer, biasing=True)
+
+trainloader, devloader = get_dataloader(
+    args.train_json, 
+    args.batch_size, 
+    loadtarget=True, 
+    tokenizer=tokenizer, 
+    biasing=True,
+    splits=(0.8, 0.2),
+)
 biasproc = BiasingProcessor(tokenizer, args.biasinglist, ndistractors=args.maxKBlen, drop=args.dropentry)
 
 ##################
@@ -109,7 +114,8 @@ optimiser = Adam(whisperbiasing.parameters(), lr=args.lr)
 ##################
 logging("Training with" + "\n" + pprint.pformat(vars(args)), args.logfile)
 bestacc = 0
-for epoch in range(args.nepochs):
+for epoch in range(1, args.nepochs + 1):
+    logging(f"Starting epoch {epoch}", args.logfile)
     start = time.time()
     totalloss = 0
     for idx, data in enumerate(trainloader):
@@ -163,11 +169,12 @@ for epoch in range(args.nepochs):
                 optimiser.param_groups[0]['lr'] = args.lr * factor
             optimiser.step()
 
-        if idx != 0 and idx % args.log_interval == 0:
-            logging(f"{idx:>3} / {len(trainloader):>3} steps | time elapsed: {time.time()-start:4.1f} sec | loss: {totalloss/args.log_interval:5.3f} | lr: {optimiser.param_groups[0]['lr']:5.3f}", args.logfile)
+        if idx % args.log_interval == 0 or idx == len(trainloader) - 1:
+            logging(f"{idx:>3} / {len(trainloader):>3} batches completed | time elapsed: {time.time()-start:4.1f} sec | loss: {totalloss/args.log_interval:5.3f} | lr: {optimiser.param_groups[0]['lr']:5.3f}", args.logfile)
             totalloss = 0
 
     # Validation
+    logging(f"Validating after epoch {epoch}", args.logfile)
     totalvalset = 0
     totalvalacc = 0
     model.eval()
@@ -210,15 +217,12 @@ for epoch in range(args.nepochs):
             totalvalset += targetmask[:, sotlen:].sum()
 
             # result = whisper.decode(model, fbank, options)
-            if idx % 10 == 0:
-                logging(f"{idx:>3} / {len(trainloader):>3} | time elapsed: {time.time()-start:4.1f} sec | accuracy: {totalvalacc/totalvalset:5.3f}", args.logfile)
-                logging("{} out of {} finished | time elapsed {} | ACC: {}".format(
-                    idx, len(devloader), time.time()-start, totalvalacc/totalvalset), args.logfile)
-        logging(f"Total ACC: {totalvalacc/totalvalset:5.3f}", args.logfile)
+            if idx % 10 == 0 or idx == len(devloader) - 1:
+                logging(f"{idx:>3} / {len(devloader):>3} batches completed | time elapsed: {time.time()-start:4.1f} | accuracy: {totalvalacc/totalvalset:5.3f}", args.logfile)
 
         totalacc = totalvalacc / totalvalset
     if totalacc > bestacc:
-        torch.save(whisperbiasing, os.path.join(args.expdir, "model.acc.best"))
+        torch.save(whisperbiasing, os.path.join(args.expdir, f"{args.modeltype}_{args.runidentifier}.best.pt"))
         bestacc = totalacc
-        logging("Saving best model at epoch {}".format(epoch+1), args.logfile)
-    torch.save(whisperbiasing, os.path.join(args.expdir, "snapshot.ep.{}".format(epoch+1)))
+        logging(f"Saving best model at epoch {epoch}", args.logfile)
+    torch.save(whisperbiasing, os.path.join(args.expdir, f"snapshot_epoch{epoch}.pt"))
