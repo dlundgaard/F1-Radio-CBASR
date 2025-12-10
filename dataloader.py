@@ -9,7 +9,6 @@ from torch.utils.data import Dataset, DataLoader
 import whisper
 from transformers import WhisperTokenizer
 
-
 random.seed(0)
 
 class DatasetContainer(Dataset):
@@ -42,7 +41,7 @@ class DatasetContainer(Dataset):
                 targetwords = []
                 for word in target.split():
                     if word.upper() in data["blist"] and random.random() > 0.5:
-                        targetwords.append(word.upper()[0:1]+word[1:])
+                        targetwords.append(word.upper()[0:1] + word[1:])
                     else:
                         targetwords.append(word)
                 target = " ".join(targetwords)
@@ -59,13 +58,11 @@ class DatasetContainer(Dataset):
             raise Exception("No tokenizer provided to dataloader")
         return example_identifier, fbank, target, tokenized_words
 
-
 def check_in_utt(tok_word, target):
     for i in range(len(target)):
         if target[i:i+len(tok_word)] == tok_word:
             return True
     return False
-
 
 def make_lexical_tree(word_dict, subword_dict, word_unk):
     # node [dict(subword_id -> node), word_id, word_set[start-1, end]]
@@ -87,7 +84,6 @@ def make_lexical_tree(word_dict, subword_dict, word_unk):
                 succ = succ[cid][0]  # move to the child successors
     return root
 
-
 def collate_wrapper(batch):
     example_identifiers = [i[0] for i in batch]
     fbank = torch.stack([i[1] for i in batch])
@@ -100,21 +96,31 @@ def collate_wrapper(batch):
     return example_identifiers, fbank, tgt, blist
 
 
-def get_dataloader(path, bs, shuffle=True, loadtarget=True, tokenizer=None, biasing=False):
+def get_dataloader(path, bs, shuffle=True, loadtarget=True, tokenizer=None, biasing=False, splits=None):
     dataset = DatasetContainer(
         path, 
         loadtarget=loadtarget, 
         tokenizer=tokenizer, 
         biasing=biasing,
     )
-    return DataLoader(
-        dataset,
-        batch_size=bs,
-        shuffle=shuffle,
-        collate_fn=collate_wrapper,
-        pin_memory=torch.cuda.is_available(),
-    )
-
+    if splits:
+        return [
+            DataLoader(
+                dataset_subset,
+                batch_size=bs,
+                shuffle=shuffle,
+                collate_fn=collate_wrapper,
+                pin_memory=torch.cuda.is_available(),
+            ) for dataset_subset in torch.utils.data.random_split(dataset, splits)
+        ]
+    else:
+        return DataLoader(
+            dataset,
+            batch_size=bs,
+            shuffle=shuffle,
+            collate_fn=collate_wrapper,
+            pin_memory=torch.cuda.is_available(),
+        )
 
 class BiasingProcessor(object):
     def __init__(self, tokenizer, fulllist, ndistractors=500, drop=0.3):
