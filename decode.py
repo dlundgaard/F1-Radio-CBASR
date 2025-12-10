@@ -13,7 +13,6 @@ import editdistance
 from dataloader import get_dataloader, BiasingProcessor
 from whisper.model import WhisperBiasing
 from transformers import GPT2Tokenizer, GPT2Model, GPT2LMHeadModel
-from whisper.normalizers.english import EnglishTextNormalizer
 
 parser = argparse.ArgumentParser(description="Whisper Contextual Biasing")
 
@@ -25,18 +24,18 @@ parser.add_argument("--biasinglist", type=str, default="data/biasing_list.txt")
 parser.add_argument("--biasing", action="store_true")
 parser.add_argument("--deepbiasing", action="store_true")
 parser.add_argument("--modeltype", type=str, default="base.en")
-parser.add_argument("--beamsize", type=int, default=3)
+parser.add_argument("--modelcheckpoint", type=str, default="")
 parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
+parser.add_argument("--beamsize", type=int, default=3)
 parser.add_argument("--eval_batch_size", type=int, default=4)
-parser.add_argument("--expdir", type=str, default="exports/")
-parser.add_argument("--loadfrom", type=str, default="")
 parser.add_argument("--use_gpt2", action="store_true")
 parser.add_argument("--save_nbest", action="store_true")
 parser.add_argument("--lm_weight", type=float, default=0)
 parser.add_argument("--attndim", type=int, default=256)
-parser.add_argument("--maxKBlen", type=int, default=10)
+parser.add_argument("--maxKBlen", type=int, default=100)
 parser.add_argument("--dropentry", type=float, default=0.0)
 parser.add_argument("--normalise", action="store_true")
+parser.add_argument("--expdir", type=str, default="exports/")
 parser.add_argument("--logfile", type=str, default="log")
 
 args = parser.parse_args()
@@ -50,7 +49,6 @@ def logging(s, logfile, logging_=True, log_=True):
 shallowfusion = args.use_gpt2
 useGPT = None
 GPTtokenizer = None
-normaliser = EnglishTextNormalizer()
 logfile = args.logfile if args.logfile != "" else os.path.join(args.expdir, "log.txt")
 if args.use_gpt2:
     GPTmodel = GPT2LMHeadModel.from_pretrained("gpt2", output_hidden_states=True).to(args.device)
@@ -58,8 +56,8 @@ if args.use_gpt2:
 else:
     GPTmodel = None
 
-if args.loadfrom != "":
-    biasing_model = torch.load(args.loadfrom)
+if args.modelcheckpoint != "":
+    biasing_model = torch.load(os.path.join(args.expdir, args.modelcheckpoint), weights_only=False)
     biasing_model.eval()
     model = biasing_model.whisper
     useGPT = getattr(biasing_model, "useGPT", False)
@@ -68,7 +66,7 @@ if args.loadfrom != "":
 else:
     model = whisper.load_model(args.modeltype).eval()
     biasing_model = None
-    useGPT = False
+    useGPT = False  
 
 shallowfusion = args.use_gpt2
 tokenizer = whisper.tokenizer.get_tokenizer(model.is_multilingual, language="en")
@@ -121,7 +119,7 @@ for idx, data in tqdm(list(enumerate(testloader)), smoothing=0):
                 file.write("\t".join((
                     str(datetime.now()),
                     identifier,
-                    args.modeltype,
+                    args.modelcheckpoint,
                     *[str(getattr(result, field)) for field in (
                         "text",
                         "avg_logprob",
