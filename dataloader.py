@@ -1,13 +1,8 @@
 import json
-import os
 import random
 
 import torch
-from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import Dataset, DataLoader
-
-import whisper
-from transformers import WhisperTokenizer
 
 random.seed(0)
 
@@ -45,7 +40,7 @@ class DatasetContainer(Dataset):
                     else:
                         targetwords.append(word)
                 target = " ".join(targetwords)
-            target = self.tokenizer.encode(" "+target) + [self.tokenizer.encoding.eot_token]
+            target = self.tokenizer.encode(" "+target) + [self.tokenizer.tokenizer.eos_token_id]
         if self.biasing:
             tokenized_words = []
             for word in data["blist"]:
@@ -134,7 +129,7 @@ class BiasingProcessor(object):
                 self.all_rare_words.append(tuple(tokenizer.encode(' '+wordcap)))
         self.ndistractors = ndistractors
         self.drop = drop
-        self.chardict = {idx:idx for idx in range(tokenizer.encoding.n_vocab)}
+        self.chardict = {idx:idx for idx in range(tokenizer.tokenizer.vocab_size)}
 
     def insert_distractors(self, uttblist):
         if self.drop > 0:

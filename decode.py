@@ -1,18 +1,14 @@
-import sys, os
-import re
+import os
 import time
 import argparse
-import json
 from datetime import datetime
 from tqdm import tqdm
 import pprint
 
 import torch
 import whisper
-import editdistance
 from dataloader import get_dataloader, BiasingProcessor
-from whisper.model import WhisperBiasing
-from transformers import GPT2Tokenizer, GPT2Model, GPT2LMHeadModel
+from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
 parser = argparse.ArgumentParser(description="Whisper Contextual Biasing")
 
@@ -22,18 +18,16 @@ parser.add_argument("--seed", type=int, default=0)
 parser.add_argument("--test_json", type=str, default="data/transcriptions_with_context.json")
 parser.add_argument("--biasinglist", type=str, default="data/biasing_list.txt")
 parser.add_argument("--biasing", action="store_true")
-parser.add_argument("--deepbiasing", action="store_true")
 parser.add_argument("--modeltype", type=str, default="base.en")
-parser.add_argument("--modelcheckpoint", type=str, default="")
+parser.add_argument("--modelcheckpoint", type=str, default="stock")
 parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
-parser.add_argument("--beamsize", type=int, default=3)
-parser.add_argument("--eval_batch_size", type=int, default=4)
-parser.add_argument("--use_gpt2", action="store_true")
-parser.add_argument("--save_nbest", action="store_true")
+parser.add_argument("--beamsize", type=int, default=5)
+parser.add_argument("--eval_batch_size", type=int, default=1)
+parser.add_argument("--useGPT", action="store_true")
 parser.add_argument("--lm_weight", type=float, default=0)
 parser.add_argument("--attndim", type=int, default=256)
-parser.add_argument("--maxKBlen", type=int, default=100)
-parser.add_argument("--dropentry", type=float, default=0.0)
+parser.add_argument("--maxKBlen", type=int, default=1000)
+parser.add_argument("--dropentry", type=float, default=0)
 parser.add_argument("--normalise", action="store_true")
 parser.add_argument("--expdir", type=str, default="exports/")
 parser.add_argument("--logfile", type=str, default="log")
@@ -46,29 +40,29 @@ def logging(s, logfile, logging_=True, log_=True):
         with open(logfile, "a+") as f_log:
             f_log.write(s + "\n")
 
-shallowfusion = args.use_gpt2
+shallowfusion = args.useGPT
 useGPT = None
 GPTtokenizer = None
 logfile = args.logfile if args.logfile != "" else os.path.join(args.expdir, "log.txt")
-if args.use_gpt2:
+if args.useGPT:
     GPTmodel = GPT2LMHeadModel.from_pretrained("gpt2", output_hidden_states=True).to(args.device)
     GPThiddim = GPTmodel.config.n_embd
 else:
     GPTmodel = None
 
-if args.modelcheckpoint != "":
+if args.modelcheckpoint != "stock":
     biasing_model = torch.load(os.path.join(args.expdir, args.modelcheckpoint), weights_only=False)
     biasing_model.eval()
     model = biasing_model.whisper
     useGPT = getattr(biasing_model, "useGPT", False)
-    if useGPT or args.use_gpt2:
+    if useGPT or args.useGPT:
         GPTtokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 else:
     model = whisper.load_model(args.modeltype).eval()
     biasing_model = None
-    useGPT = False  
+    useGPT = False
 
-shallowfusion = args.use_gpt2
+shallowfusion = args.useGPT
 tokenizer = whisper.tokenizer.get_tokenizer(model.is_multilingual, language="en")
 
 ####################
@@ -84,17 +78,12 @@ testloader = get_dataloader(
 )
 biasproc = BiasingProcessor(tokenizer, args.biasinglist, ndistractors=args.maxKBlen, drop=args.dropentry)
 
-import dataclasses
-
 print("Decoding with" + "\n" + pprint.pformat(vars(args)))
 start = time.time()
 for idx, data in tqdm(list(enumerate(testloader)), smoothing=0):
     identifiers, audio_features, target_transcriptions, blist = data
     audio_features = audio_features.to(model.device)
     origtree = biasproc.get_lextree(blist)
-
-    if biasing_model is not None and getattr(biasing_model, "GNN", None) is not None:
-        biasing_model.GNN(origtree, model.decoder.token_embedding)
 
     options = whisper.DecodingOptions(
         language="en",
@@ -112,10 +101,8 @@ for idx, data in tqdm(list(enumerate(testloader)), smoothing=0):
     )
     try:
         batch_results = whisper.decode(model, audio_features, options)
-        with open("data/transcriptions.tsv", mode="a") as file:
+        with open("exports/transcriptions.tsv", mode="a") as file:
             for identifier, result in zip(identifiers, batch_results):
-                # print(f"{identifier}: {result.text}")
-                # print(dataclasses.asdict(result))
                 file.write("\t".join((
                     str(datetime.now()),
                     identifier,
@@ -133,6 +120,3 @@ for idx, data in tqdm(list(enumerate(testloader)), smoothing=0):
                 )) + "\n")
     except Exception as exc:
         print(f"[ERROR] {identifier}: {repr(exc)}")
-
-    # print(str(identifier))
-

@@ -1,31 +1,16 @@
-import base64
-import gzip
-from contextlib import contextmanager
 from dataclasses import dataclass
-from typing import Dict, Iterable, Optional, Tuple
-
+from typing import Dict
+from typing import Iterable, Optional
 import math
+
 import numpy as np
 import torch
 import torch.nn.functional as F
-from torch import Tensor, nn
+from torch import Tensor
+from torch import nn
 
-from .decoding import (
-    decode as decode_function, 
-    detect_language as detect_language_function,
-)
 from .transcribe import transcribe as transcribe_function
-
-try:
-    from torch.nn.functional import scaled_dot_product_attention
-
-    SDPA_AVAILABLE = True
-except (ImportError, RuntimeError, OSError):
-    scaled_dot_product_attention = None
-    SDPA_AVAILABLE = False
-
-from .GNN import GCN
-
+from .decoding import detect_language as detect_language_function, decode as decode_function
 
 @dataclass
 class ModelDimensions:
@@ -49,16 +34,12 @@ class LayerNorm(nn.LayerNorm):
 class Linear(nn.Linear):
     def forward(self, x: Tensor) -> Tensor:
         return F.linear(
-            x,
-            self.weight.to(x.dtype),
-            None if self.bias is None else self.bias.to(x.dtype),
+            x, self.weight.to(x.dtype), None if self.bias is None else self.bias.to(x.dtype)
         )
 
 
 class Conv1d(nn.Conv1d):
-    def _conv_forward(
-        self, x: Tensor, weight: Tensor, bias: Optional[Tensor]
-    ) -> Tensor:
+    def _conv_forward(self, x: Tensor, weight: Tensor, bias: Optional[Tensor]) -> Tensor:
         return super()._conv_forward(
             x, weight.to(x.dtype), None if bias is None else bias.to(x.dtype)
         )
@@ -73,18 +54,7 @@ def sinusoids(length, channels, max_timescale=10000):
     return torch.cat([torch.sin(scaled_time), torch.cos(scaled_time)], dim=1)
 
 
-@contextmanager
-def disable_sdpa():
-    prev_state = MultiHeadAttention.use_sdpa
-    try:
-        MultiHeadAttention.use_sdpa = False
-        yield
-    finally:
-        MultiHeadAttention.use_sdpa = prev_state
-
 class MultiHeadAttention(nn.Module):
-    use_sdpa = True
-
     def __init__(self, n_state: int, n_head: int):
         super().__init__()
         self.n_head = n_head
@@ -115,32 +85,20 @@ class MultiHeadAttention(nn.Module):
         wv, qk = self.qkv_attention(q, k, v, mask)
         return self.out(wv), qk
 
-    def qkv_attention(
-        self, q: Tensor, k: Tensor, v: Tensor, mask: Optional[Tensor] = None
-    ) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
+    def qkv_attention(self, q: Tensor, k: Tensor, v: Tensor, mask: Optional[Tensor] = None):
         n_batch, n_ctx, n_state = q.shape
         scale = (n_state // self.n_head) ** -0.25
-        q = q.view(*q.shape[:2], self.n_head, -1).permute(0, 2, 1, 3)
-        k = k.view(*k.shape[:2], self.n_head, -1).permute(0, 2, 1, 3)
+        q = q.view(*q.shape[:2], self.n_head, -1).permute(0, 2, 1, 3) * scale
+        k = k.view(*k.shape[:2], self.n_head, -1).permute(0, 2, 3, 1) * scale
         v = v.view(*v.shape[:2], self.n_head, -1).permute(0, 2, 1, 3)
 
-        if SDPA_AVAILABLE and MultiHeadAttention.use_sdpa:
-            a = scaled_dot_product_attention(
-                q, k, v, is_causal=mask is not None and n_ctx > 1
-            )
-            out = a.permute(0, 2, 1, 3).flatten(start_dim=2)
-            qk = None
-        else:
-            qk = (q * scale) @ (k * scale).transpose(-1, -2)
-            if mask is not None:
-                qk = qk + mask[:n_ctx, :n_ctx]
-            qk = qk.float()
+        qk = q @ k
+        if mask is not None:
+            qk = qk + mask[:n_ctx, :n_ctx]
+        qk = qk.float()
 
-            w = F.softmax(qk, dim=-1).to(q.dtype)
-            out = (w @ v).permute(0, 2, 1, 3).flatten(start_dim=2)
-            qk = qk.detach()
-
-        return out, qk
+        w = F.softmax(qk, dim=-1).to(q.dtype)
+        return (w @ v).permute(0, 2, 1, 3).flatten(start_dim=2), qk.detach()
 
 
 class ResidualAttentionBlock(nn.Module):
@@ -150,15 +108,11 @@ class ResidualAttentionBlock(nn.Module):
         self.attn = MultiHeadAttention(n_state, n_head)
         self.attn_ln = LayerNorm(n_state)
 
-        self.cross_attn = (
-            MultiHeadAttention(n_state, n_head) if cross_attention else None
-        )
+        self.cross_attn = MultiHeadAttention(n_state, n_head) if cross_attention else None
         self.cross_attn_ln = LayerNorm(n_state) if cross_attention else None
 
         n_mlp = n_state * 4
-        self.mlp = nn.Sequential(
-            Linear(n_state, n_mlp), nn.GELU(), Linear(n_mlp, n_state)
-        )
+        self.mlp = nn.Sequential(Linear(n_state, n_mlp), nn.GELU(), Linear(n_mlp, n_state))
         self.mlp_ln = LayerNorm(n_state)
 
     def forward(
@@ -173,6 +127,7 @@ class ResidualAttentionBlock(nn.Module):
             x = x + self.cross_attn(self.cross_attn_ln(x), xa, kv_cache=kv_cache)[0]
         x = x + self.mlp(self.mlp_ln(x))
         return x
+
 
 class AudioEncoder(nn.Module):
     def __init__(self, n_mels: int, n_ctx: int, n_state: int, n_head: int, n_layer: int):
@@ -258,51 +213,14 @@ class TextDecoder(nn.Module):
 
         return logits, x
 
-def lecun_normal_init_parameters(module):
-    """Initialize parameters in the LeCun's manner."""
-    for p in module.parameters():
-        data = p.data
-        if data.dim() == 1:
-            # bias
-            data.zero_()
-        elif data.dim() == 2:
-            # linear weight
-            n = data.size(1)
-            stdv = 1.0 / math.sqrt(n)
-            data.normal_(0, stdv)
-        elif data.dim() in (3, 4):
-            # conv weight
-            n = data.size(1)
-            for k in data.size()[2:]:
-                n *= k
-            stdv = 1.0 / math.sqrt(n)
-            data.normal_(0, stdv)
-        else:
-            raise NotImplementedError
 
 class WhisperBiasing(nn.Module):
-    def __init__(self, whisper, tokenizer, embdim, hiddim, attndim, nvocab, Bdrop=0.0, biasing=False,
-                 GNNtype="none", GNNdim=0, useGPT=False, GPThiddim=0):
+    def __init__(self, whisper, tokenizer, embdim, hiddim, attndim, nvocab, Bdrop=0.0, biasing=False, useGPT=False, GPThiddim=0):
         super().__init__()
         self.whisper = whisper
         self.tokenizer = tokenizer
-        self.eos = self.tokenizer.encoding.eot_token
-        self.treehid = embdim if GNNdim == 0 else GNNdim
-
-        # GNN module
-        self.GNNtype = GNNtype
-        self.GNN = None
-        if GNNtype != "none":
-            # gcn3 means using GCN with 3 layers
-            if GNNtype.startswith("gcn"):
-                self.GNN = GCN(
-                    embdim,
-                    self.treehid,
-                    int(self.GNNtype[3:]),
-                    Bdrop,
-                    residual=False,
-                )
-            lecun_normal_init_parameters(self.GNN)
+        self.eos = self.tokenizer.tokenizer.eos_token_id
+        self.treehid = embdim
 
         self.hiddim = hiddim
         self.attndim = attndim
@@ -334,7 +252,6 @@ class WhisperBiasing(nn.Module):
         for i, char_idx in enumerate(yseq):
             new_tree = trees[i][0]
             char_idx = char_idx.item()
-            extended_list = []
             if char_idx == self.eos:
                 new_tree = origTries[i].copy()
                 index_list.append(list(new_tree[0].keys()))
@@ -347,7 +264,6 @@ class WhisperBiasing(nn.Module):
                     index_list.append(list(new_tree[0].keys()))
                     if new_tree[1] != -1:
                         index_list[-1].extend(list(origTries[i][0].keys()))
-                        extended_list = list(origTries[i][0].keys())
             else:
                 if char_idx not in new_tree:
                     new_tree = origTries[i].copy()
@@ -357,7 +273,6 @@ class WhisperBiasing(nn.Module):
                     index_list.append(list(new_tree[0].keys()))
                     if new_tree[1] != -1:
                          index_list[-1].extend(list(origTries[i][0].keys()))
-                         extended_list = list(origTries[i][0].keys())
             if char_idx > 0:
                 p_gen_mask.append(0)
             else:
@@ -366,31 +281,16 @@ class WhisperBiasing(nn.Module):
             if len(index_list[-1]) > maxlen:
                 maxlen = len(index_list[-1])
 
-            if getattr(self, "GNN", None) is not None:
-                step_emb = [new_tree[0][key][3] for key in new_tree[0].keys()]
-                if extended_list != []:
-                    step_emb.extend([origTries[i][0][key][3] for key in extended_list])
-                if len(step_emb) > 0:
-                    step_embs.append(torch.cat(step_emb, dim=0))
-                else:
-                    raise NotImplementedError
-                    # step_embs.append(to_device(self, torch.empty(0, self.tree_hid)))
-
         maxlen += 1
         step_mask = []
         back_transform = torch.zeros(len(new_trees), maxlen, ooKB_id+1, device=yseq.device)
         ones_mat = torch.ones(back_transform.size(), device=yseq.device)
         for i, indices in enumerate(index_list):
             step_mask.append(len(indices) * [0] + (maxlen - len(indices) - 1) * [1] + [0])
-            if getattr(self, "GNN", None) is not None:
-                pad_embs = self.ooKBemb.weight.repeat(maxlen-len(indices), 1)
-                step_embs[i] = torch.cat([step_embs[i], pad_embs], dim=0)
             indices += [ooKB_id] * (maxlen - len(indices))
         step_mask = torch.tensor(step_mask).byte().to(yseq.device)
         index_list = torch.LongTensor(index_list).to(yseq.device)
         back_transform.scatter_(dim=-1, index=index_list.unsqueeze(-1), src=ones_mat)
-        if getattr(self, "GNN", None) is not None:
-            step_embs = torch.stack(step_embs)
 
         return step_mask, step_embs, new_trees, p_gen_mask, back_transform, index_list
 
@@ -402,13 +302,12 @@ class WhisperBiasing(nn.Module):
             index_list,
             meeting_KB=[],
         ):
-        if getattr(self, "GNN", None) is None or meeting_KB == []:
-            meeting_KB = torch.cat([self.whisper.decoder.token_embedding.weight.data, self.ooKBemb.weight], dim=0)
-            meeting_KB = meeting_KB[index_list]
+        if meeting_KB == []:
+            meeting_KB = torch.cat([self.whisper.decoder.token_embedding.weight.data, self.ooKBemb.weight], dim=0)[index_list]
         meeting_KB = self.Bdrop(self.Kproj(meeting_KB))
         KBweight = torch.einsum('ijk,ik->ij', meeting_KB, query)
         KBweight = KBweight / math.sqrt(query.size(-1))
-        KBweight.masked_fill_(meeting_mask.bool(), -1e9)
+        KBweight.masked_fill_(meeting_mask.bool(), -1e15)
         KBweight = torch.nn.functional.softmax(KBweight, dim=-1)
         if meeting_KB.size(1) > 1:
             KBembedding = torch.einsum('ijk,ij->ik', meeting_KB[:,:-1,:], KBweight[:,:-1])
@@ -417,15 +316,13 @@ class WhisperBiasing(nn.Module):
         KBweight = torch.einsum('ijk,ij->ik', back_transform, KBweight)
         return KBembedding, KBweight
 
-    def calc_ptr_loss(self, ptr_dist, model_dist, ptr_gen, ptr_gen_mask,
-                      targets, ignore_idx=-100, reduction_str='none'):
+    def calc_ptr_loss(self, ptr_dist, model_dist, ptr_gen, ptr_gen_mask, targets, ignore_idx=-100, reduction_str='none'):
         ptr_gen = ptr_gen.squeeze(-1).masked_fill(ptr_gen_mask.bool(), 0).reshape(-1, 1)
         # the gap to 1 is the prob for <unk>, which indicates not in the KB
         ptr_gen_complement = (ptr_dist[:,:,-1].reshape(targets.size(0), -1)) * ptr_gen
         # print((ptr_dist[:,:,:-1].reshape(targets.size(0), -1) * ptr_gen).sum(-1).max())
         p_final = ptr_dist[:,:,:-1].reshape(targets.size(0), -1) * ptr_gen + model_dist * (1 - ptr_gen + ptr_gen_complement)
-        p_loss = F.nll_loss(torch.log(p_final+1e-9), targets,
-                            ignore_index=ignore_idx, reduction=reduction_str)
+        p_loss = F.nll_loss(torch.log(p_final + 1e-15), targets, ignore_index=ignore_idx, reduction=reduction_str)
         p_loss = p_loss.sum() / (p_loss != 0).sum()
         return p_loss, p_final
 
@@ -435,10 +332,6 @@ class WhisperBiasing(nn.Module):
             logits, hidden = self.whisper.getstates(fbank, targets * targetmask)
 
         if self.biasing:
-            # Forward GNN first
-            if getattr(self, "GNN", None) is not None:
-                self.whisper.decoder.token_embedding.weight.requires_grad = False
-                self.GNN(lextree, self.whisper.decoder.token_embedding)
             # Duplicate lextree
             lextrees = [lextree for i in range(targets.size(0))]
 
@@ -501,22 +394,6 @@ class Whisper(nn.Module):
             self.dims.n_text_head,
             self.dims.n_text_layer,
         )
-        # use the last half among the decoder layers for time alignment by default;
-        # to use a specific set of heads, see `set_alignment_heads()` below.
-        all_heads = torch.zeros(
-            self.dims.n_text_layer, self.dims.n_text_head, dtype=torch.bool
-        )
-        all_heads[self.dims.n_text_layer // 2 :] = True
-        self.register_buffer("alignment_heads", all_heads.to_sparse(), persistent=False)
-
-    def set_alignment_heads(self, dump: bytes):
-        array = np.frombuffer(
-            gzip.decompress(base64.b85decode(dump)), dtype=bool
-        ).copy()
-        mask = torch.from_numpy(array).reshape(
-            self.dims.n_text_layer, self.dims.n_text_head
-        )
-        self.register_buffer("alignment_heads", mask.to_sparse(), persistent=False)
 
     def embed_audio(self, mel: torch.Tensor):
         return self.encoder(mel)
@@ -524,9 +401,7 @@ class Whisper(nn.Module):
     def logits(self, tokens: torch.Tensor, audio_features: torch.Tensor):
         return self.decoder(tokens, audio_features)
 
-    def forward(
-        self, mel: torch.Tensor, tokens: torch.Tensor
-    ) -> Dict[str, torch.Tensor]:
+    def forward(self, mel: torch.Tensor, tokens: torch.Tensor) -> Dict[str, torch.Tensor]:
         return self.decoder(tokens, self.encoder(mel))
 
     def getstates(self, mel: torch.Tensor, tokens: torch.Tensor)  -> Dict[str, torch.Tensor]:
@@ -538,11 +413,7 @@ class Whisper(nn.Module):
 
     @property
     def is_multilingual(self):
-        return self.dims.n_vocab >= 51865
-
-    @property
-    def num_languages(self):
-        return self.dims.n_vocab - 51765 - int(self.is_multilingual)
+        return self.dims.n_vocab == 51865
 
     def install_kv_cache_hooks(self, cache: Optional[dict] = None):
         """
@@ -562,9 +433,8 @@ class Whisper(nn.Module):
         hooks = []
 
         def save_to_cache(module, _, output):
-            if module not in cache or output.shape[1] > self.dims.n_text_ctx:
-                # save as-is, for the first token or cross attention
-                cache[module] = output
+            if module not in cache or output.shape[1] > self.decoder.positional_embedding.shape[0]:
+                cache[module] = output  # save as-is, for the first token or cross attention
             else:
                 cache[module] = torch.cat([cache[module], output], dim=1).detach()
             return cache[module]
@@ -580,3 +450,26 @@ class Whisper(nn.Module):
     detect_language = detect_language_function
     transcribe = transcribe_function
     decode = decode_function
+
+
+def lecun_normal_init_parameters(module):
+    """Initialize parameters in the LeCun's manner."""
+    for p in module.parameters():
+        data = p.data
+        if data.dim() == 1:
+            # bias
+            data.zero_()
+        elif data.dim() == 2:
+            # linear weight
+            n = data.size(1)
+            stdv = 1.0 / math.sqrt(n)
+            data.normal_(0, stdv)
+        elif data.dim() in (3, 4):
+            # conv weight
+            n = data.size(1)
+            for k in data.size()[2:]:
+                n *= k
+            stdv = 1.0 / math.sqrt(n)
+            data.normal_(0, stdv)
+        else:
+            raise NotImplementedError
