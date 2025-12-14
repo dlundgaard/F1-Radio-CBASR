@@ -1,5 +1,6 @@
 import os
 import time
+import datetime
 
 import whisper
 from whisper.model import WhisperBiasing
@@ -7,7 +8,7 @@ from dataloader import get_dataloader, BiasingProcessor
 import argparse
 import torch
 from torch.nn.utils.rnn import pad_sequence
-from torch.optim import SGD, Adam
+from torch.optim import Adam
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
 import pprint
@@ -21,15 +22,13 @@ parser.add_argument('--biasinglist', type=str, default="data/biasing_list_seen.t
 parser.add_argument('--modeltype', type=str, default="base.en")
 parser.add_argument('--runidentifier', type=str, default="")
 parser.add_argument('--device', type=str, default="cuda" if torch.cuda.is_available() else "cpu")
-parser.add_argument('--train_json', type=str, default="data/transcriptions_with_context.json")
+parser.add_argument('--train_json', type=str, default="data/training_examples.json")
 parser.add_argument('--expdir', type=str, default="exports/")
-parser.add_argument('--logfile', type=str, default="exports/log")
+parser.add_argument('--logfile', type=str, default=f"exports/log {datetime.datetime.now()}")
 parser.add_argument('--log_interval', type=int, default=10)
 parser.add_argument('--nepochs', type=int, default=10)
 parser.add_argument('--batch_size', type=int, default=1)
-# parser.add_argument('--lr', type=float, default=5e-5)
-parser.add_argument('--lr', type=float, default=1e-4)
-# parser.add_argument('--lr', type=float, default=5e-4)
+parser.add_argument('--lr', type=float, default=5e-5)
 parser.add_argument("--beamsize", type=int, default=3)
 parser.add_argument('--decay_pct', type=float, default=0.2)
 parser.add_argument('--warmup_pct', type=float, default=0.05)
@@ -42,7 +41,6 @@ parser.add_argument('--useGPT', action="store_true")
 args = parser.parse_args()
 
 def logging(s, logfile, log_=True):
-    print(s)
     if log_:
         with open(logfile, 'a+') as f_log:
             f_log.write(s + '\n')
@@ -104,10 +102,10 @@ optimiser = Adam(whisperbiasing.parameters(), lr=args.lr)
 ##################
 # Start Training
 ##################
-logging("Training with" + "\n" + pprint.pformat(vars(args)), args.logfile)
+print("Training with" + "\n" + pprint.pformat(vars(args)))
 bestacc = 0
 for epoch in range(1, args.nepochs + 1):
-    logging(f"Starting epoch {epoch}", args.logfile)
+    print(f"Starting epoch {epoch}")
     start = time.time()
     totalloss = 0
     for batch_idx, data in enumerate(trainloader, start=1):
@@ -161,10 +159,10 @@ for epoch in range(1, args.nepochs + 1):
             optimiser.step()
 
         if batch_idx % args.log_interval == 0 or batch_idx == len(trainloader):
-            logging(f"{batch_idx:>3} / {len(trainloader):>3} batches completed | time elapsed: {time.time()-start:5.1f} sec | loss: {totalloss / batch_idx:5.3f} | lr: {optimiser.param_groups[0]['lr']:8.6f}", args.logfile)
+            print(f"{batch_idx:>3} / {len(trainloader):>3} batches completed | time elapsed: {time.time()-start:5.1f} sec | loss: {totalloss / batch_idx:5.3f} | lr: {optimiser.param_groups[0]['lr']:8.6f}")
 
     # Validation
-    logging(f"Validating after epoch {epoch}", args.logfile)
+    print(f"Validating after epoch {epoch}")
     totalvalset = 0
     totalvalacc = 0
     model.eval()
@@ -206,9 +204,16 @@ for epoch in range(1, args.nepochs + 1):
 
             totalacc = totalvalacc / totalvalset
             if batch_idx % args.log_interval == 0 or batch_idx == len(devloader):
-                logging(f"{batch_idx:>3} / {len(devloader):>3} batches completed | time elapsed: {time.time()-start:4.1f} | accuracy: {totalacc:5.2%}", args.logfile)
+                print(f"{batch_idx:>3} / {len(devloader):>3} batches completed | time elapsed: {time.time()-start:4.1f} | accuracy: {totalacc:5.2%}")
+
+        logging(",".join([
+            datetime.datetime.now(),
+            epoch,
+            totalloss / len(trainloader),
+            totalacc,
+        ]))
 
     if totalacc > bestacc:
         bestacc = totalacc
         torch.save(whisperbiasing, os.path.join(args.expdir, f"{args.modeltype}_{args.runidentifier}.best.pt"))
-        logging(f"Saving best model at epoch {epoch}", args.logfile)
+        print(f"Saving best model at epoch {epoch}")

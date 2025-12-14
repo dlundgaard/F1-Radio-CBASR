@@ -1,0 +1,4706 @@
+{
+    "ALEALB01_23_20230303_154119.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20230303_154119.mp3.pt",
+        "words": " WHAT DO YOU THINK ON THE FRONT WING, ALEX? IT FEELS QUITE LOW, BUT I'LL HAVE TO LEAVE IT. FOR THIS TIRE IT'S GOOD. ",
+        "blist": [
+            "WING",
+            "ALEX",
+            "TIRE"
+        ]
+    },
+    "NICHUL01_27_20230401_023542.mp3": {
+        "fbank": "data/audio_features/NICHUL01_27_20230401_023542.mp3.pt",
+        "words": " I GOT THAT \"SOC LOW\" MESSAGE, QUITE EARLY IN THE LAP. YEAH, COPY THAT. ",
+        "blist": [
+            "LAP",
+            "SOC"
+        ]
+    },
+    "LANNOR01_4_20241020_143754.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20241020_143754.mp3.pt",
+        "words": " AND LANDO SO WE'VE HAD OUR THIRD STRIKE TRACK TRACK LIMITS, WHICH I KNOW YOU'LL KNOW. SO NO MORE TRACK LIMITS. NO MORE! ",
+        "blist": [
+            "LANDO",
+            "TRACK"
+        ]
+    },
+    "NICHUL01_27_20230604_141353.mp3": {
+        "fbank": "data/audio_features/NICHUL01_27_20230604_141353.mp3.pt",
+        "words": " I THINK WE NEED TO BOX AND DO SOMETHING ELSE. ",
+        "blist": [
+            "BOX"
+        ]
+    },
+    "PIEGAS01_10_20241025_173921.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20241025_173921.mp3.pt",
+        "words": " WHERE SHOULD I ... IS THERE A GAP FORMING? ",
+        "blist": [
+            "GAP"
+        ]
+    },
+    "KEVMAG01_20_20230902_120806.mp3": {
+        "fbank": "data/audio_features/KEVMAG01_20_20230902_120806.mp3.pt",
+        "words": " SO WE WOULD SUGGEST USING THE RIGHT-HAND TOGGLE FOR TURN 11 ENTRY STABILITY, POSSIBLY ALSO 6 AND 7. YEAH, I DON'T AGREE, GUYS. ",
+        "blist": [
+            "STABILITY",
+            "TOGGLE"
+        ]
+    },
+    "SERPER01_11_20231126_142119.mp3": {
+        "fbank": "data/audio_features/SERPER01_11_20231126_142119.mp3.pt",
+        "words": " BUT WHAT ARE THEY GIVING THE THE PENALTY? I WAS AHEAD. ",
+        "blist": [
+            "PENALTY"
+        ]
+    },
+    "KEVMAG01_20_20230827_160620.mp3": {
+        "fbank": "data/audio_features/KEVMAG01_20_20230827_160620.mp3.pt",
+        "words": " YEAH I GUESS YOU'VE GOT TWO LAPS BEHIND THE SAFETY CAR AND THEN A ROLLING START. ",
+        "blist": [
+            "CAR",
+            "SAFETY",
+            "LAPS"
+        ]
+    },
+    "ESTOCO01_31_20240621_170804.mp3": {
+        "fbank": "data/audio_features/ESTOCO01_31_20240621_170804.mp3.pt",
+        "words": " HOW WAS THE BALANCE, PLEASE? YEAH, IT WASN'T GREAT. THE BOUNCING WAS SIMILAR UHM THE GRIP IN TURN 1 WAS A BIT WORSE, UHH SLIGHTLY, JUST SOME UNDERSTEER INTO 1.  AND THE LAST CORNER ALSO. THROUGH 13 THE BOUNCING WASN'T GREAT. ",
+        "blist": [
+            "UNDERSTEER",
+            "GRIP",
+            "BALANCE",
+            "BOUNCING"
+        ]
+    },
+    "PIEGAS01_10_20230506_181847.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20230506_181847.mp3.pt",
+        "words": " YUP. YEAH. STRUGGLED TO TURN THERE. FRONTS LOCK IN TURN 4. ",
+        "blist": [
+            "FRONTS"
+        ]
+    },
+    "CARSAI01_55_20230723_141713.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20230723_141713.mp3.pt",
+        "words": " AND SWITCH POSITION \"SIERRA\". I THINK IT'S TOO EARLY. I DON'T FEEL TOO BAD. COPY, UNDERSTOOD. ",
+        "blist": [
+            "SWITCH",
+            "POSITION"
+        ]
+    },
+    "GEORUS01_63_20240922_192418.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240922_192418.mp3.pt",
+        "words": " SO, I'LL HAVE SOME PU COOLING. AND JUST CONFIRM HOW MUCH FLAP. MINUS 1%. ",
+        "blist": [
+            "PU"
+        ]
+    },
+    "SERPER01_11_20231021_225544.mp3": {
+        "fbank": "data/audio_features/SERPER01_11_20231021_225544.mp3.pt",
+        "words": " SO YEAH, FOR NOW IT'S A LONG RACE. RIGHT, YOU'RE GEARS ALL SHOULD BE SYNCED. UHH PIT LIMITER ON. FIRE-UP, REMEMBER THE BRAKES AND BITE POINT FIND ONCE ON THE GROUND. EXPECTED WHEELSPIN ON THAT PRACTICE START. BUILD THE TEMPERATURE THROUGHT THE FORMATION LAP. NICE AND POSITIVE. INTO TURN 19 IT'S LIFT AND COAST, PART THROTTLE AFTER THAT. AND UHH, FERRARI PIT WALL. TWO LONG, ONE SHORT. TWO LONG, ONE SHORT BURNOUT. SHOULD BE ABOUT 35 SECONDS OF STATITIONARY TIME. ",
+        "blist": [
+            "BRAKES",
+            "COAST",
+            "FERRARI",
+            "WHEELSPIN",
+            "LIFT",
+            "LAP",
+            "THROTTLE",
+            "PIT"
+        ]
+    },
+    "LANNOR01_4_20240406_042112.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20240406_042112.mp3.pt",
+        "words": " GASLY JUST LEFT 11. HAPPY TO GO AGAIN THIS TIME AROUND. THE CAR WAS FEELING GOOD THIS TIME AROUND. ",
+        "blist": [
+            "GASLY",
+            "CAR"
+        ]
+    },
+    "GUAZHO01_24_20231006_152915.mp3": {
+        "fbank": "data/audio_features/GUAZHO01_24_20231006_152915.mp3.pt",
+        "words": " PERFECT I WILL GOING, BUT . COPY ZHOU. ",
+        "blist": [
+            "ZHOU"
+        ]
+    },
+    "MAXVER01_1_20230507_213403.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20230507_213403.mp3.pt",
+        "words": " BACK TO POSITION\u2014. I'LL TRY THIS FIRST. OK. OTHERWISE BACK TO POSITION 8. ",
+        "blist": [
+            "POSITION"
+        ]
+    },
+    "LOGSAR01_2_20230721_164913.mp3": {
+        "fbank": "data/audio_features/LOGSAR01_2_20230721_164913.mp3.pt",
+        "words": " SOME REPORTS OF RAIN SECTOR 2, SMALL AMOUNTS. ",
+        "blist": [
+            "SECTOR"
+        ]
+    },
+    "LEWHAM01_44_20230702_141905.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20230702_141905.mp3.pt",
+        "words": " THIS CAR IS SLOW, MAN. OK, COPY. ",
+        "blist": [
+            "CAR",
+            "SLOW"
+        ]
+    },
+    "ESTOCO01_31_20240302_152846.mp3": {
+        "fbank": "data/audio_features/ESTOCO01_31_20240302_152846.mp3.pt",
+        "words": " TSUNODA ON AN OUT LAP IN FRONT BATTLING WITH THOSE GUYS THAT ARE SLOWING DOWN. ",
+        "blist": [
+            "LAP",
+            "TSUNODA"
+        ]
+    },
+    "SERPER01_11_20241122_005613.mp3": {
+        "fbank": "data/audio_features/SERPER01_11_20241122_005613.mp3.pt",
+        "words": " YEAH, MAX STILL DOING MORE MANAGEMENT, AS DISCUSSED YESTERDAY. ",
+        "blist": [
+            "MAX"
+        ]
+    },
+    "NICHUL01_27_20230617_213121.mp3": {
+        "fbank": "data/audio_features/NICHUL01_27_20230617_213121.mp3.pt",
+        "words": " AAARRGH, ****. THAT ALPHA TAURI! ",
+        "blist": [
+            "ALPHA",
+            "****",
+            "TAURI"
+        ]
+    },
+    "YUKTSU01_22_20250411_150014.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20250411_150014.mp3.pt",
+        "words": " OK, STRAIGHT BACK OUT. UHH, YEAH. REMEMBER RED IN PITLANE. ",
+        "blist": [
+            "RED"
+        ]
+    },
+    "KEVMAG01_20_20230428_131003.mp3": {
+        "fbank": "data/audio_features/KEVMAG01_20_20230428_131003.mp3.pt",
+        "words": " ENGINE PROBLEM AGAIN. YEAH THEY JUST\u2014 THEY NEED TO FIX THIS. YEAH, KEV, WE THINK THERE'S SOME SORT OF ELECTRICAL CONNECTOR PROBLEM SOMEHERE. THAT'S THE ISSUE. ",
+        "blist": [
+            "KEV"
+        ]
+    },
+    "PIEGAS01_10_20240406_071440.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20240406_071440.mp3.pt",
+        "words": " AND WE CAN JUST FOCUS ON THE TIRES. KEEP AN EYE ON YOUR DELTA. AND UHH LET'S GIVE IT ALL WE GOT. ",
+        "blist": [
+            "TIRES",
+            "DELTA"
+        ]
+    },
+    "MAXVER01_1_20241206_171920.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20241206_171920.mp3.pt",
+        "words": " MAX, HOW IS RIDE, PLEASE? UHHM, IT'S BAD. BUT THAT'S NOT REALLY MY PROBLEM WITH THE CAR. FRONT AXLE IS JUST NOT WORKING. ",
+        "blist": [
+            "MAX",
+            "CAR",
+            "RIDE"
+        ]
+    },
+    "OSCPIA01_81_20231021_233920.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20231021_233920.mp3.pt",
+        "words": " THAT THERE THAT WAS P10 IN THE END, I'M AFRAID. UHH LOOKS LIKE THE TIRES GOT AWAY FROM US A BIT WITH THE BATTLING AT THE START. UHH AND WE ALSO PICKED UP A BIT OF DAMAGE, SO. WE'LL REGROUP ON THAT AND GO AGAIN TOMORROW. ",
+        "blist": [
+            "P10",
+            "TIRES"
+        ]
+    },
+    "FERALO01_14_20250921_141637.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20250921_141637.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "CARSAI01_55_20230507_205711.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20230507_205711.mp3.pt",
+        "words": " YEAH, I HAVE THAT PACE IN CLEAR AIR. ",
+        "blist": [
+            "AIR",
+            "PACE"
+        ]
+    },
+    "LANSTR01_18_20230923_034513.mp3": {
+        "fbank": "data/audio_features/LANSTR01_18_20230923_034513.mp3.pt",
+        "words": " SO LANCE, INFO FROM CARLO. SO TURN 11 HAS GOT NO HEADWIND OR TAILWIND, BUT THAT'S OBVIOUSLY LESS, A LOT LESS HEADWIND THAN SECTOR 1. SO JUST TAKE SOME MARGIN TURN 11 BRAKING. THERE'S LESS HEADWIND THERE. ",
+        "blist": [
+            "LANCE",
+            "HEADWIND",
+            "SECTOR",
+            "TAILWIND"
+        ]
+    },
+    "ALEALB01_23_20250323_151718.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250323_151718.mp3.pt",
+        "words": " WE'RE HAPPY WITH TIRES FOR NOW BUT WE ARE A CRIT\u2014 YEAH, I'M GOOD, I AM GOOD. I AM BETTER THAN EVERYONE. LET'S RELAX. I AM VERY COMFORTABLE. COPY. ",
+        "blist": [
+            "TIRES"
+        ]
+    },
+    "ALEALB01_23_20250405_153309.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250405_153309.mp3.pt",
+        "words": " THAT WAS A GOOD GAIN IN 11. THAT WAS A GOOD LAP. COME ON! ",
+        "blist": [
+            "LAP"
+        ]
+    },
+    "ALEALB01_23_20250406_141917.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250406_141917.mp3.pt",
+        "words": " THESE SHIFTS ARE SO BAD! WHAT HAVE WE DONE TO THEM?! IT'S BEEN **** AT THE START, IT'S **** NOW. OK, IF YOU CAN BE A BIT MORE SPECIFIC AS TO HOW ... WHERE IT IS, WE'LL TRY AND HELP. YEAH, THE SAME. THE SAME I'VE BEEN TALKING ABOUT ALL THE TIME. ",
+        "blist": [
+            "****"
+        ]
+    },
+    "ALEALB01_23_20250406_144219.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250406_144219.mp3.pt",
+        "words": " HONESTLY, YOU GUYS MAKE ABSOLUTELY NO SENSE! OK. LIKE, RIDICULOUS! ALRIGHT, BEARMAN HAS PITTED. YEAH, BUT, WHO BEFORE THEM?! TRUST ME IT WAS WORSE BEFORE. ",
+        "blist": [
+            "BEARMAN",
+            "PITTED"
+        ]
+    },
+    "SERPER01_11_20230528_153032.mp3": {
+        "fbank": "data/audio_features/SERPER01_11_20230528_153032.mp3.pt",
+        "words": " WHEN YOU CAN, ENGINE 13, POSITION 4, PLUS 1. ",
+        "blist": [
+            "POSITION"
+        ]
+    },
+    "FERALO01_14_20240505_212549.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20240505_212549.mp3.pt",
+        "words": " THAT WAS A LOT BETTER FERNANDO, SO IF YOU COULD JUST HOLD YOUR FOOT ON THE BRAKE PEDAL. [UNINTELLIGIBLE] ISN'T IT. ",
+        "blist": [
+            "BRAKE",
+            "FERNANDO"
+        ]
+    },
+    "YUKTSU01_22_20241121_210922.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20241121_210922.mp3.pt",
+        "words": " I DON'T FEEL IT\u2014 DO YOU FEEL LIKE I\u2014 GRID WAS GRIPPING QUITE A LOT. IT WAS QUITE SEVERE GRIP, I'D SAY. ",
+        "blist": [
+            "GRID",
+            "GRIP",
+            "GRIPPING"
+        ]
+    },
+    "OSCPIA01_81_20241121_204930.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20241121_204930.mp3.pt",
+        "words": " WELL, THE FRONT LEFT DOESN'T LOOK GREAT. TONS OF GRAINING. UNDERSTOOD. DO YOU WANT TO TRY ONE MORE LAP OR IS IT FINISHED? NO, IT'S NOT FINISHED. BUT, IT JUST\u2014 JUST PRETTY WORN. ",
+        "blist": [
+            "LAP",
+            "GRAINING"
+        ]
+    },
+    "CARSAI01_55_20231027_194138.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20231027_194138.mp3.pt",
+        "words": " I LOST THE CAR. INTO ALEX. I WILL TRY AND MAKE IT MAKE. UHH, I HAVE NO POWER STEERING. SORRY CHECO, BUT... I HAVE AN ISSUE WITH THE CAR. ",
+        "blist": [
+            "CHECO",
+            "ALEX",
+            "CAR",
+            "STEERING"
+        ]
+    },
+    "OSCPIA01_81_20230430_120633.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20230430_120633.mp3.pt",
+        "words": " I HAD SOME CONTACT. LEFT REAR. COPY, NO CONCERN. CAR LOOKS OK. ",
+        "blist": [
+            "CAR",
+            "REAR"
+        ]
+    },
+    "OSCPIA01_81_20230728_172256.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20230728_172256.mp3.pt",
+        "words": " I'M LEAVING A LOT ON THE TABLE, SO, SORRY ABOUT THAT. STILL TODAY WENT VERY WELL, WAS A GOOD SESSION. AND UHH, LET'S TRY AGAIN TOMORROW. YEAH. ALL GOOD, OSCAR, ALL GOOD. STARTING P6, WE CAN HAVE A GOOD RACE ON SUNDAY FROM THERE. WE'LL HAVE ANOTHER GO AT THIS TOMORROW. ",
+        "blist": [
+            "SESSION",
+            "P6",
+            "OSCAR"
+        ]
+    },
+    "GEORUS01_63_20240921_175523.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240921_175523.mp3.pt",
+        "words": " SO, I JUST HAD A LOT OF TRAFFIC SECTOR 1. UNDERSTOOD. STILL STRUGGLING IN THE LAST CORNER WITH UNDERSTEER. ",
+        "blist": [
+            "SECTOR",
+            "UNDERSTEER",
+            "TRAFFIC"
+        ]
+    },
+    "CHALEC01_16_20230505_191809.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20230505_191809.mp3.pt",
+        "words": " OK, NEXT CAR BEHIND IS AT 13 SECONDS. CAN I DO A COOL DOWN AND GO AGAIN? YES. YES YOU CAN. ",
+        "blist": [
+            "COOL",
+            "CAR"
+        ]
+    },
+    "MAXVER01_1_20240707_155059.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20240707_155059.mp3.pt",
+        "words": " TYRES ARE TAKING A LOT. COPY THAT, MAX. ",
+        "blist": [
+            "TYRES",
+            "MAX"
+        ]
+    },
+    "PIEGAS01_10_20230603_160706.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20230603_160706.mp3.pt",
+        "words": " WHAT'S THE GAP AHEAD OF THE CARS? UHH 11 SECONDS TO A GROUP OF PIASTRI, NORRIS AND ESTEBAN. ",
+        "blist": [
+            "NORRIS",
+            "GAP",
+            "PIASTRI",
+            "ESTEBAN"
+        ]
+    },
+    "PIEGAS01_10_20250613_173157.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20250613_173157.mp3.pt",
+        "words": " YEAH, VERY BAD TRAFFIC. YEAH, ALMOST CRASHED. ",
+        "blist": [
+            "TRAFFIC"
+        ]
+    },
+    "LANNOR01_4_20240419_050700.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20240419_050700.mp3.pt",
+        "words": " LANDO, SUGGESTION. RIGHT HAND PADDLE IS BETTER FOR TURN 11 THAN RIGHT HAND TOGGLE. USE THE PADDLE. ",
+        "blist": [
+            "TOGGLE",
+            "PADDLE",
+            "LANDO"
+        ]
+    },
+    "PIEGAS01_10_20231119_063625.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20231119_063625.mp3.pt",
+        "words": " I NEED TO BOX. I'M LOSING TOO MUCH TIME. YEP. COPY, MATE. ",
+        "blist": [
+            "MATE",
+            "BOX"
+        ]
+    },
+    "GEORUS01_63_20240302_165105.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240302_165105.mp3.pt",
+        "words": " DIFFICULT, UHH DIFFICULT AFTERNOON. A LOT TO LEARN. WILL NEED TO LOOK AT THAT DATA AND UNDERSTAND WHAT HAPPENDED WITH THOSE TEMPS. THAT WAS QUITE HAMPERING IN THE END. YEAH, REALLY CHALLENGING AFTERNOON. THAT FIRST STINT AND A HALF WAS ... YEAH, VERY VERY TOUGH, VERY VERY TOUGH. ",
+        "blist": [
+            "STINT",
+            "TEMPS"
+        ]
+    },
+    "MAXVER01_1_20240728_153404.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20240728_153404.mp3.pt",
+        "words": " LET'S JUST TO GET THEM, MATE. WHAT DO YOU THINK? HAVE A GO. ",
+        "blist": [
+            "MATE"
+        ]
+    },
+    "LEWHAM01_44_20240307_133407.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20240307_133407.mp3.pt",
+        "words": " THE REARS ARE ABOVE. OK, COPY. ",
+        "blist": [
+            "REARS"
+        ]
+    },
+    "CHALEC01_16_20241201_102944.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20241201_102944.mp3.pt",
+        "words": " AND LET'S UHH ... CHECK PRESSURES. TIRE PRESSURES. THE WAY I DRIVE PUNCTURE IS LIKELY. ",
+        "blist": [
+            "TIRE"
+        ]
+    },
+    "ALEALB01_23_20230923_070640.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20230923_070640.mp3.pt",
+        "words": " SO, A SLIGHTLY STRONGER WIND UHH THAN P3 MORNING. HEADWIND IN P3 WAS SLIGHTLY STRONGER. AND PEREZ PUSHING. 5 SECONDS BACK. AND IT SHOULD BE CLEAR. ",
+        "blist": [
+            "PEREZ",
+            "WIND",
+            "PUSHING",
+            "P3",
+            "HEADWIND"
+        ]
+    },
+    "CARSAI01_55_20240609_152113.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20240609_152113.mp3.pt",
+        "words": " TRY TO SAVE THE TIRES, AND ATTACK. ",
+        "blist": [
+            "TIRES",
+            "ATTACK",
+            "SAVE"
+        ]
+    },
+    "PIEGAS01_10_20230722_115327.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20230722_115327.mp3.pt",
+        "words": " THE ... I THINK THE RI\u2014 STEERING IS SLIGHTLY BENT. RIGHT HAND SIDE DOWN SINCE THE START. NOT NICE, BUT JUST DOWN A BIT. COPY. ",
+        "blist": [
+            "STEERING"
+        ]
+    },
+    "YUKTSU01_22_20240823_163425.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20240823_163425.mp3.pt",
+        "words": " I THINK NO MORE UNDERSTEER IN HIGH-SPEED TURN 7, TURN 8. YEAH, VERY CLEAR. ",
+        "blist": [
+            "UNDERSTEER"
+        ]
+    },
+    "FERALO01_14_20230723_143612.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20230723_143612.mp3.pt",
+        "words": " SO, LANCE IS 2.4 AHEAD HE'LL LET US PAST ONCE WE GET TO DRS. ",
+        "blist": [
+            "LANCE",
+            "DRS"
+        ]
+    },
+    "CHALEC01_16_20230527_151714.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20230527_151714.mp3.pt",
+        "words": " SO, CHARLES WE'LL SWAP POSITIONS AS SOON AS POSSIBLE, OKAY? YEAH UHH TO BE HONEST NOW I THINK IT'S TOO LATE. LET'S KEEP IT LIKE THIS AND I WILL LET HIM GO. FOR HIM TO NOT STUPIDLY SLOW DOWN IN THE LAST SECTOR. BUT UH, LET'S STAY LIKE THIS, IT WILL BE EASIER FOR EVERYONE. ",
+        "blist": [
+            "SECTOR",
+            "SLOW",
+            "CHARLES"
+        ]
+    },
+    "GUAZHO01_24_20231029_215323.mp3": {
+        "fbank": "data/audio_features/GUAZHO01_24_20231029_215323.mp3.pt",
+        "words": " TURN 6 WAS LOOKING BETTER. OK, SO YOU DID A BIT MORE ROTATION BRAKE BALANCE FOR\u2014 REARWARD, SORRY, FOR LAST SECTOR. ",
+        "blist": [
+            "BRAKE",
+            "BALANCE",
+            "SECTOR"
+        ]
+    },
+    "OSCPIA01_81_20240705_132353.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20240705_132353.mp3.pt",
+        "words": " WE HAVE REQUESTED FOR THE FIA TO GO AND GET YOU. OSCAR, THEY'RE ON THEIR WAY. ",
+        "blist": [
+            "FIA",
+            "OSCAR"
+        ]
+    },
+    "CHALEC01_16_20250905_141153.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250905_141153.mp3.pt",
+        "words": " I TRIED TO LET HIM PAST BUT I THINK BECAUSE IT WAS RED FLAG HE WOULDN'T PASS AGAIN. ",
+        "blist": [
+            "RED"
+        ]
+    },
+    "LANSTR01_18_20250613_170714.mp3": {
+        "fbank": "data/audio_features/LANSTR01_18_20250613_170714.mp3.pt",
+        "words": " TRYING TO BRING IT BACK. I THINK WE HAVE TO STOP, LANCE. WE SHOULDN'T DRIVE BACK. SO JUST STOP, FIND A SAFE PLACE. BUT WHY?! BECAUSE WE CAN'T DRIVE BACK IN THIS CONDITION. IT'S NOT ALLOWED ANYWHERE. ",
+        "blist": [
+            "LANCE",
+            "SAFE",
+            "STOP"
+        ]
+    },
+    "GEORUS01_63_20230429_101421.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20230429_101421.mp3.pt",
+        "words": " LOST THE REAR BIG TIME. AFFIRM. ",
+        "blist": [
+            "AFFIRM",
+            "REAR"
+        ]
+    },
+    "LANNOR01_4_20230702_144215.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20230702_144215.mp3.pt",
+        "words": " I MEAN, THE FERRARI WAS DECENT ON THE MEDIUM, BUT... ",
+        "blist": [
+            "MEDIUM",
+            "FERRARI"
+        ]
+    },
+    "ESTOCO01_31_20240622_133246.mp3": {
+        "fbank": "data/audio_features/ESTOCO01_31_20240622_133246.mp3.pt",
+        "words": " YEAH, COPY. THE STABILITY IN 3 AND 1 AND 7 IS NOT THE BEST, ALSO. THE UNDERSTEER MID-CORNER WAS BETTER WITH THE FLAP. WE'LL HAVE A GOOD LOOK THROUGH THE DATA WHEN WE'RE IN AND DECIDE WHERE WE GO FROM HERE. OK, WELL MANAGED THAT SESSION. A FEW PRECEDURES AND THINGS TO AS WELL. SO QUITE A BUSY ONE, THANK YOU FOR THAT. UHM SO WE'RE GOING TO THE GRID AND WE'LL DO A START ON THE LEFT-HAND SIDE. ",
+        "blist": [
+            "UNDERSTEER",
+            "STABILITY",
+            "GRID",
+            "SESSION"
+        ]
+    },
+    "NYCDEV01_21_20230604_143640.mp3": {
+        "fbank": "data/audio_features/NYCDEV01_21_20230604_143640.mp3.pt",
+        "words": " OK. LET'S SEE THAT SPECIAL LAP. YUKI IS DOING 20.6. 8 TENTHS UP. ",
+        "blist": [
+            "LAP",
+            "TENTHS",
+            "YUKI"
+        ]
+    },
+    "GEORUS01_63_20240823_164258.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240823_164258.mp3.pt",
+        "words": " JUST THINK ABOUT DIFF HIGH SPEED FOR TURN 7. IT'S FULLY OPEN. IT'S VERY LATE IN THE CORNER WHERE IT'S SLIDING. YEAH, UNDERSTOOD. ",
+        "blist": [
+            "SLIDING",
+            "DIFF",
+            "SPEED"
+        ]
+    },
+    "FERALO01_14_20230428_150623.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20230428_150623.mp3.pt",
+        "words": " AT ONE POINT YOU TELL WE ARE SAFE, EH? I WILL MATE. I WILL THROW IT IN A CRASH. COPY MATE. SO IF YOU NEED IT AT ALL FOR LANCE OR WHATEVER. UNDERSTOOD. LANCE IS PRETTY OK. ",
+        "blist": [
+            "LANCE",
+            "SAFE",
+            "MATE"
+        ]
+    },
+    "OSCPIA01_81_20240407_060559.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20240407_060559.mp3.pt",
+        "words": " SO CARS INVOLVED IN TURN 3 ARE RICCARDO AND ALBON. THEY'RE BOTH OUT THE CAR AND OK. ",
+        "blist": [
+            "CAR",
+            "ALBON"
+        ]
+    },
+    "ALEALB01_23_20230701_110330.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20230701_110330.mp3.pt",
+        "words": " OK. THIS IS A GOOD GAP TO DE VRIES AHEAD. SO LET'S TRY AND STAY AHEAD OF ALONSO. ALONSO 2.5. ",
+        "blist": [
+            "DE",
+            "ALONSO",
+            "GAP",
+            "VRIES"
+        ]
+    },
+    "OSCPIA01_81_20241103_160502.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20241103_160502.mp3.pt",
+        "words": " YEP, YEAH JUST... YEAH, SO, TOUGH RACE. JUST LACKED A LITTLE PACE, I THINK. JUST, NO REAR GRIP, SO... THANKS FOR THE EFFORT, AND SORRY FOR A SCRUFFY DAY. ",
+        "blist": [
+            "GRIP",
+            "REAR",
+            "PACE"
+        ]
+    },
+    "OSCPIA01_81_20241201_110509.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20241201_110509.mp3.pt",
+        "words": " KEEP DOING WHAT YOU CAN WITH THE TIRES. ESPECIALLY THE FRONTS. ",
+        "blist": [
+            "TIRES",
+            "FRONTS"
+        ]
+    },
+    "CARSAI01_55_20241019_131939.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20241019_131939.mp3.pt",
+        "words": " AND PURPLE FIRST SECTOR. AWESOME OUT THERE. GOOD PACE, AND LANDO'S STRUGGLING WITH HIS FRONT LEFT. FRONT LEFT WEAK FOR LANDO. ",
+        "blist": [
+            "SECTOR",
+            "LANDO",
+            "PACE"
+        ]
+    },
+    "ROBSHW01_97_20241025_135243.mp3": {
+        "fbank": "data/audio_features/ROBSHW01_97_20241025_135243.mp3.pt",
+        "words": " OH MY GOD. I THINK BEARMAN DID SOMETHING TO SOMEONE. ",
+        "blist": [
+            "BEARMAN"
+        ]
+    },
+    "SERPER01_11_20241103_150611.mp3": {
+        "fbank": "data/audio_features/SERPER01_11_20241103_150611.mp3.pt",
+        "words": " P11. LUCK DIDN'T FALL OUR WAYS. YEP. NOTHING WORKED TODAY. ",
+        "blist": [
+            "P11"
+        ]
+    },
+    "OSCPIA01_81_20241103_081843.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20241103_081843.mp3.pt",
+        "words": " SO, OSCAR, THERE'S NOW LIGHT DROPS IN PITLANE. WE THINK THE RAIN MIGHT PICK UP IN FOUR MINUTES OR SO. ",
+        "blist": [
+            "OSCAR"
+        ]
+    },
+    "ALEALB01_23_20250411_152014.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250411_152014.mp3.pt",
+        "words": " ALEX WE NEED TO GO INLAP, I KNOW WE'RE TWO AND A HALF UP. WE'LL GET IT LATER. WE'LL GET IT LATER. IT'S FINE. YEAH BUT WHEN I DON'T KNOW WHAT THE BRAKES ARE DOING EVERY LAP IT'S NICE TO ... DO SOMETHING. I GET THE FRUSTRATION. ",
+        "blist": [
+            "LAP",
+            "ALEX",
+            "BRAKES",
+            "INLAP"
+        ]
+    },
+    "ALEALB01_23_20250418_161744.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250418_161744.mp3.pt",
+        "words": " **** **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "ALEALB01_23_20250419_202134.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250419_202134.mp3.pt",
+        "words": " I HIT THE WALL PRETTY HARD. ENTRY OF TURN 16. ON THE LEFT HAND SIDE. ",
+        "blist": [
+            "HARD"
+        ]
+    },
+    "ALEALB01_23_20250420_202259.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250420_202259.mp3.pt",
+        "words": " JUST THINK ABOUT YOUR GAP THERE TO CAR AHEAD WITH ANY OVERHEATING ON THE FRONT. GUYS, DO YOU NOT SEE THERE'S A CAR RIGHT BEHIND ME AT ALL. OR ARE WE NOT ... THINKING ABOUT THAT? ",
+        "blist": [
+            "OVERHEATING",
+            "GAP",
+            "CAR"
+        ]
+    },
+    "ALEALB01_23_20250502_165643.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250502_165643.mp3.pt",
+        "words": " I DON'T KNOW THE MERC IS LEGAL. YEAH, COPY. ",
+        "blist": [
+            "MERC"
+        ]
+    },
+    "ALEALB01_23_20250518_153949.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250518_153949.mp3.pt",
+        "words": " GUYS, FOR ONCE, LET'S NOT BE STUPID. COPY THAT. FOR NOW YOU'RE DOING A GREAT JOB. YOU ARE PULLING AWAY FROM HADJAR AND ALONSO. ",
+        "blist": [
+            "HADJAR",
+            "ALONSO"
+        ]
+    },
+    "ALEALB01_23_20250525_160902.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250525_160902.mp3.pt",
+        "words": " I THINK I'M GONNA TAKE THE 5 SECOND PENALTY. YEAH, COPY. I THINK INTENTIONAL CORNER CUTTING IS WORSE. SHOULDN'T BE HERE ELSE. ",
+        "blist": [
+            "SECOND",
+            "PENALTY"
+        ]
+    },
+    "GEORUS01_63_20230319_175139.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20230319_175139.mp3.pt",
+        "words": " ALONSO HAS A 5 SECOND PENALTY HERE. LET'S FIGHT LATER. SO, LET'S MANAGE THE TIRES A LITTLE BIT NOW. ALONSO HAS SERVED HIS PENALTY AT THE STOP. AHH, ****. AGAIN, INFO I NEED! ",
+        "blist": [
+            "TIRES",
+            "ALONSO",
+            "****",
+            "STOP",
+            "SECOND",
+            "PENALTY"
+        ]
+    },
+    "GEORUS01_63_20230701_155241.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20230701_155241.mp3.pt",
+        "words": " IT'S DRYING QUICK. I DON'T THINK IT'S FAR OFF SLICKS. ",
+        "blist": [
+            "SLICKS"
+        ]
+    },
+    "CHALEC01_16_20250516_164827.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250516_164827.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "LEWHAM01_44_20231119_070005.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20231119_070005.mp3.pt",
+        "words": " SO, HULKENBERG AND MAGNUSSEN, SARGEANT AHEAD OF THEM, SHOULD BE PUSHING THEM BACK. ",
+        "blist": [
+            "MAGNUSSEN",
+            "PUSHING",
+            "HULKENBERG",
+            "SARGEANT"
+        ]
+    },
+    "LANSTR01_18_20230901_160613.mp3": {
+        "fbank": "data/audio_features/LANSTR01_18_20230901_160613.mp3.pt",
+        "words": " OKAY, WELL. OKAY, LANCE. WE BELIEVE WE NEED TO TURN THE CAR OFF AND JUMP OUT, I'M AFRAID. SO TURN IT OFF P0, MUST BE P0, JUMP OUT. I'M SORRY. ",
+        "blist": [
+            "LANCE",
+            "CAR"
+        ]
+    },
+    "LEWHAM01_44_20230507_213711.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20230507_213711.mp3.pt",
+        "words": " MY TIRES ARE GOING OVER BECAUSE I'M TRYING TO PUSH. ",
+        "blist": [
+            "TIRES",
+            "PUSH"
+        ]
+    },
+    "MAXVER01_1_20240623_154208.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20240623_154208.mp3.pt",
+        "words": " TYRES ARE VERY ... INCONSISTENT. OK. COPY THAT, MAX. ",
+        "blist": [
+            "TYRES",
+            "MAX"
+        ]
+    },
+    "CARSAI01_55_20230917_144032.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20230917_144032.mp3.pt",
+        "words": " GAP TO LANDO, EVERY LAP. COPY THAT. ",
+        "blist": [
+            "LAP",
+            "GAP",
+            "LANDO"
+        ]
+    },
+    "ALEALB01_23_20250531_162342.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250531_162342.mp3.pt",
+        "words": " I DON'T QUITE UNDERSTAND WHY ... WHY WE'RE GOING SO EARLY. IT'S BETTER FOR THIS SET OF TIRES. IT'S THE SAME ONE YOU JUST ABORTED THE LAP ON. ",
+        "blist": [
+            "TIRES",
+            "LAP",
+            "SET"
+        ]
+    },
+    "ALEALB01_23_20250531_164148.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250531_164148.mp3.pt",
+        "words": " THEY WERE DIRTY. DIRTY! HA. THEY JUST THEY KNEW WHAT THEY'RE WERE DOING. PURPOSELY SLOW IN SECTOR 3. ",
+        "blist": [
+            "DIRTY",
+            "SECTOR",
+            "SLOW"
+        ]
+    },
+    "ALEALB01_23_20250613_135106.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250613_135106.mp3.pt",
+        "words": " I TRIED TO DO THE RIGHT THING THERE. I TRIED TO GIVE NORRIS A WAVE. ",
+        "blist": [
+            "NORRIS"
+        ]
+    },
+    "ALEALB01_23_20250614_130347.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250614_130347.mp3.pt",
+        "words": " EVERYTIME I DRIVE THIS CAR IT FEELS TOTALLY DIFFERENT. ",
+        "blist": [
+            "CAR"
+        ]
+    },
+    "ALEALB01_23_20250614_161558.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250614_161558.mp3.pt",
+        "words": " RED FLAG, RED FLAG. LOST A LOT OF THE BODYWORK THERE, AS YOU PROBABLY CAN SEE BEHIND YOU. OH, IS THAT WHY? I WOULD HAVE THOUGH SO AT THE MINUTE. JUST BALLOON UP. ",
+        "blist": [
+            "RED"
+        ]
+    },
+    "ALEALB01_23_20250615_141803.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250615_141803.mp3.pt",
+        "words": " WE ARE A MONITORING EHH ISSUES SIMILAR TO BARCELONA WITH THE PU. NOT AS BAD. ",
+        "blist": [
+            "PU"
+        ]
+    },
+    "ALEALB01_23_20250615_142939.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250615_142939.mp3.pt",
+        "words": " BOX THIS LAP. NO DON'T BOX NOW, DON'T BOX NOW! FORGET BOXING NOW. WE CAN'T DO ALL OF THAT AND THEN BOX. ",
+        "blist": [
+            "LAP",
+            "BOX"
+        ]
+    },
+    "ALEALB01_23_20250705_120850.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250705_120850.mp3.pt",
+        "words": " THE **** WAS THAT? ",
+        "blist": [
+            "****"
+        ]
+    },
+    "ALEALB01_23_20230304_121558.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20230304_121558.mp3.pt",
+        "words": " YEAH, THAT WAS ALL WRONG. MASSIVE FRONT-LOCKING AND JUST UNDERSTEER THROUGH THAT WHOLE STINT FROM ... FROM TURN-IN TURN ONE TO THE FINAL CORNER. ",
+        "blist": [
+            "UNDERSTEER",
+            "STINT"
+        ]
+    },
+    "ALEALB01_23_20250705_155109.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250705_155109.mp3.pt",
+        "words": " NO! TOTALLY DIFFERENT CAR. MY BAD, GUYS. WELL, WE MADE IT DIFFICULT FOR OURSELVES. ",
+        "blist": [
+            "CAR"
+        ]
+    },
+    "ALEALB01_23_20250829_160952.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250829_160952.mp3.pt",
+        "words": " I GUESS THE FERRARI DIDN'T SEE ME, OR WHAT? ",
+        "blist": [
+            "FERRARI"
+        ]
+    },
+    "ALEALB01_23_20250830_154134.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250830_154134.mp3.pt",
+        "words": " YOU'VE GOT TO BE ******* KIDDING ME. OH MY GOD! NO TIRES AT ALL. YEP, THAT'S P12, P12. WHY DO WE DO IT TO OURSELVES? ",
+        "blist": [
+            "TIRES",
+            "P12",
+            "*******"
+        ]
+    },
+    "ALEALB01_23_20250906_164355.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250906_164355.mp3.pt",
+        "words": " THAT'S P14, P14. YEAH, I DIDN'T THE SAME TIRE AS I DID IN THE ... IN THE ROUND 2 LAP. ",
+        "blist": [
+            "LAP",
+            "P14",
+            "TIRE"
+        ]
+    },
+    "ALEALB01_23_20250920_132321.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250920_132321.mp3.pt",
+        "words": " I THINK THE WIND'S PICKING UP A LOT. YEAH, AFFIRM. I THINK SO. ",
+        "blist": [
+            "AFFIRM"
+        ]
+    },
+    "ALEALB01_23_20250920_160709.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250920_160709.mp3.pt",
+        "words": " ****. I'M OUT. SORRY. ",
+        "blist": [
+            "****"
+        ]
+    },
+    "LEWHAM01_44_20250706_151040.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20250706_151040.mp3.pt",
+        "words": " RAIN EXPECTED IN TEN LAPS. ",
+        "blist": [
+            "LAPS"
+        ]
+    },
+    "KEVMAG01_20_20230701_150144.mp3": {
+        "fbank": "data/audio_features/KEVMAG01_20_20230701_150144.mp3.pt",
+        "words": " STAY NEGATIVE ON THE DELTA. WHEN YOU GET TO THE BACK OF THE GRID, PLEASE DO A STATIC BITE POINT FIND. ",
+        "blist": [
+            "GRID",
+            "DELTA"
+        ]
+    },
+    "LANNOR01_4_20250323_155556.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250323_155556.mp3.pt",
+        "words": " GO FOR PLAN C, PLAN C. [UNINTELLIGIBLE] CAN YOU TELL TO JUST SPEED A LITTLE BIT, BECAUSE I'M IN THE DIRTY AIR AND ON ******* TIRES. ",
+        "blist": [
+            "TIRES",
+            "AIR",
+            "DIRTY",
+            "*******",
+            "SPEED"
+        ]
+    },
+    "CHALEC01_16_20230708_154404.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20230708_154404.mp3.pt",
+        "words": " THERE'S TWO ... TRACK IS CLEAR BEHIND, AND WE ARE AIMING FOR A SINGLE COOL DOWN LAP. SINGLE COOL DOWN LAP. ",
+        "blist": [
+            "COOL",
+            "LAP",
+            "TRACK"
+        ]
+    },
+    "GEORUS01_63_20231008_193721.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20231008_193721.mp3.pt",
+        "words": " GOOD JOB RACING ... GOOD JOB RACING BACK THERE. THAT'S UP TO P4. LOOKED DIFFICULT FROM THE START. YEAH, WELL DONE EVERYBODY. SO SORRY ABOUT WHAT HAPPENED AT THE BEGINNING. TAKES TWO TO PUT IT TOGETHER AND ... I'LL SHARE IT. BUT, THIS WEEKEND YOU GUYS HAVE DONE A REALLY GOOD JOB. TWICE IN A SEASON. WORK ETHIC AND EVERYTHING, LET'S KEEP RUNNING. SO UHH, LET'S KEEP ON GOING. IT'S A LONG OFF SEASON BUT, WE'RE DOING ALL RIGHT. ",
+        "blist": [
+            "P4"
+        ]
+    },
+    "OLIBEA01_50_20231027_195531.mp3": {
+        "fbank": "data/audio_features/OLIBEA01_50_20231027_195531.mp3.pt",
+        "words": " YEAH, I HAD A BIT OF TRAFFIC THAT LAP. NO WORRIES. NICO 11 SECONDS BEHIND; TIMED LAP. ",
+        "blist": [
+            "LAP",
+            "TRAFFIC",
+            "NICO"
+        ]
+    },
+    "OSCPIA01_81_20241101_140718.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20241101_140718.mp3.pt",
+        "words": " DOES SEEM LIKE THE WIND HAS PICKED UP A LITTLE. ",
+        "blist": [
+            "WIND"
+        ]
+    },
+    "GEORUS01_63_20240920_220050.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240920_220050.mp3.pt",
+        "words": " I'LL MAKE A NOSE CHANGE, AND SWITCH OFF. ",
+        "blist": [
+            "SWITCH"
+        ]
+    },
+    "OSCPIA01_81_20250831_150649.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250831_150649.mp3.pt",
+        "words": " OK, WE EXPECT CLASS 1 RAIN FOR 8 MINUTES AROUND LAP 7. MAY OR MAY NOT REQUIRE AN INTER; UNCLEAR. ",
+        "blist": [
+            "LAP",
+            "INTER"
+        ]
+    },
+    "GEORUS01_63_20240302_142628.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240302_142628.mp3.pt",
+        "words": " CHECK SLIDIN'; 12; THIS LAP. ",
+        "blist": [
+            "LAP"
+        ]
+    },
+    "OSCPIA01_81_20240407_074748.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20240407_074748.mp3.pt",
+        "words": " REAR LOCKING LEVELS IN TURN 11 ARE OVER LIMITS. AND RUSSELL 1.5. ",
+        "blist": [
+            "LOCKING",
+            "RUSSELL",
+            "REAR"
+        ]
+    },
+    "MAXVER01_1_20250523_175229.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250523_175229.mp3.pt",
+        "words": " [UNINTELLIGIBLE] THE CAR IS NOT GOING INTO REVERSE. ",
+        "blist": [
+            "CAR"
+        ]
+    },
+    "LIALAW01_30_20250705_121608.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20250705_121608.mp3.pt",
+        "words": " I MEAN GASLY IS NOT EVEN LOOKING. YEAH, OK. WE SAW IT; REPORTING IT. ",
+        "blist": [
+            "GASLY"
+        ]
+    },
+    "FERALO01_14_20240719_140804.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20240719_140804.mp3.pt",
+        "words": " FERNANDO, WHAT WOULD YOU SAY ON CAR BALANCE; TO HELP THE OTHER CAR. YEP, GOOD LUCK. ",
+        "blist": [
+            "FERNANDO",
+            "BALANCE",
+            "CAR"
+        ]
+    },
+    "OSCPIA01_81_20230901_161339.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20230901_161339.mp3.pt",
+        "words": " THESE CARS AHEAD HAVE JUST OPENED LAPS. CARS BEHIND HAVE JUST FINISHED LAPS. THAT'S SAINZ; 12 SECONDS. ",
+        "blist": [
+            "SAINZ",
+            "LAPS"
+        ]
+    },
+    "PIEGAS01_10_20231021_232834.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20231021_232834.mp3.pt",
+        "words": " AND THE REARS ... NOT HAPPY WITH THE REAR. I'M LOSING THE REAR. COPY. ",
+        "blist": [
+            "REARS",
+            "REAR"
+        ]
+    },
+    "LOGSAR01_2_20230923_070452.mp3": {
+        "fbank": "data/audio_features/LOGSAR01_2_20230923_070452.mp3.pt",
+        "words": " KEEP IT COOL. JUST FOLLOW PROCEDURE. ",
+        "blist": [
+            "COOL"
+        ]
+    },
+    "GEORUS01_63_20231028_221544.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20231028_221544.mp3.pt",
+        "words": " SO, GAP AHEAD 3 SECONDS. NORRIS HAS JUST COMPLETED HIS LAP. ",
+        "blist": [
+            "LAP",
+            "GAP",
+            "NORRIS"
+        ]
+    },
+    "GEORUS01_63_20230319_182400.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20230319_182400.mp3.pt",
+        "words": " IS HE GETTING A PENALTY OR NOT? I'M PUSHING LIKE A MADMAN AT THE MOMENT. JUST KEEP PUSHING LIKE A MADMAN. ",
+        "blist": [
+            "PUSHING",
+            "PENALTY"
+        ]
+    },
+    "PIEGAS01_10_20241026_123639.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20241026_123639.mp3.pt",
+        "words": " YEAH I DON'T KNOW. CHECK TURN 4; THE CAR DOESN'T TURN AT ALL. OK, MATE. WE'LL TAKE A LOOK. ",
+        "blist": [
+            "CAR",
+            "MATE"
+        ]
+    },
+    "CARSAI01_55_20240307_172109.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20240307_172109.mp3.pt",
+        "words": " YEAH 100 KILOMETRES IS SUPER DANGEROUS. LIKE HE WAS IN THE MIDDLE ... AND COULDN'T GET OUT OF THE WAY. PIASTRI 4\u2014 I VERY NEARLY CRASHED BECAUSE OF HIM. UNDERSTOOD. ",
+        "blist": [
+            "PIASTRI"
+        ]
+    },
+    "LANNOR01_4_20240721_162348.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20240721_162348.mp3.pt",
+        "words": " AND LANDO, HIROSHI IS STRESSED ABOUT THE TIRE ENERGIES. ",
+        "blist": [
+            "TIRE",
+            "LANDO"
+        ]
+    },
+    "DANRIC01_3_20231119_062020.mp3": {
+        "fbank": "data/audio_features/DANRIC01_3_20231119_062020.mp3.pt",
+        "words": " MODE 6; CLICK OVERTAKE. YEAH, VERY HARD WITH GRIP ON TIRES ON OUR CAR. WE JUST HAVE TO BE A LITTLE BIT PATIENT. ",
+        "blist": [
+            "TIRES",
+            "GRIP",
+            "OVERTAKE",
+            "CAR",
+            "HARD"
+        ]
+    },
+    "SERPER01_11_20230630_164849.mp3": {
+        "fbank": "data/audio_features/SERPER01_11_20230630_164849.mp3.pt",
+        "words": " WE'VE LOST THAT TIME FOR TRACK LIMITS. NO WAY; WHERE? WE'VE LOST THAT TIME FOR TRACK LIMITS. NO WAY; WHERE? AT TURN 10; EXIT TURN 10. ****. CAN WE GO AGAIN? THAT'S THE CHECKQUERED FLAG. AARRRH, I MEAN ... WHAT A ******* JOKE WITH TRACK TIMES ... WITH THE TRACK LIMITS. ",
+        "blist": [
+            "*******",
+            "****",
+            "TRACK"
+        ]
+    },
+    "LANNOR01_4_20230305_163402.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20230305_163402.mp3.pt",
+        "words": " LANDO WE'VE HAD OUR THIRD STRIKE; TRACK LIMITS, TURN 7. WE MUST NOT GET ANY MORE! ",
+        "blist": [
+            "LANDO",
+            "TRACK"
+        ]
+    },
+    "CARSAI01_55_20230709_153520.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20230709_153520.mp3.pt",
+        "words": " HOW IS EVERYONE LOOKING? 32.9 FIRST TIMED LAP FOR CHARLES. 32.9. ",
+        "blist": [
+            "LAP",
+            "CHARLES"
+        ]
+    },
+    "OSCPIA01_81_20231008_171345.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20231008_171345.mp3.pt",
+        "words": " OSCAR, WIND-WISE IT'S SIMILAR TO THE SPRINT RACE YESTERDAY; VERY MILD WIND. ",
+        "blist": [
+            "WIND",
+            "OSCAR"
+        ]
+    },
+    "CHALEC01_16_20241129_121223.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20241129_121223.mp3.pt",
+        "words": " A LOT OF UNDERSTEER. A LOT. ",
+        "blist": [
+            "UNDERSTEER"
+        ]
+    },
+    "ESTOCO01_31_20230922_040524.mp3": {
+        "fbank": "data/audio_features/ESTOCO01_31_20230922_040524.mp3.pt",
+        "words": " OK, SO HAPPY WITH SWITCHES. WE'VE GOT THE YELLOW MODIFIER FOR 11, TO TRY. ",
+        "blist": [
+            "YELLOW"
+        ]
+    },
+    "CARSAI01_55_20240324_041222.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20240324_041222.mp3.pt",
+        "words": " WE'LL GO FOR MODE X. LANDO 2.2 BEHIND, STRUGGLING WITH GRAINING. ALSO PIASTRI STRUGGLING WITH FRONT GRAINING. ",
+        "blist": [
+            "GRAINING",
+            "PIASTRI",
+            "LANDO"
+        ]
+    },
+    "NICHUL01_27_20230430_120457.mp3": {
+        "fbank": "data/audio_features/NICHUL01_27_20230430_120457.mp3.pt",
+        "words": " OK, WE'RE SENDING YOU TO THE PIT EXIT. ",
+        "blist": [
+            "PIT"
+        ]
+    },
+    "KEVMAG01_20_20240309_183026.mp3": {
+        "fbank": "data/audio_features/KEVMAG01_20_20240309_183026.mp3.pt",
+        "words": " I NOW IT'S NOT WHAT YOU WANTED, KEV, BUT THAT WAS ABSOLUTELY MEGA. AND THE TEAM GOT A POINT OUT OF THAT AND THAT IS LIKE GOLD DUST AS WE'VE SAID BEFORE. I'M REALLY SORRY THAT IT ENDED UP THE WAY IT DID BUT I CAN'T THANK YOU ENOUGH FOR YOUR EFFORTS. IT REALLY MEANS SO MUCH TO THE TEAM. THANK YOU VERY MUCH. YEAH, SORRY MAN. I'M HAPPY I COULD MAKE IT UP, NOT SCREWING US OVER. I'LL KEEP IT CLEAN NEXT TIME. CONGRATS ON THE POINTS; WELL DESERVED EVERYONE. LET'S GO FOR MORE, YEAH? ",
+        "blist": [
+            "KEV",
+            "TEAM",
+            "MEGA"
+        ]
+    },
+    "CARSAI01_55_20240301_165022.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20240301_165022.mp3.pt",
+        "words": " AND THE WIND IS THE SAME THAN THE PREVIOUS RUN. ",
+        "blist": [
+            "WIND"
+        ]
+    },
+    "CHALEC01_16_20230721_170041.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20230721_170041.mp3.pt",
+        "words": " YEAH, I'VE GOT TRAFFIC. ",
+        "blist": [
+            "TRAFFIC"
+        ]
+    },
+    "ALEALB01_23_20230901_170021.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20230901_170021.mp3.pt",
+        "words": " SO, YOU WILL TAKE THE FLAG. YOU CAN PUSH UNTIL THE EXIT OF 10. PUSH UNTIL EXIT OF 10. ",
+        "blist": [
+            "PUSH"
+        ]
+    },
+    "GEORUS01_63_20241103_054201.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20241103_054201.mp3.pt",
+        "words": " TAKE A NEW SET; LOWER PRESSURE. ",
+        "blist": [
+            "PRESSURE",
+            "SET"
+        ]
+    },
+    "LANNOR01_4_20230305_153524.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20230305_153524.mp3.pt",
+        "words": " SO WE HAVE AN ISSUE; WE'RE GONNA HAVE TO STOP AGAIN NEXT TIME ROUND. WHEN DO WE HAVE TO STOP? NEXT\u2014 NEXT LAP? YEAH, THIS TIME. ARH, YOU MIGHT AS WELL PUT ME ON THE SOFT. ",
+        "blist": [
+            "LAP",
+            "SOFT",
+            "STOP"
+        ]
+    },
+    "GUAZHO01_24_20240706_113306.mp3": {
+        "fbank": "data/audio_features/GUAZHO01_24_20240706_113306.mp3.pt",
+        "words": " UPSHIFT IS HARSH. ",
+        "blist": [
+            "UPSHIFT"
+        ]
+    },
+    "NICHUL01_27_20230723_155552.mp3": {
+        "fbank": "data/audio_features/NICHUL01_27_20230723_155552.mp3.pt",
+        "words": " GOOD JOB, NICO, HOLDING HIM OFF. AT LEAST NO LOSS OF POINTS TO THE MAIN COMPETITORS, FOR US, BUT ... WELL, THE YEAR IS GONNA EVENTUALLY RUN OUT FOR US. YEAH, COPY THAT. WE'LL KEEP WORKING. ",
+        "blist": [
+            "NICO"
+        ]
+    },
+    "ESTOCO01_31_20250406_145344.mp3": {
+        "fbank": "data/audio_features/ESTOCO01_31_20250406_145344.mp3.pt",
+        "words": " PLEASE SWAP OUT OF TURN 14; 22 LAPS TO GO. COPY; NEXT LAP I'LL LET HIM PASS. ",
+        "blist": [
+            "LAP",
+            "LAPS"
+        ]
+    },
+    "MAXVER01_1_20251025_155900.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20251025_155900.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "NICHUL01_27_20250704_162814.mp3": {
+        "fbank": "data/audio_features/NICHUL01_27_20250704_162814.mp3.pt",
+        "words": " FEELS VERY GHOSTY. CAR IS BEING PUSHED AROUND A LOT. YEAH, COPY THAT. ",
+        "blist": [
+            "CAR"
+        ]
+    },
+    "FERALO01_14_20240406_075024.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20240406_075024.mp3.pt",
+        "words": " SAINZ IS CLOSE BEHIND BUT MAKE SURE HE STAYS THERE. ",
+        "blist": [
+            "SAINZ"
+        ]
+    },
+    "LIALAW01_30_20250503_165807.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20250503_165807.mp3.pt",
+        "words": " WHAT THE ****. WAIT, WHAT IS GOING ON WITH THIS BATTERY?! WE UHH, WE DO HAVE A PROBLEM, CLEARLY. AND THAT'S WHAT WE TRIED TO MANAGE THE WHOLE SESSION UNFORTUNATELY. AND IT SEEMS THAT WE DIDN'T REALLY GET THE ... ",
+        "blist": [
+            "SESSION",
+            "****",
+            "BATTERY"
+        ]
+    },
+    "LANSTR01_18_20240913_123212.mp3": {
+        "fbank": "data/audio_features/LANSTR01_18_20240913_123212.mp3.pt",
+        "words": " JUST BOX. JUST LET'S JUST BOX. OK, YOU'VE GOT PEREZ AT 3. I DONT WANNA DRIVE LIKE THIS ANYMORE. PEREZ AT 2. RIGHT NOW, [UNINTELLIGIBLE] IS BROKING IN THE CAR. ",
+        "blist": [
+            "CAR",
+            "BOX",
+            "PEREZ"
+        ]
+    },
+    "ALEALB01_23_20250418_172734.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250418_172734.mp3.pt",
+        "words": " I HAVE NO BALANCE. IF I CARRY MORE SPEED THROUGH 9 AND 10 I'M GONNA CRASH. ",
+        "blist": [
+            "BALANCE",
+            "SPEED"
+        ]
+    },
+    "ALEALB01_23_20250418_201009.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20250418_201009.mp3.pt",
+        "words": " ******* DANGEROUS. YEAH, COPY. ",
+        "blist": [
+            "*******"
+        ]
+    },
+    "OSCPIA01_81_20250727_174038.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250727_174038.mp3.pt",
+        "words": " WEATHER UPDATE: COULD BE A FEW DROPS IN TURN 1 IN THE LAST COUPLE OF LAPS. NOT CURRENTLY EXPECTING IT BUT NOT IMPOSSIBLE. ",
+        "blist": [
+            "LAPS"
+        ]
+    },
+    "LANNOR01_4_20250831_152724.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250831_152724.mp3.pt",
+        "words": " AND LANDO, HOW ARE THE TYRES, HOW'S THE PACE? YEAHM STARTING TO STRUGGLE A LITTLE BIT MORE NOW WITH THE REARS, ",
+        "blist": [
+            "TYRES",
+            "REARS",
+            "LANDO",
+            "PACE"
+        ]
+    },
+    "LANNOR01_4_20251107_120921.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20251107_120921.mp3.pt",
+        "words": " YEAH, HE'S JUST BLOCKING ME. I'M ON A PUSH LAP. YEAH, WE'RE ON IT. ",
+        "blist": [
+            "LAP",
+            "PUSH"
+        ]
+    },
+    "YUKTSU01_22_20250419_165407.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20250419_165407.mp3.pt",
+        "words": " THANKS GUYS, FOR THE CAR. ",
+        "blist": [
+            "CAR"
+        ]
+    },
+    "MAXVER01_1_20250406_152735.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250406_152735.mp3.pt",
+        "words": " THAT'S PERFECTION. JUST PERFECTION MAX. FANTASTIC. WOW! THANK YOU GUYS. WOW. OH MATE, WHAT AN UNBELIEVABLE WEEKEND. WHAT A GREAT TURNAROUND AFTER THE DIFFICULT START. YOU SEE, WE NEVER GIVE UP. WE KEEP PUSHING TOGETHER. WELL DONE EVERYONE. MAX, THAT WAS ONE OF YOUR FINEST WEEKENDS. THAT WAS A TRULY INSPIRATIONAL PERFORMANCE. SO AS YOU SAY, NEVER EVER GIVE UP. ALL TO PLAY FOR. WELL DONE, MATE. EXACTLY THAT. WE KEEP PUSHING. UNBELIEVABLE. WHAT A GREAT, GREAT WEEKEND FOR US. ",
+        "blist": [
+            "MAX",
+            "MATE",
+            "PUSHING"
+        ]
+    },
+    "MAXVER01_1_20250406_143359.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250406_143359.mp3.pt",
+        "words": " YOU WANT ME TO PUSH NOW? YEAH, WE CAN PUSH NOW, MAX. ",
+        "blist": [
+            "PUSH",
+            "MAX"
+        ]
+    },
+    "OSCPIA01_81_20250706_162959.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250706_162959.mp3.pt",
+        "words": " I DON'T THINK THE PENALTY BEFORE WAS VERY FAIR. I MEAN, I KNOW IT'S A BIG QUESTION, BUT IF YOU DON'T THINK IT WAS FAIR EITHER, I THINK WE SHOULD SWAP BACK AND RACE. ",
+        "blist": [
+            "PENALTY"
+        ]
+    },
+    "LANNOR01_4_20250615_152140.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250615_152140.mp3.pt",
+        "words": " LET'S ATTACK OSCAR WHILE HE DOESN'T HAVE DRS. ",
+        "blist": [
+            "DRS",
+            "ATTACK",
+            "OSCAR"
+        ]
+    },
+    "ISAHAD01_6_20251017_132611.mp3": {
+        "fbank": "data/audio_features/ISAHAD01_6_20251017_132611.mp3.pt",
+        "words": " IS THE POWER OKAY OR WHAT? MODE 4 WAS TWO TENTHS OF LAP TIME. I'M WAITING FOR FEEDBACK. BUT IT'S NOT OKAY. YEAH, THAT'S A JOKE! ",
+        "blist": [
+            "LAP",
+            "TENTHS"
+        ]
+    },
+    "MAXVER01_1_20250615_141629.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250615_141629.mp3.pt",
+        "words": " THOUGHTS ON TIRES PLEASE MAX? YEAH, NOT GOOD. IT'S VERY FRAGILE. ",
+        "blist": [
+            "TIRES",
+            "MAX"
+        ]
+    },
+    "OSCPIA01_81_20250907_161024.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250907_161024.mp3.pt",
+        "words": " OSCAR, THIS IS A BIT LIKE HUNGARY LAST YEAR. WE PITTED IN THIS ORDER FOR TEAM REASONS. PLEASE LET LANDO PASST THEN YOU'RE FREE TO RACE. I MEAN, WE SAID THAT A SLOW PIT STOP WAS PART OF RACING, SO I DON'T REALLY GET WHAT'S CHANGED HERE, BUT IF YOU REALLY WANT TO DO IT, THEN I'LL DO IT. ",
+        "blist": [
+            "LANDO",
+            "OSCAR",
+            "STOP",
+            "PITTED",
+            "SLOW",
+            "FREE",
+            "TEAM",
+            "PIT"
+        ]
+    },
+    "CHALEC01_16_20250504_172501.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250504_172501.mp3.pt",
+        "words": " WE'LL TRY AGAIN NEXT LAP. IT'S OKAY, IT'S OKAY. NOW, WE ARE SEEING ANTONELLI. LET'S TRY TO GET HIM AND THEN, OTHERWISE WE ARE GOING TO LOSE MORE TIME THAN ANYTHING. I, YEAH, THEN WE DISCUSS AFTER THE RACE. ",
+        "blist": [
+            "LAP",
+            "ANTONELLI"
+        ]
+    },
+    "YUKTSU01_22_20250411_145158.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20250411_145158.mp3.pt",
+        "words": " OKAY, BUT THE THROTTLE IS NOT REACTING QUITE WELL. IT FEELS VERY LAZY SOMEHOW. YEAH, WE'LL CHECK IT BACK IN THE BOX. ",
+        "blist": [
+            "THROTTLE",
+            "BOX"
+        ]
+    },
+    "OSCPIA01_81_20250518_151933.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250518_151933.mp3.pt",
+        "words": " I THINK PLAN A IS VERY AMBITIOUS AT THE MOMENT. COPY, OSCAR. ",
+        "blist": [
+            "OSCAR"
+        ]
+    },
+    "LANNOR01_4_20250524_130247.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250524_130247.mp3.pt",
+        "words": " WHAT'S STROLL DOING HERE? I MEAN HE'S JUST, [UNINTELLIGIBLE] BLUE FLAG DOESN'T HE? NAH, WE'RE GOOD. ",
+        "blist": [
+            "BLUE",
+            "STROLL"
+        ]
+    },
+    "OSCPIA01_81_20250629_162116.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250629_162116.mp3.pt",
+        "words": " YOU'LL GET SOME CLEARER AIR. LET'S USE THE PACE, WE SHOULD BE IN AT THE END OF THIS LAP. ",
+        "blist": [
+            "LAP",
+            "AIR",
+            "PACE"
+        ]
+    },
+    "LANNOR01_4_20251005_202755.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20251005_202755.mp3.pt",
+        "words": " THERE'S CURRENTLY 3 OR 4 CARS ON THE WINDOW, SO THINK ABOUT THE UNDERCUT OF MAX. YEAH, EASY. ",
+        "blist": [
+            "MAX",
+            "WINDOW",
+            "UNDERCUT"
+        ]
+    },
+    "LANNOR01_4_20250803_153413.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250803_153413.mp3.pt",
+        "words": " SO THIS IS EITHER PLAN A, LOOK TO EXTEND, OR PLAN D. JUST KEEP TALKING TO US ABOUT THE TYRES. ",
+        "blist": [
+            "TYRES"
+        ]
+    },
+    "LIALAW01_30_20250627_170227.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20250627_170227.mp3.pt",
+        "words": " SOMETHING'S NOT RIGHT. MY STEERING IS PULLING ME MASSIVELY TO THE RIGHT. UNDERSTOOD. ",
+        "blist": [
+            "STEERING"
+        ]
+    },
+    "ISAHAD01_6_20251120_165648.mp3": {
+        "fbank": "data/audio_features/ISAHAD01_6_20251120_165648.mp3.pt",
+        "words": " GET OUT! MATE, WHAT IS IT DOING? YEAH, MASSIVE IMPEDING. WE WILL REPORT IT. ",
+        "blist": [
+            "IMPEDING",
+            "MATE"
+        ]
+    },
+    "MAXVER01_1_20250905_140134.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250905_140134.mp3.pt",
+        "words": " NO GRIP, I JUST SLIDE A LOT. UNDERSTOOD. ",
+        "blist": [
+            "GRIP",
+            "SLIDE"
+        ]
+    },
+    "GABBOR01_5_20250829_133446.mp3": {
+        "fbank": "data/audio_features/GABBOR01_5_20250829_133446.mp3.pt",
+        "words": " AND JUST FOR YOUR INFO, VERSTAPPEN IS ON THE GRAVEL IN TOWN 1, THERE'S YELLOW THERE. HOW DID HE GO IN THE GRAVEL? I THINK YOU WOULD HAVE TO ASK HIM, I DON'T KNOW. ",
+        "blist": [
+            "VERSTAPPEN",
+            "YELLOW"
+        ]
+    },
+    "OLIBEA01_87_20250704_161117.mp3": {
+        "fbank": "data/audio_features/OLIBEA01_87_20250704_161117.mp3.pt",
+        "words": " THIS IS THE WORST UNDERSTEER I'VE HAD IN HIGH SPEED IN A WHILE. PROBABLY THE WORST UNDERSTEER I'VE HAD, EVER. ",
+        "blist": [
+            "UNDERSTEER",
+            "SPEED"
+        ]
+    },
+    "MAXVER01_1_20250406_143806.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250406_143806.mp3.pt",
+        "words": " HE DROVE HIMSELF INTO THE GRASS. YEAH, WE KNOW THE GAME, MAX. AS YOU ARE. ",
+        "blist": [
+            "MAX"
+        ]
+    },
+    "LANNOR01_4_20250629_164307.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250629_164307.mp3.pt",
+        "words": " WELL DONE MATE WELL DONE GREAT JOB YEAH WELL DONE EVERYONE BEAUTIFUL ONE TWO THAT CAR WAS GREAT ... ISH ... THANKS' EVERYONE AMAZING WORK JUST KEEP IT UP. I AGREE, MATE. FOLLOW THE PROCESS ",
+        "blist": [
+            "CAR",
+            "MATE"
+        ]
+    },
+    "FRACOL01_43_20250705_151437.mp3": {
+        "fbank": "data/audio_features/FRACOL01_43_20250705_151437.mp3.pt",
+        "words": " THANK YOU. YEAH, SORRY, I LOST THE REAR. LOST THE LEFT. OR I TOUCHED A BUMP OR SOMETHING, IT JUST WENT, THE REAR. ",
+        "blist": [
+            "REAR"
+        ]
+    },
+    "LANNOR01_4_20250615_142042.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250615_142042.mp3.pt",
+        "words": " RUSSELL HAS PITTED. SO THIS IS PLAN A. WE NEED ONE OF THOSE AMAZING RACES FROM YOU HERE. ",
+        "blist": [
+            "PITTED",
+            "RUSSELL"
+        ]
+    },
+    "ESTOCO01_31_20250524_165740.mp3": {
+        "fbank": "data/audio_features/ESTOCO01_31_20250524_165740.mp3.pt",
+        "words": " WE'RE THROUGH ESTEBAN, WE'RE THROUGH, WE'RE P10. NO, I CAN'T BELIEVE IT. GOOD JOB, GOOD JOB. YES. NICE JOB ESTEBAN. ",
+        "blist": [
+            "P10",
+            "ESTEBAN"
+        ]
+    },
+    "LEWHAM01_44_20250921_162708.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20250921_162708.mp3.pt",
+        "words": " THESE GUYS ARE FAST MAN. TRYING TO CATCH UP. YEAH, LAWSON TWO SECONDS AND A HALF AHEAD. CAN DO IT. ",
+        "blist": [
+            "LAWSON"
+        ]
+    },
+    "PIEGAS01_10_20250705_113940.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20250705_113940.mp3.pt",
+        "words": " HOW WAS THE BALANCE, PLEASE? IN GENERAL, OVERALL BETTER, BUT STILL NO GRIP. OKAY, COPY THAT. ",
+        "blist": [
+            "GRIP",
+            "BALANCE"
+        ]
+    },
+    "LANNOR01_4_20250316_153444.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250316_153444.mp3.pt",
+        "words": " THEY'RE OKAY. I MEAN, LITTLE BITS IN THE LAST SECTOR I ACTUALLY THINK HAS SOME DRY PATCHES, BUT SOME BITS ARE STILL PRETTY WET. 100% INTER AT THE MINUTE, DEFINITELY NOT CLOSE TO THE WET. BUT IF IT STAYS LIKE THIS, IT WILL DRY UP AT SOME POINT IF IT DOESN'T RAIN. OKAY, UNDERSTOOD. ",
+        "blist": [
+            "SECTOR",
+            "INTER",
+            "WET"
+        ]
+    },
+    "OLIBEA01_87_20250803_160936.mp3": {
+        "fbank": "data/audio_features/OLIBEA01_87_20250803_160936.mp3.pt",
+        "words": " GUYS, THIS CAR IS BROKEN. I'VE GOT NO GRIP AT ALL. YEAH OLI, YOU HAVE SIGNIFICANT REAR DAMAGE. YOU HAVE THAT 1% MORE AERO BALANCE THAN PLANNED. GREAT. ",
+        "blist": [
+            "AERO",
+            "REAR",
+            "GRIP",
+            "BALANCE",
+            "CAR"
+        ]
+    },
+    "ALEALB01_23_20251025_152007.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20251025_152007.mp3.pt",
+        "words": " THE BRAKES AREN'T WORKING AT ALL. I AM SMASHING THE BRAKES AS HARD AS I CAN INTO TURN 1, TURN 4. ",
+        "blist": [
+            "BRAKES",
+            "HARD"
+        ]
+    },
+    "CHALEC01_16_20251017_132154.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20251017_132154.mp3.pt",
+        "words": " WHAT HAPPENED? CAN I SHIFT OR NOT? THE SEVENTH WASN'T GOING IN. WE'LL COME BACK TO YOU. THERE'S OIL SMELL ",
+        "blist": [
+            "SHIFT"
+        ]
+    },
+    "LEWHAM01_44_20250503_123810.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20250503_123810.mp3.pt",
+        "words": " CAR WON'T TURN. ",
+        "blist": [
+            "CAR"
+        ]
+    },
+    "MAXVER01_1_20250704_161510.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250704_161510.mp3.pt",
+        "words": " HAVE YOU SEEN MY FRONT TIRES IN THE HIGH SPEED? THEY JUST DON'T RESPOND. OK, WE'LL BOX THIS LAP, MAX. ",
+        "blist": [
+            "TIRES",
+            "BOX",
+            "MAX",
+            "LAP",
+            "SPEED"
+        ]
+    },
+    "MAXVER01_1_20250907_161741.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250907_161741.mp3.pt",
+        "words": " OH MATE, THAT'S THE ITALIAN DOUBLE. FANTASTICO, WELL DONE MATE. YES! THAT WAS UNBELIEVABLE GUYS. INSANE. WELL DONE EVERYONE, WELL DONE. WE EXECUTED THAT REALLY, REALLY WELL. WHAT AN UNBELIEVABLE WEEKEND. WE CAN BE REALLY, REALLY PROUD OF THAT. WELL DONE EVERYONE. ",
+        "blist": [
+            "DOUBLE",
+            "MATE"
+        ]
+    },
+    "GABBOR01_5_20251025_123236.mp3": {
+        "fbank": "data/audio_features/GABBOR01_5_20251025_123236.mp3.pt",
+        "words": " VERY NICE, THIS MCLAREN, VERY NICE. ",
+        "blist": [
+            "MCLAREN"
+        ]
+    },
+    "OSCPIA01_81_20250525_163442.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250525_163442.mp3.pt",
+        "words": " RIGHT MATE LET'S STAY CLOSE TO THIS FIGHT IN FRONT THERE COULD BE OPPORTUNITIES HERE ",
+        "blist": [
+            "MATE"
+        ]
+    },
+    "ANDANT01_12_20250627_171642.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20250627_171642.mp3.pt",
+        "words": " MATE, WHAT IS GOING ON WITH THESE PEOPLE, HONESTLY? ",
+        "blist": [
+            "MATE"
+        ]
+    },
+    "MAXVER01_1_20250726_123235.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250726_123235.mp3.pt",
+        "words": " WELL DONE MAX, VERY VERY IMPRESSIVE DEFENSE, VERY VERY WELL CONTROLLED. YOU DIDN'T LEAVE ANYTHING ON THE TABLE THERE, WELL DONE. YEAH, THANK YOU LAURENT, THAT WAS A GOOD START, I ENJOYED THAT. ",
+        "blist": [
+            "MAX"
+        ]
+    },
+    "CARSAI01_55_20250907_154059.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20250907_154059.mp3.pt",
+        "words": " MY FRONT'S ARE DEAD IN TRAFFIC. ",
+        "blist": [
+            "TRAFFIC",
+            "FRONTS"
+        ]
+    },
+    "CHALEC01_16_20250323_161559.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250323_161559.mp3.pt",
+        "words": " WE'RE LOSING SOME TIME IN TURN 2, MAYBE TRY ONE LAP WITHOUT USING THE CURB. NOPE. ",
+        "blist": [
+            "LAP"
+        ]
+    },
+    "MAXVER01_1_20250726_122216.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250726_122216.mp3.pt",
+        "words": " I CAN'T BRAKE! ON THE PEAKS! UNDERSTOOD. ",
+        "blist": [
+            "BRAKE"
+        ]
+    },
+    "FERALO01_14_20250627_140221.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20250627_140221.mp3.pt",
+        "words": " OKAY, THAT WAS THE WORST OUTLAP WE CAN DO. GOOD TO DO IT IN FP1. OKAY, COPY. ",
+        "blist": [
+            "FP1",
+            "OUTLAP"
+        ]
+    },
+    "LEWHAM01_44_20250504_170023.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20250504_170023.mp3.pt",
+        "words": " I'M JUST BURNING UP MY TIRES BEHIND HIM. ",
+        "blist": [
+            "TIRES"
+        ]
+    },
+    "ANDANT01_12_20250503_124811.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20250503_124811.mp3.pt",
+        "words": " IT'S GETTING CLOSE TO SLICKS. COPY. ",
+        "blist": [
+            "SLICKS"
+        ]
+    },
+    "OSCPIA01_81_20250419_210044.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250419_210044.mp3.pt",
+        "words": " LANDO HAS HIT THE WALL EXIT TURN 5. IS HE ALRIGHT? YES, HE'S OKAY. ",
+        "blist": [
+            "LANDO"
+        ]
+    },
+    "OLIBEA01_87_20251025_122100.mp3": {
+        "fbank": "data/audio_features/OLIBEA01_87_20251025_122100.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "CARSAI01_55_20250921_162020.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20250921_162020.mp3.pt",
+        "words": " I THINK THE RESULT ON FRESHER RUBBER WITH CAR PACE IT WILL BE DIFFICULT. COREY, GIVE IT TO ME PLEASE. ",
+        "blist": [
+            "CAR",
+            "PACE"
+        ]
+    },
+    "OSCPIA01_81_20250705_155821.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250705_155821.mp3.pt",
+        "words": " THAT WAS PRETTY MARGINAL BY THE MERCEDES. COPY. ",
+        "blist": [
+            "MERCEDES"
+        ]
+    },
+    "GABBOR01_5_20250613_175836.mp3": {
+        "fbank": "data/audio_features/GABBOR01_5_20250613_175836.mp3.pt",
+        "words": " MATE, WHAT IS THIS GUY DOING? HE'S LIFTING AND THEN HE'S GOING ON POWER AND THEN HE'S LIFTING. DOES HE WANT TO CRASH OR WHAT? LET'S JUST FOCUS ON OUR THING AND BE SURE THAT WE DON'T MESS AROUND WITH HIM. ",
+        "blist": [
+            "MATE"
+        ]
+    },
+    "ANDANT01_12_20250516_174610.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20250516_174610.mp3.pt",
+        "words": " THAT WAS SUPER DANGEROUS FROM THE RED BULL. YEAH, COPY. ",
+        "blist": [
+            "BULL",
+            "RED"
+        ]
+    },
+    "FERALO01_14_20250614_124843.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20250614_124843.mp3.pt",
+        "words": " NO REAR GRIP TODAY. ",
+        "blist": [
+            "GRIP",
+            "REAR"
+        ]
+    },
+    "GEORUS01_63_20250525_161318.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20250525_161318.mp3.pt",
+        "words": " SO WE'VE GOT A DRIVE-THROUGH PENALTY BUT WE'LL DELAY IT AS LONG AS WE CAN. TO BE HONEST, I PREFER NOT TO SPEAK. AFFIRM. ",
+        "blist": [
+            "AFFIRM",
+            "PENALTY"
+        ]
+    },
+    "MAXVER01_1_20250413_181201.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250413_181201.mp3.pt",
+        "words": " LANDO IS OVER HIS GRID BOX. ",
+        "blist": [
+            "GRID",
+            "LANDO",
+            "BOX"
+        ]
+    },
+    "ISAHAD01_6_20250524_125541.mp3": {
+        "fbank": "data/audio_features/ISAHAD01_6_20250524_125541.mp3.pt",
+        "words": " THAT WAS DANGEROUS BY YUKI. ",
+        "blist": [
+            "YUKI"
+        ]
+    },
+    "MAXVER01_1_20250516_175200.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250516_175200.mp3.pt",
+        "words": " WHAT'S THIS GUY DOING, MAN? USING DRS? NO IDEA. ",
+        "blist": [
+            "DRS"
+        ]
+    },
+    "YUKTSU01_22_20250323_161942.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20250323_161942.mp3.pt",
+        "words": " WAIT, FRONT WING DAMAGE FROM WHAT? ",
+        "blist": [
+            "WING"
+        ]
+    },
+    "ISAHAD01_6_20250531_155739.mp3": {
+        "fbank": "data/audio_features/ISAHAD01_6_20250531_155739.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "YUKTSU01_22_20250404_123331.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20250404_123331.mp3.pt",
+        "words": " YEAH, ALSO QUITE MESSY. I THINK, YEAH, I COULD GIVE YOU FEEDBACK, BUT I FOUND IT KIND OF INTERESTING. BUT IT'S NOT, BUT YEAH, IT'S OKAY. GOOD SESSION. YEAH. ",
+        "blist": [
+            "SESSION"
+        ]
+    },
+    "MAXVER01_1_20250413_172723.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250413_172723.mp3.pt",
+        "words": " I DON'T KNOW IF YOU'D LIKE A FLAP ADJUST. NO, NO, THE CAR DOESN'T TURN ALREADY, MID CORNER. DO YOU WANT MORE THEN? NO, BECAUSE I'M ALSO OVERSTEERING ON ENTRY. ",
+        "blist": [
+            "CAR"
+        ]
+    },
+    "OLIBEA01_87_20250531_164244.mp3": {
+        "fbank": "data/audio_features/OLIBEA01_87_20250531_164244.mp3.pt",
+        "words": " YEAH, SORRY. THAT WAS WHAT SHE HAD WITH THE USED TIRE. ",
+        "blist": [
+            "USED",
+            "TIRE"
+        ]
+    },
+    "CARSAI01_55_20250706_162035.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20250706_162035.mp3.pt",
+        "words": " I HAD TO AVOID AN ACCIDENT, HE WENT ON THE CURB AND NEARLY CRASHED INTO ME. THAT WAS COMPLETELY RECKLESS BY LECLERC. ",
+        "blist": [
+            "LECLERC"
+        ]
+    },
+    "OLIBEA01_87_20250726_164421.mp3": {
+        "fbank": "data/audio_features/OLIBEA01_87_20250726_164421.mp3.pt",
+        "words": " **** THE ******* OUTLAP OF THE THE GUY AHEAD OF ME! I GET STUNG BY TSUNODA IN THE LAST CORNER ON A BUILD LAP. OH MY GOD! I LOST THREE TENTHS THOUGH! YEAH, COPY ON THE UHH\u2013, WE'LL REVIEW IT AFTER THE SESSION. EVERY TIME! WE WERE EASILY IN. EASILY. ****! ",
+        "blist": [
+            "****",
+            "OUTLAP",
+            "SESSION",
+            "TENTHS",
+            "*******",
+            "LAP",
+            "TSUNODA"
+        ]
+    },
+    "LANNOR01_4_20251107_161535.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20251107_161535.mp3.pt",
+        "words": " OKAY, WELL YOU WILL START ON POLE. ",
+        "blist": [
+            "POLE"
+        ]
+    },
+    "CHALEC01_16_20250321_160156.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250321_160156.mp3.pt",
+        "words": " AND CAN WE SWAP THE CARS PLEASE? SWAP THE CARS NOW? YES, PLEASE. I'LL DO IT BUT WE'VE NEVER DONE THAT. AND I'M A BIT IN THE **** AS WELL ALL, SO. ",
+        "blist": [
+            "****"
+        ]
+    },
+    "OLIBEA01_87_20250705_122859.mp3": {
+        "fbank": "data/audio_features/OLIBEA01_87_20250705_122859.mp3.pt",
+        "words": " WE THINK THAT BODYWORK ON TRACK MIGHT ACTUALLY BE YOURS. OH. IS IT MINE? **** ",
+        "blist": [
+            "****",
+            "TRACK"
+        ]
+    },
+    "LANNOR01_4_20250323_163157.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250323_163157.mp3.pt",
+        "words": " LANDO, THE BRAKE SITUATION HAS BEEN GETTING CRITICAL. YEAH, I THINK THE PEDAL IS GOING FLAT. ",
+        "blist": [
+            "FLAT",
+            "BRAKE",
+            "LANDO"
+        ]
+    },
+    "GABBOR01_5_20250726_162219.mp3": {
+        "fbank": "data/audio_features/GABBOR01_5_20250726_162219.mp3.pt",
+        "words": " HAMILTON LOST HIS LAP TIME. OH, YES. ",
+        "blist": [
+            "LAP",
+            "HAMILTON"
+        ]
+    },
+    "LANNOR01_4_20250419_205244.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250419_205244.mp3.pt",
+        "words": " LANDO, ARE YOU OKAY? YEAH I'M GOOD. I'M A ******* IDIOT. DON'T WORRY ABOUT IT, MATE. ",
+        "blist": [
+            "IDIOT",
+            "LANDO",
+            "*******",
+            "MATE"
+        ]
+    },
+    "LANNOR01_4_20251005_192624.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20251005_192624.mp3.pt",
+        "words": " **** **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "LIALAW01_30_20251017_170423.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20251017_170423.mp3.pt",
+        "words": " WHAT THE **** WAS THAT? AND WE ALSO GOT TRUCK LIMITS AT TURN 19. MAYBE BECAUSE A CAR WAS SITTING IN THE MIDDLE OF THE ******* ROAD. ",
+        "blist": [
+            "CAR",
+            "****",
+            "*******"
+        ]
+    },
+    "LIALAW01_30_20250831_161739.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20250831_161739.mp3.pt",
+        "words": " DOUBLE YELLOW WHERE YOU ARE, DOUBLE YELLOW WHERE YOU ARE. OH MY GOD, MAN. I COULD NOT SEE HIM AT ALL. YOU SAVED ME THERE, MAN. IT'S OKAY. ",
+        "blist": [
+            "DOUBLE",
+            "YELLOW"
+        ]
+    },
+    "LANNOR01_4_20250323_162203.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250323_162203.mp3.pt",
+        "words": " SO LANDO, I KNOW THIS IS BORING, SO IT'S NOT THE BRAKE POWER THAT'S CHANGING, IT'S JUST THE PEDAL THAT'S GOING LONGER. ",
+        "blist": [
+            "BRAKE",
+            "LANDO"
+        ]
+    },
+    "ISAHAD01_6_20250517_121718.mp3": {
+        "fbank": "data/audio_features/ISAHAD01_6_20250517_121718.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "GEORUS01_63_20250420_204153.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20250420_204153.mp3.pt",
+        "words": " I'M SET ON PLAN B, LET'S SEE HOW THESE TIRES DO ",
+        "blist": [
+            "TIRES",
+            "SET"
+        ]
+    },
+    "CHALEC01_16_20250727_164446.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250727_164446.mp3.pt",
+        "words": " I DON'T KNOW IF IT'S THE DOWNFORCE, BUT MY GOD, MY TIRES ARE GONE. ",
+        "blist": [
+            "TIRES",
+            "DOWNFORCE"
+        ]
+    },
+    "CHALEC01_16_20250323_150731.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250323_150731.mp3.pt",
+        "words": " WE HAVE 20 TO 30 POINTS LOSS ON THE FRONT. IF WE CAN SURVIVE, WE WAIT THE FIRST STOP. ",
+        "blist": [
+            "STOP"
+        ]
+    },
+    "FERALO01_14_20250525_152703.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20250525_152703.mp3.pt",
+        "words": " PUSH NOW, FERNANDO. I NOW I HAVEN'T GIVEN YOU MUCH INFO, BUT JUST KEEP PUSHING NOW TO COVER HAMILTON. I CAN'T PUSH NOW! ",
+        "blist": [
+            "FERNANDO",
+            "PUSH",
+            "HAMILTON",
+            "PUSHING"
+        ]
+    },
+    "CHALEC01_16_20250601_152546.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250601_152546.mp3.pt",
+        "words": " AND FULL PUSH, FULL PUSH PLEASE. THAT'S WHAT I'M DOING ALREADY. ",
+        "blist": [
+            "PUSH"
+        ]
+    },
+    "MAXVER01_1_20251017_132952.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20251017_132952.mp3.pt",
+        "words": " OKAY, SO WE ARE STAYING OUT FOR THE CHECKERED FLAG MAX. ",
+        "blist": [
+            "MAX"
+        ]
+    },
+    "FERALO01_14_20250627_174952.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20250627_174952.mp3.pt",
+        "words": " TOO MUCH BOUNCING. ",
+        "blist": [
+            "BOUNCING"
+        ]
+    },
+    "OSCPIA01_81_20250321_114326.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250321_114326.mp3.pt",
+        "words": " OSCAR, HOW'S THE CAR? IT'S OKAY, YEAH, IT'S A BIT NERVOUS IN THE HIGH SPEED. ",
+        "blist": [
+            "CAR",
+            "OSCAR",
+            "SPEED"
+        ]
+    },
+    "ANDANT01_12_20250411_143612.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20250411_143612.mp3.pt",
+        "words": " I GOT AN ISSUE. COPY. COPY. SO JUST LET IT COOL. SO STRAT MODE 1. STRAT MODE 1. ",
+        "blist": [
+            "COOL",
+            "STRAT"
+        ]
+    },
+    "CHALEC01_16_20250704_170316.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250704_170316.mp3.pt",
+        "words": " YEAH, I THINK WE'VE GOT TO MAXIMIZE QUALI, BUT THE SETUP FOR THE RACE IS PRETTY GOOD. OKAY. ",
+        "blist": [
+            "QUALI"
+        ]
+    },
+    "JACDOO01_7_20250413_171109.mp3": {
+        "fbank": "data/audio_features/JACDOO01_7_20250413_171109.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "FERALO01_14_20250706_145822.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20250706_145822.mp3.pt",
+        "words": " WHAT'S THE LATEST FORECAST? WE'RE EXPECTING AROUND LAP 15 TO 17, POTENTIALLY HEAVY RAIN CELL. ",
+        "blist": [
+            "LAP"
+        ]
+    },
+    "GEORUS01_63_20250921_153519.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20250921_153519.mp3.pt",
+        "words": " I THINK I'VE GOT A TIRE ADVANTAGE TO GET PAST LAWSON. COPY THAT, GEORGE. ",
+        "blist": [
+            "GEORGE",
+            "TIRE",
+            "LAWSON"
+        ]
+    },
+    "LIALAW01_30_20250523_135102.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20250523_135102.mp3.pt",
+        "words": " I NEARLY HIT HAMILTON, HE LIKE BRAKED RIGHT BEFORE THE LAST CORNER. YEAH, YEAH, USUAL. USUAL HAMILTON STUFF, THAT'S OKAY. ",
+        "blist": [
+            "HAMILTON"
+        ]
+    },
+    "CHALEC01_16_20250413_182908.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250413_182908.mp3.pt",
+        "words": " AT THE MOMENT WE ARE STILL ON PLAN B FOR BRAVO. PLAN B FOR BRAVO. I THINK DELTA FOR ME. ",
+        "blist": [
+            "DELTA"
+        ]
+    },
+    "OSCPIA01_81_20250727_172538.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250727_172538.mp3.pt",
+        "words": " ERR, DEG LOOKED AS EXPECTED, WE STILL THINK THE BEST THING IS TO DO IS TO GO TO THE END ON THIS TYRE. OK, I'M HAPPY WITH THAT. ",
+        "blist": [
+            "DEG",
+            "TYRE"
+        ]
+    },
+    "LANNOR01_4_20250615_131734.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250615_131734.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "MAXVER01_1_20250530_134120.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250530_134120.mp3.pt",
+        "words": " MAX, CAN WE HAVE DIFF MID 7, PLEASE? I'M NOT SURE THAT'S WHAT I WANT, TO BE HONEST. ",
+        "blist": [
+            "MAX",
+            "DIFF"
+        ]
+    },
+    "OLIBEA01_87_20250906_133123.mp3": {
+        "fbank": "data/audio_features/OLIBEA01_87_20250906_133123.mp3.pt",
+        "words": " THAT WAS JUST POOR EXECUTION. CAN'T HAVE MY TEAMMATE SITTING ON MY APEX OF TURN 1 ON MY LAP. ",
+        "blist": [
+            "LAP"
+        ]
+    },
+    "LANNOR01_4_20250322_112256.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250322_112256.mp3.pt",
+        "words": " HOW CAN WE HELP? DO YOU HAVE ANY PACE? NO, NO. I'M FLAT OUT. ",
+        "blist": [
+            "FLAT",
+            "PACE"
+        ]
+    },
+    "LANNOR01_4_20250531_131855.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250531_131855.mp3.pt",
+        "words": " SO LANDO, IN TURN 9, WE THINK IT WASN'T TOUCHING, BUT WE SAW PORPOISING. SO IF WE WANT TO FIX THAT, WE'D HAVE TO BOX NOW TO LIFT THE REAR. ",
+        "blist": [
+            "LANDO",
+            "BOX",
+            "REAR",
+            "PORPOISING",
+            "LIFT"
+        ]
+    },
+    "LANNOR01_4_20251018_163613.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20251018_163613.mp3.pt",
+        "words": " YEAH, I'M GOING TO NEED PROBABLY A STEERING WHEEL SWAP FOR THE NEXT RUN. THE WHOLE LEFT GRIP'S COME OFF. OKAY, WE'LL SORT THAT OUT. ",
+        "blist": [
+            "STEERING"
+        ]
+    },
+    "NICHUL01_27_20250412_160149.mp3": {
+        "fbank": "data/audio_features/NICHUL01_27_20250412_160149.mp3.pt",
+        "words": " GUYS, LET ME KNOW WHAT YOU WANT ME TO DO. YEAH, IT DOESN'T LOOK LIKE WE CAN GET GOING AGAIN, NICO. ",
+        "blist": [
+            "NICO"
+        ]
+    },
+    "ANDANT01_12_20250629_152147.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20250629_152147.mp3.pt",
+        "words": " AH, SORRY ABOUT THAT. LOCKED THE REAR. SORRY. ",
+        "blist": [
+            "LOCKED",
+            "REAR"
+        ]
+    },
+    "LANNOR01_4_20250629_160938.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250629_160938.mp3.pt",
+        "words": " IS HE JUST QUICKER EVERYWHERE NOW, OR? HE'S MAINLY QUICKER IN HIGH SPEED, WE'LL JUST SEE WITH HIS LOSS OF TRAFFIC. ",
+        "blist": [
+            "TRAFFIC",
+            "SPEED"
+        ]
+    },
+    "FERALO01_14_20250530_142010.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20250530_142010.mp3.pt",
+        "words": " LET US KNOW IF YOU NEED A FLAP ADJUST. I JUST NEED THE ENGINE GOING NORMAL ON THE STRAIGHTS LIKE THE FIRST RUN. WE'LL HAVE TO TRY A STRAT 3 IF YOU PREFER. NO, I JUST DON'T WANT TO LOSE TWO TENTHS EVERY STRAIGHT. ",
+        "blist": [
+            "STRAT",
+            "TENTHS"
+        ]
+    },
+    "OSCPIA01_81_20250629_154451.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250629_154451.mp3.pt",
+        "words": " FLATSPOT FROM DATA LOOKS OKAY TO CONTINUE LET ME KNOW. YES, NOT PLEASANT BUT IT'S OKAY. ",
+        "blist": [
+            "FLATSPOT"
+        ]
+    },
+    "ALEDUN01_89_20250627_143217.mp3": {
+        "fbank": "data/audio_features/ALEDUN01_89_20250627_143217.mp3.pt",
+        "words": " I WANT TO SAY A MASSIVE THANK YOU. THANK YOU. A LITTLE BOYS' DREAM CAME TRUE. THIS IS DEFINITELY THE BEST DAY OF MY LIFE. SO THANK YOU, EVERYONE, FOR LETTING ME DO THIS. THANKS, LANDO, AS WELL, FOR TRUSTING ME WITH THIS CAR. YOU'RE VERY WELCOME. GOOD JOB AS WELL. THAT WAS QUITE A BUSY SESSION. THANK YOU, EVERYONE. IT MEANS A LOT. ",
+        "blist": [
+            "SESSION",
+            "CAR",
+            "LANDO"
+        ]
+    },
+    "LANNOR01_4_20250906_163307.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250906_163307.mp3.pt",
+        "words": " WE NEED TO BOX THIS LAP. ",
+        "blist": [
+            "LAP",
+            "BOX"
+        ]
+    },
+    "CHALEC01_16_20250615_150854.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250615_150854.mp3.pt",
+        "words": " WHAT ARE WE WAITING FOR TO STOP? WE DON'T WANT TO DO TOO MANY LAPS ON THE MEDIUM. I DON'T GET IT. THE MEDIUM FOR ME HAS BEEN FINE. ",
+        "blist": [
+            "LAPS",
+            "MEDIUM",
+            "STOP"
+        ]
+    },
+    "ANDANT01_12_20251109_152138.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20251109_152138.mp3.pt",
+        "words": " OK, KIMI. WE'RE NOT EXPECTING WEAR CONCERN ON THIS TYRE. YOU HAVE 12 LAPS REMAINING, SO BEST STINT THE END MATE. YEAH, I'M FIGHTING OVERHEATING, MATE! COPY. ",
+        "blist": [
+            "LAPS",
+            "TYRE",
+            "KIMI",
+            "MATE",
+            "STINT",
+            "OVERHEATING"
+        ]
+    },
+    "LANNOR01_4_20250831_152858.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250831_152858.mp3.pt",
+        "words": " LANDO, CAN YOU GET CLOSER TO THE CAR AHEAD? I CAN, MAYBE A TOUCH. ",
+        "blist": [
+            "CAR",
+            "LANDO"
+        ]
+    },
+    "ISAHAD01_6_20251005_213218.mp3": {
+        "fbank": "data/audio_features/ISAHAD01_6_20251005_213218.mp3.pt",
+        "words": " PLEASE CONFIRM THE SITUATION IS CLEAR ON MAX AND NORRIS. YEAH! THANK YOU. ",
+        "blist": [
+            "MAX",
+            "NORRIS"
+        ]
+    },
+    "MAXVER01_1_20251005_210225.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20251005_210225.mp3.pt",
+        "words": " MAN, THE CAR IS SO ****ING HARD TO DRIVE ",
+        "blist": [
+            "CAR",
+            "HARD"
+        ]
+    },
+    "LANNOR01_4_20250316_141547.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250316_141547.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "LANNOR01_4_20250803_163917.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250803_163917.mp3.pt",
+        "words": " YES, YES, YES. MEGA JOB, MATE. MEGA JOB. LOVELY. GOOD RACING. GOOD STRATEGY. GOOD CALL. WELL FOUGHT. THANK YOU, GUYS! ",
+        "blist": [
+            "MEGA",
+            "STRATEGY",
+            "MATE"
+        ]
+    },
+    "CARSAI01_55_20250525_162241.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20250525_162241.mp3.pt",
+        "words": " TOWARDS THE END, WE WILL SWAP THE CARS BACK. OKAY, LET'S DO OUR RACE UNTIL THE LAST LAP, THEN. WE NEVER KNOW WHAT CAN HAPPEN IN FRONT. ALEX WILL FINISH THE RACE, P9, DON'T WORRY. ",
+        "blist": [
+            "LAP",
+            "ALEX",
+            "P9"
+        ]
+    },
+    "PIEGAS01_10_20250705_153007.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20250705_153007.mp3.pt",
+        "words": " ARE WE THROUGH? WE ARE THROUGH IN P15, ONLY JUST, BUT WE ARE THROUGH. WELL DONE. YEAH, GOOD JOB GUYS. YEAH, WELL DONE. ",
+        "blist": [
+            "P15"
+        ]
+    },
+    "CARSAI01_55_20250906_124513.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20250906_124513.mp3.pt",
+        "words": " I THINK IT'S THE TAILWIND TURN 1. YEAH, I AGREE. ",
+        "blist": [
+            "TAILWIND"
+        ]
+    },
+    "CHALEC01_16_20250524_133009.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250524_133009.mp3.pt",
+        "words": " WHO DID YOU SAY CRASHED? LEWIS, TURN 3. **** ",
+        "blist": [
+            "****",
+            "LEWIS"
+        ]
+    },
+    "LANNOR01_4_20250613_134052.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250613_134052.mp3.pt",
+        "words": " I DON'T KNOW WHAT HAPPENED IN THE HAIRPIN. ACTUALLY, I LOCKED THE REARS COMPLETELY SO I DON'T FEEL TOO MUCH, BUT THEN WHEN I CAME ON THROTTLE SOMETHING HAPPENED. ",
+        "blist": [
+            "LOCKED",
+            "REARS",
+            "THROTTLE"
+        ]
+    },
+    "LANNOR01_4_20250803_154220.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250803_154220.mp3.pt",
+        "words": " OKAY, LANDO, WE'RE GOING TO TRY IT. SO LET'S EEK OUT A COUPLE OF LAPS. WHEN THE LAP TIME DROPS, WE'RE COMING IN. IF LECLERC CATCHES US, WE'RE COMING IN. HE'S 5.6 BEHIND. AT THIS PACE, LECLERC CATCHES US IN 3 LAPS. ",
+        "blist": [
+            "LANDO",
+            "LAPS",
+            "PACE",
+            "LECLERC",
+            "LAP"
+        ]
+    },
+    "YUKTSU01_22_20250321_153816.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20250321_153816.mp3.pt",
+        "words": " RUSSELL WAS IN THE WAY IN TURN 14. UNDERSTOOD. ",
+        "blist": [
+            "RUSSELL"
+        ]
+    },
+    "YUKTSU01_22_20250523_142821.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20250523_142821.mp3.pt",
+        "words": " **** THAT GUY! YEAH, COPY, THAT WASN'T VERY NICE. ",
+        "blist": [
+            "****"
+        ]
+    },
+    "LANNOR01_4_20250418_201403.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250418_201403.mp3.pt",
+        "words": " WHY DOES NO ONE USE RADIOS AT ALL? YEAH, I GOT BLOCKED BY THE RED BULL. COMPLETELY IN THE WAY. THAT WAS VERSTAPPEN THAT BLOCKED YOU. ",
+        "blist": [
+            "VERSTAPPEN",
+            "BULL",
+            "RED"
+        ]
+    },
+    "JACDOO01_7_20250321_121622.mp3": {
+        "fbank": "data/audio_features/JACDOO01_7_20250321_121622.mp3.pt",
+        "words": " I HAVE AN ISSUE, NO POWER STEERING, CAR IS SWITCHED OFF, LET ME KNOW YOUR INSTRUCTIONS. ",
+        "blist": [
+            "CAR",
+            "STEERING"
+        ]
+    },
+    "LIALAW01_30_20250615_151510.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20250615_151510.mp3.pt",
+        "words": " SORRY, MATE. IT'S A HARD DAY AND THIS IS THE CHERRY ON TOP. BUT WE HAD TO TAKE CARE OF THIS PU. ",
+        "blist": [
+            "PU",
+            "MATE",
+            "HARD"
+        ]
+    },
+    "CHALEC01_16_20250323_152024.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250323_152024.mp3.pt",
+        "words": " SO IT WOULD BE TOO MUCH TRAFFIC, SO WE STICK TO PLAN B. ",
+        "blist": [
+            "TRAFFIC"
+        ]
+    },
+    "CHALEC01_16_20250518_160740.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250518_160740.mp3.pt",
+        "words": " WE NEED TO STAY OUT. WE DON'T HAVE A TIRE THAT CAN DO TO THE END. SOFT WILL BE BETTER THAN THAT. IT'S 17 LAPS, CHARLES. 17 LAPS TO THE END. HOW MANY LAPS HAVE MY MEDIUM? MEDIUM HAS 11 LAPS. ",
+        "blist": [
+            "LAPS",
+            "CHARLES",
+            "SOFT",
+            "TIRE",
+            "MEDIUM"
+        ]
+    },
+    "OSCPIA01_81_20251019_145401.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20251019_145401.mp3.pt",
+        "words": " RUSSELL IS WITHIN UNDERCUT RANGE, WOULD YOU PREFER TO PIT FIRST ONTO A SOFT OR LET HIM GO AND HAVE TO PASS ON TRACK? PROBABLY GO FIRST. ",
+        "blist": [
+            "UNDERCUT",
+            "SOFT",
+            "TRACK",
+            "RUSSELL",
+            "PIT"
+        ]
+    },
+    "ANDANT01_12_20250530_131711.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20250530_131711.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "PIEGAS01_10_20250629_155446.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20250629_155446.mp3.pt",
+        "words": " I HAVE NO GRIP. ***** CRAZY. I'M ABOUT TO SPIN EVERY CORNER. ",
+        "blist": [
+            "GRIP"
+        ]
+    },
+    "MAXVER01_1_20250614_130506.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250614_130506.mp3.pt",
+        "words": " I'M STILL LACKING BITE IN THE BRAKE MATERIAL. IT'S NOT GOOD. UNDERSTOOD. ",
+        "blist": [
+            "BRAKE"
+        ]
+    },
+    "PIEGAS01_10_20251108_114643.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20251108_114643.mp3.pt",
+        "words": " YEAH, THAT FERRARI NEEDS TO GET PAST ALONSO. I'LL BE SURE TO LET HIM KNOW. ",
+        "blist": [
+            "ALONSO",
+            "FERRARI"
+        ]
+    },
+    "MAXVER01_1_20250704_123743.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250704_123743.mp3.pt",
+        "words": " INITIAL BALANCE PLEASE MAX. AT MEDIUM SPEED THE CAR HAS QUITE A BIT OF FRONT. MAYBE WE CAN LOCK THE DIFF A LITTLE BIT. ",
+        "blist": [
+            "DIFF",
+            "BALANCE",
+            "CAR",
+            "MAX",
+            "MEDIUM",
+            "SPEED"
+        ]
+    },
+    "OSCPIA01_81_20250831_142509.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250831_142509.mp3.pt",
+        "words": " I HAVE LIKE A WHISTLING NOISE COMING FROM SOMEWHERE, BUT I DON'T KNOW IF IT'S A MIRROR OR MY HELMET. UNDERSTOOD. WE'LL CHECK THAT ON THE GRID. ",
+        "blist": [
+            "GRID"
+        ]
+    },
+    "MAXVER01_1_20250523_140044.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250523_140044.mp3.pt",
+        "words": " **** ME, MAN. ",
+        "blist": [
+            "****"
+        ]
+    },
+    "OSCPIA01_81_20250504_173357.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250504_173357.mp3.pt",
+        "words": " WELL DONE, OSCAR. GREAT JOB. REALLY SMOOTH. PACE WAS PHENOMENAL. NICELY DONE. ",
+        "blist": [
+            "SMOOTH",
+            "OSCAR",
+            "PACE"
+        ]
+    },
+    "OSCPIA01_81_20251019_145226.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20251019_145226.mp3.pt",
+        "words": " THOUGHTS ON A SOFT TO GET TO THE END FROM HERE? UHH, I THINK DIFFICULT FROM HERE. COPY, ",
+        "blist": [
+            "SOFT"
+        ]
+    },
+    "GEORUS01_63_20250418_205819.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20250418_205819.mp3.pt",
+        "words": " YOUR HAND NOT GETTING TIRED? NO, I'VE GOTTEN USED TO THIS NOW. ",
+        "blist": [
+            "USED"
+        ]
+    },
+    "LEWHAM01_44_20250518_155440.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20250518_155440.mp3.pt",
+        "words": " P5 ON THE ROAD, AWESOME. YEAH, HAD TO USE A LOT OF TIRES TO GET THROUGH THOSE TWO. ",
+        "blist": [
+            "P5",
+            "TIRES"
+        ]
+    },
+    "MAXVER01_1_20251005_202019.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20251005_202019.mp3.pt",
+        "words": " ANY CHANGE THERE WITH THE DOWNSHIFT MAX? OTHERWISE YOU'VE GOT\u2013 NO, IT'S REALLY **** OKAY, UNDERSTOOD. ",
+        "blist": [
+            "MAX",
+            "****",
+            "DOWNSHIFT"
+        ]
+    },
+    "ANDANT01_12_20251019_141520.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20251019_141520.mp3.pt",
+        "words": " YEAH, TOOK ME OUT. YEAH, COPY, SAW THAT MATE. WHAT A ******* IDIOT. ",
+        "blist": [
+            "IDIOT",
+            "MATE",
+            "*******"
+        ]
+    },
+    "NICHUL01_27_20251024_165820.mp3": {
+        "fbank": "data/audio_features/NICHUL01_27_20251024_165820.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "FERALO01_14_20250802_170005.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20250802_170005.mp3.pt",
+        "words": " IT'S A GOOD LAP. IT'S A PRETTY GOOD LAP, I'D SAY. GOOD JOB. ",
+        "blist": [
+            "LAP"
+        ]
+    },
+    "ALEALB01_23_20251026_150448.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20251026_150448.mp3.pt",
+        "words": " WHEN YOU WERE 13 LAPS INTO THE HARD IT WAS COMPARABLE ACROSS CARS HENCE THE LESS ON THE FLAP ADJUST WE JUST DID. JUST ASK THE OTHER CAR, WHAT THEIR BALANCE IS RIGHT NOW? I DON'T UNDERSTAND WHAT'S GOING ON. ",
+        "blist": [
+            "BALANCE",
+            "HARD",
+            "CAR",
+            "LAPS"
+        ]
+    },
+    "OSCPIA01_81_20250706_160021.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250706_160021.mp3.pt",
+        "words": " OSCAR, THE SAFETY CAR RESTART, WE'VE BEEN GIVEN A 10 SECOND PENALTY FOR THE BRAKING ON THE STRAIGHT BEFORE THE SAFETY CAR RESTART. YOU HAVE A 17 SECOND GAP TO STROLL. HEAD DOWN, WE WANT TO TRY AND PULL AS MUCH OF A GAP AS WE CAN. ",
+        "blist": [
+            "SAFETY",
+            "OSCAR",
+            "SECOND",
+            "CAR",
+            "STROLL",
+            "GAP",
+            "PENALTY"
+        ]
+    },
+    "OSCPIA01_81_20250803_160428.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250803_160428.mp3.pt",
+        "words": " SO OSCAR, LECLERC IS GOING TO BE 4 OR 5 SECONDS AHEAD OF OUR PIT WINDOW. WE SUGGEST TO BOX THIS LAP, TO PUSH AND BOX THIS LAP. I DON'T REALLY CARE ABOUT LECLERC, I JUST WANT THE BEST CHANCE TO TRY AND BEAT LANDO. THAT'S THE MOST IMPORTANT THING AT THE MOMENT. ",
+        "blist": [
+            "LANDO",
+            "BOX",
+            "OSCAR",
+            "PUSH",
+            "LECLERC",
+            "LAP",
+            "WINDOW",
+            "PIT"
+        ]
+    },
+    "CHALEC01_16_20250518_154337.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250518_154337.mp3.pt",
+        "words": " UNBELIEVABLE! THIS IS UNBELIEVABLE! ALL THE TIME! I GET ******* WITH VIRTUAL SAFETY CAR OR SAFETY CAR. ",
+        "blist": [
+            "VIRTUAL",
+            "CAR",
+            "SAFETY",
+            "*******"
+        ]
+    },
+    "LIALAW01_30_20250406_132737.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20250406_132737.mp3.pt",
+        "words": " MY DRINKS TUBE JUST **** WATER ALL OVER MY FACE, SO WE NEED TO CHANGE SOMETHING. COPY, UNDERSTOOD. ",
+        "blist": [
+            "****"
+        ]
+    },
+    "MAXVER01_1_20251109_152028.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20251109_152028.mp3.pt",
+        "words": " P2 IS ON HERE MAX, ASSUMING YOU CAN CONTROL THE DEG. ",
+        "blist": [
+            "P2",
+            "MAX",
+            "DEG"
+        ]
+    },
+    "MAXVER01_1_20250504_163249.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250504_163249.mp3.pt",
+        "words": " HE WENT OFF ITSELF, WHILE DRIVING ME OFF THE TRACK, SO I'LL NEED THAT POSITION BACK. ",
+        "blist": [
+            "POSITION",
+            "TRACK"
+        ]
+    },
+    "GEORUS01_63_20250524_163713.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20250524_163713.mp3.pt",
+        "words": " AHHH ... **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "ANDANT01_12_20250920_172455.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20250920_172455.mp3.pt",
+        "words": " THE TRACK IS SO SLIPPERY. THE WHITE LINES ARE ICE. COPY. ",
+        "blist": [
+            "TRACK"
+        ]
+    },
+    "OSCPIA01_81_20251026_131858.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20251026_131858.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "LANNOR01_4_20250413_190144.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250413_190144.mp3.pt",
+        "words": " SO LANDO, RUSSELL'S ALREADY WORRIED ABOUT THE SOFT FOR THIS LENGTH OF STINT. YEAH, I DON'T THINK HE SHOULD BE. I MEAN, THE SOFT WAS MEGA. I THINK IT'S A GOOD TIRE. ",
+        "blist": [
+            "LANDO",
+            "MEGA",
+            "STINT",
+            "SOFT",
+            "TIRE"
+        ]
+    },
+    "OSCPIA01_81_20251109_143226.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20251109_143226.mp3.pt",
+        "words": " OSCAR, WE HAVE A 10-SECOND PENALTY FOR THE SAFETY CAR RESTART, TURN 1. BEST OPPORTUNITY IS PLAN C, AND YOU NEED TO GET TO TARGET LAP WITH GOOD PACE. OSCAR, YOUR PACE LOOKS GOOD, AND WE CAN STILL MAKE THIS WORK. ",
+        "blist": [
+            "SAFETY",
+            "OSCAR",
+            "CAR",
+            "PACE",
+            "LAP",
+            "PENALTY"
+        ]
+    },
+    "MAXVER01_1_20251108_151830.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20251108_151830.mp3.pt",
+        "words": " OH MY GOD, THE CAR, NOW THE RIDE IS A TINY BIT BETTER, BUT NOW I'M SLIDING EVEN MORE. ",
+        "blist": [
+            "SLIDING",
+            "CAR",
+            "RIDE"
+        ]
+    },
+    "MAXVER01_1_20251026_132318.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20251026_132318.mp3.pt",
+        "words": " THE DRINK JUST KEEPS LEAKING OUT THE\u2013 THE TUBE LIKE CRAZY. OKAY, UNDERSTOOD. WE'LL SORT RIGHT OUT ON THE GRID. I'LL HAVE TO BE CAREFUL WITH TALKING BECAUSE IT JUST LEAKS OUT EVERYWHERE. ",
+        "blist": [
+            "GRID"
+        ]
+    },
+    "LEWHAM01_44_20250919_131942.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20250919_131942.mp3.pt",
+        "words": " CLIPPED THE WALL. PUNCTURE, LEFT PUNCTURE. YEAH, FRONT WING I THINK AS WELL. ",
+        "blist": [
+            "WING"
+        ]
+    },
+    "MAXVER01_1_20250523_170105.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250523_170105.mp3.pt",
+        "words": " THIS IS A QUICK QUESTION FROM MY SIDE. THIS HELMET AND VISOR, IS IT THE SAME AS WHAT I USE IN FP1? YES, IT IS MAX. ",
+        "blist": [
+            "FP1",
+            "MAX",
+            "VISOR"
+        ]
+    },
+    "CHALEC01_16_20250420_210545.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250420_210545.mp3.pt",
+        "words": " WELL DONE, CHARLES. THANK YOU, BRYAN. ",
+        "blist": [
+            "CHARLES"
+        ]
+    },
+    "LANSTR01_18_20251005_213005.mp3": {
+        "fbank": "data/audio_features/LANSTR01_18_20251005_213005.mp3.pt",
+        "words": " BORTOLETO AHEAD IS ON 40 LAP OLD HARDS. YEAH, MY MEDIUMS FEEL LIKE 100 LAP OLD. ",
+        "blist": [
+            "LAP",
+            "MEDIUMS",
+            "BORTOLETO",
+            "HARDS"
+        ]
+    },
+    "LANNOR01_4_20250601_154332.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250601_154332.mp3.pt",
+        "words": " AND VERSTAPPEN HAS PITTED. THAT MEANS HE'S ON A THREE. WE'RE HAPPY WITH OUR PLAN? ",
+        "blist": [
+            "VERSTAPPEN",
+            "PITTED"
+        ]
+    },
+    "ANDANT01_12_20250404_122755.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20250404_122755.mp3.pt",
+        "words": " YEAH, I LOCKED UP. ",
+        "blist": [
+            "LOCKED"
+        ]
+    },
+    "LANNOR01_4_20250628_172217.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250628_172217.mp3.pt",
+        "words": " THAT IS POLE AND BY SOME MARGIN. WELL DONE. YES. THANK YOU GUYS. NICE TO SEE THE OLD ME BACK EVERY NOW AND THEN. WELL DONE. CAR WAS PRETTY DAMN BEAUTIFUL. GOOD EFFORT MATE. PROUD OF YOU. ",
+        "blist": [
+            "POLE",
+            "CAR",
+            "MATE"
+        ]
+    },
+    "FERALO01_14_20250516_133446.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20250516_133446.mp3.pt",
+        "words": " YEAH I NEARLY CRASHED WITH LECLERC. ",
+        "blist": [
+            "LECLERC"
+        ]
+    },
+    "CHALEC01_16_20250419_173225.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250419_173225.mp3.pt",
+        "words": " THAT'S UHHH. AT LEAST I FEEL IT'S THE LIMIT OF THE CAR. I CANNOT GO FASTER IN CORNERS. IT'S JUST SLIDING FROM ALL FOUR TIRES. OK. ",
+        "blist": [
+            "LIMIT",
+            "SLIDING",
+            "CAR",
+            "TIRES"
+        ]
+    },
+    "LANNOR01_4_20250323_162530.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250323_162530.mp3.pt",
+        "words": " SO LANDO, WE SEE YOU'RE QUICK. THIS IS ONE OF THOSE THINGS WE DISCUSSED. THE PROBLEM IS OVER THE YEAR. I'D RATHER FINISH SECOND THAN NOT AT ALL. NO HEARTBREAK. ",
+        "blist": [
+            "LANDO",
+            "SECOND"
+        ]
+    },
+    "OSCPIA01_81_20251018_120706.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20251018_120706.mp3.pt",
+        "words": " SO OSCAR, BE CAREFUL, WE HAVE POSSIBLE SUSPENSION DAMAGE. YEAH, WE DO. YEAH, WE DO SEE THAT. ",
+        "blist": [
+            "OSCAR"
+        ]
+    },
+    "GEORUS01_63_20250628_121800.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20250628_121800.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "FERALO01_14_20250420_204622.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20250420_204622.mp3.pt",
+        "words": " WOW, HE MOVED UNDER BRAKING. OH, THAT WAS CLOSE. WOW, SO CLOSE. CHECK THE CAR. ",
+        "blist": [
+            "CAR"
+        ]
+    },
+    "PIEGAS01_10_20250418_201712.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20250418_201712.mp3.pt",
+        "words": " I CAN'T BRAKE. CHECK THE BRAKES. WE'RE LOOKING AT IT NOW. ",
+        "blist": [
+            "BRAKE",
+            "BRAKES"
+        ]
+    },
+    "GABBOR01_5_20250628_165618.mp3": {
+        "fbank": "data/audio_features/GABBOR01_5_20250628_165618.mp3.pt",
+        "words": " WELL THE, YOU HAVE MADE IT TO YOUR FIRST Q3. LET'S GO! I HOPE FIRST OF MANY. LET'S GO, GUYS. GOOD JOB. ",
+        "blist": [
+            "Q3"
+        ]
+    },
+    "GEORUS01_63_20250531_163418.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20250531_163418.mp3.pt",
+        "words": " I'M HAPPY TO GIVE KIMI A TOW IF NEEDED. ",
+        "blist": [
+            "KIMI",
+            "TOW"
+        ]
+    },
+    "LANSTR01_18_20250531_123949.mp3": {
+        "fbank": "data/audio_features/LANSTR01_18_20250531_123949.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "CARSAI01_55_20250518_153130.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20250518_153130.mp3.pt",
+        "words": " ALEX 21.8, 21.8. IT'S CLEARLY A ONE STOP THEN, IF ALEX IS DOING 21 8. ",
+        "blist": [
+            "ALEX",
+            "STOP"
+        ]
+    },
+    "OSCPIA01_81_20250803_155638.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250803_155638.mp3.pt",
+        "words": " LANDO'S DONE 6 LAPS OF HARD. WOULD YOU PRIORITIZE UNDERCUTTING LECLERC OR TIRE DELTA TO LANDO? IF STILL THINK BEATING LANDO IS REALISTIC THEN DOING THAT. ",
+        "blist": [
+            "LANDO",
+            "LAPS",
+            "DELTA",
+            "LECLERC",
+            "TIRE",
+            "HARD"
+        ]
+    },
+    "LEWHAM01_44_20250906_132657.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20250906_132657.mp3.pt",
+        "words": " I NEED SOME MORE JUICE, SOME MORE SPEED SOMEHOW. THAT'S IT. ",
+        "blist": [
+            "SPEED"
+        ]
+    },
+    "PAUARO01_97_20250704_133306.mp3": {
+        "fbank": "data/audio_features/PAUARO01_97_20250704_133306.mp3.pt",
+        "words": " PAUL, JONATHAN, JUST WANT TO SAY FANTASTIC JOB THIS MORNING. THANK YOU VERY MUCH. COMPLETED THE PROGRAM AND VERY, VERY PROFESSIONAL JOB. SO THANK YOU. THANK YOU, JONATHAN. THANK YOU, EVERYONE, FOR MY FIRST OFFICIAL FORMULA 1 SESSION. IT'S BEEN A BLAST. AND HOPEFULLY MANY MORE TO COME. BUT YEAH, THANKS VERY MUCH. IT'S WHAT EVERYONE SAYS, BUT IT IS A DREAM COME TRUE. AND IT WAS A BLAST. THANK YOU. ",
+        "blist": [
+            "SESSION",
+            "PAUL",
+            "FORMULA"
+        ]
+    },
+    "LANNOR01_4_20251120_171840.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20251120_171840.mp3.pt",
+        "words": " IT'S GOOD TO CHALLENGE THE BRAKING THERE. THE LEFT HAND TOGGLE COULD HELP THERE AS WELL. ",
+        "blist": [
+            "TOGGLE"
+        ]
+    },
+    "GEORUS01_63_20251025_115732.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20251025_115732.mp3.pt",
+        "words": " JUST NOT GETTING THIS MEDIUM TYRE WORKING, JUST SLIDING ALL OVER THE PLACE. ",
+        "blist": [
+            "SLIDING",
+            "MEDIUM",
+            "TYRE"
+        ]
+    },
+    "GABBOR01_5_20250704_130900.mp3": {
+        "fbank": "data/audio_features/GABBOR01_5_20250704_130900.mp3.pt",
+        "words": " OKAY MATE, ARE YOU OKAY? YEAH, IT'S ALL GOOD, I'M ON TRACK. ",
+        "blist": [
+            "MATE",
+            "TRACK"
+        ]
+    },
+    "ESTOCO01_31_20250907_151950.mp3": {
+        "fbank": "data/audio_features/ESTOCO01_31_20250907_151950.mp3.pt",
+        "words": " OKAY, ESTEBAN, WE HAVE A 5 SECOND PENALTY FOR FORCING STROLL OF THE TRACK IN LAP 2. **** THAT. TRACK GETS NARROWER THERE, SO THERE WAS NO SPACE, THAT'S IT. YEAH, I UNDERSTAND; NOTHING WE CAN DO. ",
+        "blist": [
+            "****",
+            "ESTEBAN",
+            "PENALTY",
+            "SECOND",
+            "TRACK",
+            "LAP",
+            "STROLL"
+        ]
+    },
+    "LEWHAM01_44_20250627_171708.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20250627_171708.mp3.pt",
+        "words": " I COULDN'T SEE ANTONELLI AT ALL, SO. ",
+        "blist": [
+            "ANTONELLI"
+        ]
+    },
+    "CHALEC01_16_20251024_170204.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20251024_170204.mp3.pt",
+        "words": " WELL, FROM THE LAST TWO LAPS, HOW DID IT LOOK? I GUESS MCLAREN ARE ON ANOTHER PLANET, NO? YEAH, FOR NOW NORRIS IS VERY FAST, MORE SO THAN PIASTRI. ",
+        "blist": [
+            "PIASTRI",
+            "NORRIS",
+            "LAPS",
+            "MCLAREN"
+        ]
+    },
+    "LEWHAM01_44_20250411_144735.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20250411_144735.mp3.pt",
+        "words": " I WANT TO TAKE ONE MORE PUSH ON THIS. IT FEELS A HORRENDOUS MATE. UNDERSTOOD. ",
+        "blist": [
+            "PUSH",
+            "MATE"
+        ]
+    },
+    "GABBOR01_5_20250705_123518.mp3": {
+        "fbank": "data/audio_features/GABBOR01_5_20250705_123518.mp3.pt",
+        "words": " YOU OKAY? YOU OKAY, MATE? I'M OKAY, BUT THE SUSPENSION IS BROKEN. YEAH, I SAW THAT. NO PROBLEM. WE'LL REPAIR THAT FOR QUALI. ",
+        "blist": [
+            "QUALI",
+            "MATE"
+        ]
+    },
+    "GEORUS01_63_20250803_162757.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20250803_162757.mp3.pt",
+        "words": " THAT'S. THAT'S A PENALTY. TURNED IN ON ME DURING BRAKING. ",
+        "blist": [
+            "PENALTY"
+        ]
+    },
+    "PIEGAS01_10_20250627_131839.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20250627_131839.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "MAXVER01_1_20250628_163816.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250628_163816.mp3.pt",
+        "words": " CAR IS COMPLETELY UNDRIVEABLE. IT'S EVEN WORSE THAN BEFORE. I DON'T KNOW WHAT TO SAY. LIKE I HAVE NO GRIP LOW SPEED, MEDIUM SPEED, HIGH SPEED. ",
+        "blist": [
+            "GRIP",
+            "CAR",
+            "MEDIUM",
+            "SPEED"
+        ]
+    },
+    "LEWHAM01_44_20251107_123702.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20251107_123702.mp3.pt",
+        "words": " THE REAR HIT THE FLOOR ",
+        "blist": [
+            "REAR"
+        ]
+    },
+    "LANNOR01_4_20250413_184810.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250413_184810.mp3.pt",
+        "words": " OKAY, LANDO, THE PACE IS GOOD. LECLERC JUST HAD FRESHER TYRES. NEITHER OF THE CARS AHEAD HAVE ANOTHER MEDIUM. THAT'S OUR OPPORTUNITY. STAY WITH THEM, MATE. DOING WELL. ",
+        "blist": [
+            "TYRES",
+            "LANDO",
+            "MATE",
+            "PACE",
+            "LECLERC",
+            "MEDIUM"
+        ]
+    },
+    "ANDANT01_12_20251109_153717.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20251109_153717.mp3.pt",
+        "words": " YEAH BOY! P2 MATE! OH MY GOODNESS, THAT WAS STRESSFULL. OH MY GOODNESS INDEED. ",
+        "blist": [
+            "P2",
+            "MATE"
+        ]
+    },
+    "ANDANT01_12_20250503_131816.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20250503_131816.mp3.pt",
+        "words": " KIMI, ON THE PIASTRI SITUATION NOW, YOU KNOW, YOU'VE SEEN IT, WHAT TO DO, YOU KNOW, GOOD PRECEDENT? YEAH, DEFINITELY. ",
+        "blist": [
+            "KIMI",
+            "PIASTRI"
+        ]
+    },
+    "OSCPIA01_81_20250504_161343.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250504_161343.mp3.pt",
+        "words": " DOES VERSTAPPEN HAVE DAMAGE OR A PENALTY? NOT YET, BUT THEY'RE LOOKING AT IT, OSCAR. THEY'RE LOOKING AT THE TURN 2 INCIDENT. ",
+        "blist": [
+            "VERSTAPPEN",
+            "OSCAR",
+            "PENALTY"
+        ]
+    },
+    "ESTOCO01_31_20250412_153915.mp3": {
+        "fbank": "data/audio_features/ESTOCO01_31_20250412_153915.mp3.pt",
+        "words": " YEAH, A LOT OF BOUNCING IN TURN 12, STILL DIFFICULT TO GO FLAT, BUT YEAH, BECAUSE OF IT. ",
+        "blist": [
+            "FLAT",
+            "BOUNCING"
+        ]
+    },
+    "LANNOR01_4_20250323_162323.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250323_162323.mp3.pt",
+        "words": " SO, LANDO THE BRAKE PEDAL WILL CONTINUE TO GET LONG. HOW BIG'S THE ISSUE? IT'LL GET LIKE HALF A MIL LONGER PER LAP. ",
+        "blist": [
+            "BRAKE",
+            "LAP",
+            "LANDO"
+        ]
+    },
+    "MAXVER01_1_20250601_162935.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250601_162935.mp3.pt",
+        "words": " CHARLES JUST RAMMED INTO ME ON THE STREET. COPY THAT, MAX. ",
+        "blist": [
+            "MAX",
+            "CHARLES"
+        ]
+    },
+    "CHALEC01_16_20250405_154322.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20250405_154322.mp3.pt",
+        "words": " FIRST SECTOR WAS RUBBISH FROM ME. ",
+        "blist": [
+            "SECTOR"
+        ]
+    },
+    "OSCPIA01_81_20250706_162326.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250706_162326.mp3.pt",
+        "words": " OSCAR, WE NEED TO KEEP LANDO OUT OF DRS. IF HE GETS IN DRS WITH OUR PENALTY, IT WILL BE DO NOT MAKE IT TOO DIFFICULT. ",
+        "blist": [
+            "DRS",
+            "LANDO",
+            "OSCAR",
+            "PENALTY"
+        ]
+    },
+    "GEORUS01_63_20250503_164815.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20250503_164815.mp3.pt",
+        "words": " GET ME OUT THERE REALLY. JUST NO CONFIDENCE IN THE CAR, MATE. NO GRIP SLIDING, EVERYWHERE. ",
+        "blist": [
+            "GRIP",
+            "SLIDING",
+            "CAR",
+            "MATE"
+        ]
+    },
+    "LANSTR01_18_20250829_131907.mp3": {
+        "fbank": "data/audio_features/LANSTR01_18_20250829_131907.mp3.pt",
+        "words": " WHAT THE **** IS THIS GUY DOING DOING, MAN? ",
+        "blist": [
+            "****"
+        ]
+    },
+    "OSCPIA01_81_20250601_163801.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250601_163801.mp3.pt",
+        "words": " CHECKERED FLAG WHAT A RACE, WHAT A WEEKEND, MATE REALLY GOOD, REALLY HAPPY, BIGGEST POLE MARGIN OF THE YEAR AND UH VERY CONVINCING SUNDAY AFTERNOON AS WELL GREAT JOB YEP WHEN YOU SAID THAT UH BASED ON THE THE WEEKEND LAST YEAR WAS GONNA BE AWESOME YOU WEREN'T WRONG SHOULD LISTEN TO YOU MORE OFTEN YOU KNOW STOP COME VERY WICKED UM YEAH COULDN'T HAVE ASKED FOR MORE SO UH THANK YOU VERY MUCH EVERYBODY NICE UH NICE WAY TO BOUNCE BACK FROM A LITTLE BIT OF A DIFFICULT ONE LAST WEEK AND UH VERY WELL DONE WELL MANAGED COULDN'T HAVE DONE IT ANY BETTER MYSELF, SO WELL DONE ",
+        "blist": [
+            "POLE",
+            "MATE",
+            "STOP"
+        ]
+    },
+    "LANNOR01_4_20250322_102057.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250322_102057.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "PIEGAS01_10_20250523_172929.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20250523_172929.mp3.pt",
+        "words": " THAT ASTON IN FRONT ALMOST PUT ME IN THE WALL ",
+        "blist": [
+            "ASTON"
+        ]
+    },
+    "GEORUS01_63_20250801_133439.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20250801_133439.mp3.pt",
+        "words": " BRAKE FEELS A BIT LONG AND SPONGY. UNDERSTOOD. ",
+        "blist": [
+            "BRAKE"
+        ]
+    },
+    "MAXVER01_1_20251107_160252.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20251107_160252.mp3.pt",
+        "words": " MATE, THE CAR IS COMPLETELY BROKEN. IT'S JUST UNDRIVEABLE. ",
+        "blist": [
+            "CAR",
+            "MATE"
+        ]
+    },
+    "NICHUL01_27_20250803_151918.mp3": {
+        "fbank": "data/audio_features/NICHUL01_27_20250803_151918.mp3.pt",
+        "words": " OKAY, NICO, WE HAVE A 5 SECOND TIME PENALTY FOR MOVING BEFORE THE START SIGNAL. FIVE SECOND TIME PENALTY. REALLY? I'M NOT AWARE OF THAT. DIDN'T FEEL ANYTHING FROM MY SIDE. ",
+        "blist": [
+            "NICO",
+            "SECOND",
+            "PENALTY"
+        ]
+    },
+    "GABBOR01_5_20250615_155930.mp3": {
+        "fbank": "data/audio_features/GABBOR01_5_20250615_155930.mp3.pt",
+        "words": " YEAH, GASLY IS OVERTAKING EVERYONE, IS IT FAIR WE CANNOT OVERTAKE? WELL, THAT'S WHAT WE ARE TALKING HERE. WE ARE SURE THAT WE SHOULDN'T BE OVERTAKEN, ALL THE DRIVERS ARE FOLLOWING THE RULES, SO LET'S NOT BREAK IT. ",
+        "blist": [
+            "GASLY",
+            "OVERTAKE"
+        ]
+    },
+    "JACDOO01_7_20250413_171037.mp3": {
+        "fbank": "data/audio_features/JACDOO01_7_20250413_171037.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "YUKTSU01_22_20250614_164850.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20250614_164850.mp3.pt",
+        "words": " RUSSELL THAT'S A PENALTY, MAN. YEP, SAW IT. ",
+        "blist": [
+            "RUSSELL",
+            "PENALTY"
+        ]
+    },
+    "ANDANT01_12_20250524_162000.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20250524_162000.mp3.pt",
+        "words": " OKAY MATE, YOU OKAY? I'M SORRY. YEAH, I'M SORRY. I'M SORRY BUD, YOU OKAY THOUGH? YEAH, I'M SORRY. ",
+        "blist": [
+            "MATE"
+        ]
+    },
+    "LANNOR01_4_20250803_160618.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250803_160618.mp3.pt",
+        "words": " LET'S DO EVERYTHING WE CAN FOR BLUE FLAGS PLEASE. LET'S BE A BIT MORE PROACTIVE WITH IT. ",
+        "blist": [
+            "BLUE"
+        ]
+    },
+    "MAXVER01_1_20250706_162853.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250706_162853.mp3.pt",
+        "words": " **** **** MATE, THIS CAR IS JUST UNDRIVEABLE. **** ",
+        "blist": [
+            "CAR",
+            "****",
+            "MATE"
+        ]
+    },
+    "ANDANT01_12_20250613_133819.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20250613_133819.mp3.pt",
+        "words": " YEAH, JUST LOCKED THE REAR, THERE. OKAY, WE'LL LOOK INTO IT. ",
+        "blist": [
+            "LOCKED",
+            "REAR"
+        ]
+    },
+    "LIALAW01_30_20250627_170259.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20250627_170259.mp3.pt",
+        "words": " IF I LET GO OF THE STEERING, IT GOES HARD RIGHT ",
+        "blist": [
+            "STEERING",
+            "HARD"
+        ]
+    },
+    "ISAHAD01_6_20250920_123756.mp3": {
+        "fbank": "data/audio_features/ISAHAD01_6_20250920_123756.mp3.pt",
+        "words": " THE WIND IS PUSHING ME A LOT TO THE RIGHT ON THE STRAIGHT. ",
+        "blist": [
+            "WIND",
+            "PUSHING"
+        ]
+    },
+    "MAXVER01_1_20250921_163821.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250921_163821.mp3.pt",
+        "words": " ANOTHER GREAT DRIVE MAX, FABULOUS WORK MATE. CONGRATS. YES, WHAT AN UNBELIEVABLE RACE GUYS, ON FIRE. [UNINTELLIGBILE] REALLY WELL EXECUTED, REALLY, REALLY WELL DONE THE WHOLE WEEKEND. ANOTHER INCREDIBLE WEEKEND FOR US, SO WELL, WELL DONE TO EVERYONE INVOLVED. ",
+        "blist": [
+            "MAX",
+            "MATE"
+        ]
+    },
+    "LIALAW01_30_20250801_141721.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20250801_141721.mp3.pt",
+        "words": " **** I NEARLY DROVE INTO ISACK. ",
+        "blist": [
+            "ISACK",
+            "****"
+        ]
+    },
+    "ISAHAD01_6_20250921_142723.mp3": {
+        "fbank": "data/audio_features/ISAHAD01_6_20250921_142723.mp3.pt",
+        "words": " YEAH, STILL NO POWER. OKAY, BRING IT TO THE GRID SLOWLY, PLEASE. ",
+        "blist": [
+            "GRID"
+        ]
+    },
+    "MAXVER01_1_20250406_143915.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250406_143915.mp3.pt",
+        "words": " ALSO, HE PRESSED THE PIT LIMITER OFF TOO EARLY. THERE'S NO WAY THAT WAS LEGAL. ",
+        "blist": [
+            "PIT"
+        ]
+    },
+    "OLIBEA01_87_20251018_123909.mp3": {
+        "fbank": "data/audio_features/OLIBEA01_87_20251018_123909.mp3.pt",
+        "words": " IS THERE ANY INVESTIGATION FOR WHAT HAPPENED WITH ME AND ANTONELLI? YEAH, OLI, UNFORTUNATELY WE GOT A 10 SECOND TIME PENALTY. WHAT THE HELL? THAT IS INCREDIBLE. ",
+        "blist": [
+            "SECOND",
+            "ANTONELLI",
+            "PENALTY"
+        ]
+    },
+    "LEWHAM01_44_20251109_142351.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20251109_142351.mp3.pt",
+        "words": " MATE, I'M GONNA CRASH OUT HERE, I'LL KEEP TRYING. CAR'S CRAZY UNSTABLE. ",
+        "blist": [
+            "MATE"
+        ]
+    },
+    "MAXVER01_1_20251019_153915.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20251019_153915.mp3.pt",
+        "words": " ANOTHER VERY IMPRESSIVE WEEKEND MAX, EXTREMELY WELL DONE. THANK YOU FOR THE CELEBRATIONS, I'LL SEE YOU IN MEXICO. YEAH, WELL DONE MATE, UNBELIEVABLE WEEKEND, REALLY REALLY GOOD. THANK YOU VERY MUCH EVERYONE, AND YEAH, YOU CAN FLY BACK MATE. WELL DONE MAX, THAT WAS PROPER DOMINATION, WHAT TO SAY, YOU GOT EVERYTHING THIS WEEKEND. YEAH, I REALLY HAVE TO DO THAT, LET'S TRY TO KEEP THIS MOMENTUM UP. ",
+        "blist": [
+            "MAX",
+            "MATE"
+        ]
+    },
+    "YUKTSU01_22_20250517_131639.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20250517_131639.mp3.pt",
+        "words": " ABSOLUTELY ZERO PACE, MAN. COPY ",
+        "blist": [
+            "PACE"
+        ]
+    },
+    "ANDANT01_12_20250919_155531.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20250919_155531.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "LANSTR01_18_20250830_150501.mp3": {
+        "fbank": "data/audio_features/LANSTR01_18_20250830_150501.mp3.pt",
+        "words": " I CRASHED BUT I'M BRINGING IT BACK. **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "ANDANT01_12_20250920_162545.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20250920_162545.mp3.pt",
+        "words": " YOU KNOW KIMI, YOU HAVE TONS OF TIME, JUST THESE 6 AND A HALF MINUTES, JUST ONE CLEAN LAP. ",
+        "blist": [
+            "LAP",
+            "KIMI"
+        ]
+    },
+    "LANNOR01_4_20251005_201649.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20251005_201649.mp3.pt",
+        "words": " HOW ARE THE TYRES? HOW'S THE PACE? YEAH, PACE IS GOOD. I THINK I'M A LOT QUICKER. ",
+        "blist": [
+            "TYRES",
+            "PACE"
+        ]
+    },
+    "OSCPIA01_81_20250629_154610.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20250629_154610.mp3.pt",
+        "words": " OSCAR QUESTION, BETTER TO BE 4 SECONDS BEHIND LANDO WITH MORE DELTA OR 1 AND A HALF BEHIND? 4 WITH DELTA. ",
+        "blist": [
+            "DELTA",
+            "LANDO",
+            "OSCAR"
+        ]
+    },
+    "PIEGAS01_10_20250524_161134.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20250524_161134.mp3.pt",
+        "words": " OH MY GOSH, WHO WAS THAT?  SHOCKING FROM STROLL ",
+        "blist": [
+            "STROLL"
+        ]
+    },
+    "FERALO01_14_20250921_151859.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20250921_151859.mp3.pt",
+        "words": " AND WE'VE BEEN GIVEN A 5 SECOND TIME PENALTY FOR JUMPING THE START? 5 SECOND TIME PENALTY? YEAH, COPY. YEAH. I REACTED TO PIASTRI, SORRY. ",
+        "blist": [
+            "PIASTRI",
+            "SECOND",
+            "PENALTY"
+        ]
+    },
+    "FERALO01_14_20250504_161216.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20250504_161216.mp3.pt",
+        "words": " POSSIBLE RAIN IN 20 LAPS. IT WILL BE HEAVY IF IT HITS. ",
+        "blist": [
+            "LAPS"
+        ]
+    },
+    "LEWHAM01_44_20250504_172610.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20250504_172610.mp3.pt",
+        "words": " AND SAINZ 1.4 BEHIND. YOU WANT ME TO LET HIM PAST AS WELL? ",
+        "blist": [
+            "SAINZ"
+        ]
+    },
+    "LANNOR01_4_20250629_163424.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250629_163424.mp3.pt",
+        "words": " AND LANDO, JUST FOR YOUR AWARENESS, WE HAVE A BIT OF DAMAGE ON OUR FRONT WING WHICH IS MAKING THE BALANCE CHANGE A BIT. NOTHING WE COULD DO, JUST FOR YOUR AWARENESS. ",
+        "blist": [
+            "WING",
+            "BALANCE",
+            "LANDO"
+        ]
+    },
+    "LANNOR01_4_20250322_111500.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250322_111500.mp3.pt",
+        "words": " HOW'S EVERYONE ELSE'S FRONT? I JUST FIND MINE ARE ******** ALREADY. SO VISUALLY, YOURS DO LOOK SLIGHTLY WORSE THAN PEOPLE. BUT THEN I NEED SOME HELP, DON'T I? BECAUSE I'M JUST ******* DRIVING SO SLOW AND KILLING THE TIRE. ",
+        "blist": [
+            "TIRE",
+            "SLOW",
+            "*******"
+        ]
+    },
+    "JACDOO01_7_20250502_163044.mp3": {
+        "fbank": "data/audio_features/JACDOO01_7_20250502_163044.mp3.pt",
+        "words": " I'M SAFE, I'M SAFE. LIAM LAWSON HAD TO BREAK, OTHERWISE IT WOULD HAVE GONE INTO HIM. AND HIS MECHANIC WAS TELLING HIM TO STOP. ",
+        "blist": [
+            "SAFE",
+            "LAWSON",
+            "STOP"
+        ]
+    },
+    "MAXVER01_1_20250411_184511.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20250411_184511.mp3.pt",
+        "words": " MY BRAKES ARE REALLY NOT DECELERATING WELL. OKAY, COPY. ",
+        "blist": [
+            "BRAKES"
+        ]
+    },
+    "LANNOR01_4_20250406_143317.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250406_143317.mp3.pt",
+        "words": " LANDO, MATE. THIS PACE IS REALLY STRONG. KEEP IT UP. ",
+        "blist": [
+            "PACE",
+            "LANDO",
+            "MATE"
+        ]
+    },
+    "PIEGAS01_10_20250517_171941.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20250517_171941.mp3.pt",
+        "words": " LET'S GO. THAT WAS A GOOD LAP. LET'S GO. THAT WAS A GOOD LAP. LET'S\u2013 LET'S GO. EXCELLENT, SAME AGAIN. ",
+        "blist": [
+            "LAP"
+        ]
+    },
+    "GABBOR01_5_20250706_151154.mp3": {
+        "fbank": "data/audio_features/GABBOR01_5_20250706_151154.mp3.pt",
+        "words": " OKAY, GABI, ARE YOU OKAY? YEAH, MAN, SORRY. IT'S OKAY, NO WORRIES. I WAS VERY TRICKY OUT THERE. ",
+        "blist": [
+            "GABI"
+        ]
+    },
+    "YUKTSU01_22_20250802_133133.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20250802_133133.mp3.pt",
+        "words": " WHAT A SESSION! ",
+        "blist": [
+            "SESSION"
+        ]
+    },
+    "FERALO01_14_20250613_141022.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20250613_141022.mp3.pt",
+        "words": " WHAT ALBON IS DOING THIS SESSION IS... YEAH. OUT OF 2 IS... YEAH. CRAZY. ",
+        "blist": [
+            "SESSION",
+            "ALBON"
+        ]
+    },
+    "LANNOR01_4_20250803_154052.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20250803_154052.mp3.pt",
+        "words": " SO LANDO, WE'RE CONSIDERING THE 1 STOP. IT WOULD BE 40 LAPS ON A HARD TYRE. KEEN FOR IT? YEAH, WHY NOT? ",
+        "blist": [
+            "LANDO",
+            "LAPS",
+            "STOP",
+            "TYRE",
+            "HARD"
+        ]
+    },
+    "NICHUL01_27_20240503_173604.mp3": {
+        "fbank": "data/audio_features/NICHUL01_27_20240503_173604.mp3.pt",
+        "words": " I FEEL LIKE THE BRAKES DON'T WORK SO WELL. ALL THE BIG BRAKING EVENTS, RETARDATION DOESN'T FEEL GREAT OR NORMAL. OKAY, UNDERSTOOD. NICO WE''LL CHECK THE EFFICIENCY AND THE BRAKE BALANCE. YOU CAN GO TO SPARK 2. ",
+        "blist": [
+            "BRAKE",
+            "NICO",
+            "BALANCE",
+            "BRAKES"
+        ]
+    },
+    "PIEGAS01_10_20241124_002709.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20241124_002709.mp3.pt",
+        "words": " IF YOU CAN'T OVERTAKE, LET'S JUST TRY AND MANAGE THESE FRONTS THE BEST YOU CAN. WE CAN MANAGE THE FRONT MORE IN TURN 3. ",
+        "blist": [
+            "OVERTAKE",
+            "FRONTS"
+        ]
+    },
+    "CARSAI01_55_20240301_160146.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20240301_160146.mp3.pt",
+        "words": " THE WIND IS VERY SIMILAR TO FP3. ",
+        "blist": [
+            "WIND",
+            "FP3"
+        ]
+    },
+    "GEORUS01_63_20240721_160337.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240721_160337.mp3.pt",
+        "words": " PEREZ SEEMS QUICK CONSIDERING THE AGE OF THE TYRES. ",
+        "blist": [
+            "TYRES",
+            "PEREZ"
+        ]
+    },
+    "CHALEC01_16_20240727_155940.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20240727_155940.mp3.pt",
+        "words": " AND JUST CHECK THAT MCLAREN BECAUSE IT LOOKS LIKE IT'S OUT OF THE PIT EXIT. ",
+        "blist": [
+            "PIT",
+            "MCLAREN"
+        ]
+    },
+    "GEORUS01_63_20240519_161419.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240519_161419.mp3.pt",
+        "words": " GEORGE, WOULD YOU BE HAPPY WITH STOPPING IF WE LOST A POSITION TO LEWIS? WE'VE GOT A WINDOW TO PEREZ CURRENTLY THAT IS STILL OPEN. YEAH, I DON'T MIND. HAVE YOUR WISH? YOU WITH ME? BUT WOULD YOU SWITCH AT THE END OR WHAT ARE YOU? OR ARE WE JUST PRETENDING FOR? NEGATIVE. SO JUST GIVE ME A BACK. BUT WHY WOULD WE BOX? I DON'T REALLY GET THAT. WE'RE JUST CONCERNED ON GETTING THESE TYRES TO THE END. WELL I DON'T WANT TO CONCEDE THE POSITION FOR NO REASON. STAY OUT. ",
+        "blist": [
+            "TYRES",
+            "GEORGE",
+            "BOX",
+            "PEREZ",
+            "SWITCH",
+            "LEWIS",
+            "POSITION",
+            "WINDOW"
+        ]
+    },
+    "OSCPIA01_81_20241103_052011.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20241103_052011.mp3.pt",
+        "words": " CARS HAVE BEEN TOLD TO PUSH THE OUTLAP, OBVIOUSLY. ",
+        "blist": [
+            "PUSH",
+            "OUTLAP"
+        ]
+    },
+    "AYUIWA01_40_20241206_041320.mp3": {
+        "fbank": "data/audio_features/AYUIWA01_40_20241206_041320.mp3.pt",
+        "words": " I STILL QUITE UNDERSTEER ON MEDIUM AND LOW SPEED CORNERS. FOR ME, IT'S COMING FROM THE TYRE. FRONT IS STARTING TO DEGRADE. BUT IF I CAN HAVE A BIT MORE ROTATION ON THE MIDDLE OF THE CORNER, LET'S SAY [UNINTELLIGIBLE] TIMING SHOULD BE GOOD FOR ME. ",
+        "blist": [
+            "MEDIUM",
+            "UNDERSTEER",
+            "TYRE",
+            "SPEED"
+        ]
+    },
+    "OSCPIA01_81_20241129_113342.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20241129_113342.mp3.pt",
+        "words": " OKAY, WE CAN LOOK AT THE TEMPERATURE IN THE TYRES HERE. ",
+        "blist": [
+            "TYRES"
+        ]
+    },
+    "LIALAW01_30_20241103_050645.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20241103_050645.mp3.pt",
+        "words": " VERY GOOD MIDDLE SECTOR, LIAM. WE CAN DO ONE MORE LAP WITH TIRE TEMPERATURES. WE CAN DO ONE MORE LAP. WE KEEP AN EYE ON INTERS. ",
+        "blist": [
+            "SECTOR",
+            "TEMPERATURES",
+            "INTERS",
+            "LAP",
+            "TIRE"
+        ]
+    },
+    "ALEALB01_23_20240301_162822.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20240301_162822.mp3.pt",
+        "words": " I DON'T KNOW WHO THAT ASTON IS BUT HE'S LEFT SUCH A HUGE GAP TO THE CAR IN FRONT. ",
+        "blist": [
+            "GAP",
+            "CAR",
+            "ASTON"
+        ]
+    },
+    "YUKTSU01_22_20240721_151857.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20240721_151857.mp3.pt",
+        "words": " THE FRONT IS GOING AWAY OFFSET 2 FOR TYRES. ",
+        "blist": [
+            "TYRES"
+        ]
+    },
+    "LOGSAR01_2_20240322_021149.mp3": {
+        "fbank": "data/audio_features/LOGSAR01_2_20240322_021149.mp3.pt",
+        "words": " I DON'T KNOW WHAT'S HAPPENED WITH THE TIRE. ",
+        "blist": [
+            "TIRE"
+        ]
+    },
+    "LOGSAR01_2_20240726_142842.mp3": {
+        "fbank": "data/audio_features/LOGSAR01_2_20240726_142842.mp3.pt",
+        "words": " MY TIRES LOOK LIKE THEY'VE BEEN THROUGH THE GAUNTLET. THEY LOOK DESTROYED. ",
+        "blist": [
+            "TIRES"
+        ]
+    },
+    "PIEGAS01_10_20240825_164336.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20240825_164336.mp3.pt",
+        "words": " WELL DONE MATE, IT WAS A GREAT FIRST LAP AND SOME NICE BATTLES OUT THERE. YEAH, I MUST SAY I ENJOYED THAT RACE. SOME GOOD FUN OUT THERE, GOOD BATTLES. WITH FERNANDO, LEWIS, CARLOS, YEAH. GOOD RECOVERY AFTER FRIDAY. GOOD JOB GUYS. AND YEAH, IT FEELS GOOD TO RESTART THE SECOND PART OF THE YEAR WITH SOME POINTS. SO LET'S TRY TO FOCUS ON THE COMING ONE AND KEEP IMPROVING RACE BY RACE. THANKS. ",
+        "blist": [
+            "FERNANDO",
+            "MATE",
+            "CARLOS",
+            "SECOND",
+            "LEWIS",
+            "LAP"
+        ]
+    },
+    "GEORUS01_63_20241201_204702.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20241201_204702.mp3.pt",
+        "words": " AND JUST TO ADD TO THE AFTERNOON, WE'VE BEEN GIVEN A 5 SECOND PENALTY FOR SAFETY CAR INFRINGEMENT. WHO HAVE? WE? YES, YOU HAVE. DOESN'T CHANGE THE RESULT. WHAT WAS THE INFRINGEMENT? IT'S FOLLOWING THE DELTA. WE CAN GO THROUGH IT WHEN YOU GET BACK. FOLLOWING THE DELTA? OKAY. OVERALL, GEORGE, THERE'S SO MUCH TO ANALYSE. COLLECTIVELY. YEAH, ABSOLUTELY. IT WAS MOMENTS OF BRILLIANCE FROM OUR SIDE. ",
+        "blist": [
+            "GEORGE",
+            "SAFETY",
+            "SECOND",
+            "DELTA",
+            "CAR",
+            "PENALTY"
+        ]
+    },
+    "ALEALB01_23_20240623_162939.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20240623_162939.mp3.pt",
+        "words": " CAR BEHIND IS GASLY, THREE SECONDS. HE WOULD BE A BLUE, BUT YOU'RE MATCHING HIS PACE. ",
+        "blist": [
+            "BLUE",
+            "GASLY",
+            "CAR",
+            "PACE"
+        ]
+    },
+    "YUKTSU01_22_20240922_210931.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20240922_210931.mp3.pt",
+        "words": " WHAT ARE WE WAITING FOR? WE ARE DISCUSSING YUKI. ",
+        "blist": [
+            "YUKI"
+        ]
+    },
+    "FERALO01_14_20241103_045222.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20241103_045222.mp3.pt",
+        "words": " I NEED A GAP AND FRONT LOCKING, PLEASE. ",
+        "blist": [
+            "GAP",
+            "LOCKING"
+        ]
+    },
+    "SERPER01_11_20240629_123617.mp3": {
+        "fbank": "data/audio_features/SERPER01_11_20240629_123617.mp3.pt",
+        "words": " YEAH, THERE'S NO PACE. YEAH, IT DIDN'T SEEM TO REWARD US. EVERYONE JUST CONVERGED ONTO OUR PACE. ",
+        "blist": [
+            "PACE"
+        ]
+    },
+    "CHALEC01_16_20241206_175608.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20241206_175608.mp3.pt",
+        "words": " PIASTRI 29.2. YEAH, THEY ARE SO FAST. ",
+        "blist": [
+            "PIASTRI"
+        ]
+    },
+    "OSCPIA01_81_20240922_204918.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20240922_204918.mp3.pt",
+        "words": " OKAY MATE, THIS IS THE RACE, LET'S GO. ",
+        "blist": [
+            "MATE"
+        ]
+    },
+    "VALBOT01_77_20240623_150957.mp3": {
+        "fbank": "data/audio_features/VALBOT01_77_20240623_150957.mp3.pt",
+        "words": " THE PACE FEELS GOOD IN THIS TRAIN. I'M MANAGING A LOT. OKAY, UNDERSTOOD. THAT'S GOOD. ",
+        "blist": [
+            "PACE"
+        ]
+    },
+    "GEORUS01_63_20240720_132200.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240720_132200.mp3.pt",
+        "words": " TYRES ARE VERY HOT. ",
+        "blist": [
+            "TYRES"
+        ]
+    },
+    "GUAZHO01_24_20240420_042014.mp3": {
+        "fbank": "data/audio_features/GUAZHO01_24_20240420_042014.mp3.pt",
+        "words": " YOU CAN DROP YOUR DIFF MID ONE OR TWO STEPS. ",
+        "blist": [
+            "DIFF"
+        ]
+    },
+    "LANNOR01_4_20241103_131608.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20241103_131608.mp3.pt",
+        "words": " WE THINK THE TIRE MIGHT BECOME SLICKTERMEDIATE IN MAYBE SIX OR SEVEN LAPS OR SO. WE NEED TO GET TO THE RAIN AND THEN MAKE THE RIGHT TIME WHEN TO STOP. ",
+        "blist": [
+            "STOP",
+            "TIRE",
+            "LAPS"
+        ]
+    },
+    "LEWHAM01_44_20240915_134722.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20240915_134722.mp3.pt",
+        "words": " OK, EVERYTHING YOU CAN DO TO REDUCE SURFACE TEMP. I'M TRYING! ",
+        "blist": [
+            "TEMP",
+            "SURFACE"
+        ]
+    },
+    "NICHUL01_27_20241122_004534.mp3": {
+        "fbank": "data/audio_features/NICHUL01_27_20241122_004534.mp3.pt",
+        "words": " I THINK SINCE THESE TEMPS ARE SO LOW, NICO, JUST TAKE IT EASY UNTIL IT BUILDS A BIT MORE. ",
+        "blist": [
+            "NICO",
+            "TEMPS"
+        ]
+    },
+    "PIEGAS01_10_20240504_174331.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20240504_174331.mp3.pt",
+        "words": " YEAH, JUST STUCK THE WHOLE RACE. YEAH, COPY THAT. THAT'S THE CHECKERED FLAG, MATE. ",
+        "blist": [
+            "MATE"
+        ]
+    },
+    "ALEALB01_23_20240419_052102.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20240419_052102.mp3.pt",
+        "words": " I DEFINITELY FEEL LIKE I NEED MORE FRONT ON ENTRY, GENERALLY. BUT MY BIGGEST LIMITATION IS... MY BIGGEST LIMITATION IS TRACTION. ",
+        "blist": [
+            "LIMITATION",
+            "TRACTION"
+        ]
+    },
+    "MAXVER01_1_20240323_051743.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20240323_051743.mp3.pt",
+        "words": " STILL UNDERSTEERING TOO MUCH. ESPECIALLY JUST MY FRONT TYRES ALREADY LOOK GRAINED. ALL GOOD NEWS TODAY, MAX. THANK YOU. ",
+        "blist": [
+            "TYRES",
+            "GRAINED",
+            "MAX"
+        ]
+    },
+    "LANNOR01_4_20240525_171016.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20240525_171016.mp3.pt",
+        "words": " YEAH, OKAY, I JUST GOT SCREWED OVER BY SAINZ A BIT, BUT NOTHING WE COULD HAVE DONE REALLY ABOUT THAT, SO GOOD EFFORT. NO MATE, SORRY, I COULD HAVE FOUND A BETTER POSITION. ",
+        "blist": [
+            "POSITION",
+            "SAINZ",
+            "MATE"
+        ]
+    },
+    "SERPER01_11_20240322_020319.mp3": {
+        "fbank": "data/audio_features/SERPER01_11_20240322_020319.mp3.pt",
+        "words": " I THINK WE'RE JUST WORKING AROUND A VERY USED TIRE, BUT YEAH. ",
+        "blist": [
+            "USED",
+            "TIRE"
+        ]
+    },
+    "MAXVER01_1_20240824_151649.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20240824_151649.mp3.pt",
+        "words": " AH, UNBELIEVABLE, SLIDING. ",
+        "blist": [
+            "SLIDING"
+        ]
+    },
+    "KEVMAG01_20_20241027_153938.mp3": {
+        "fbank": "data/audio_features/KEVMAG01_20_20241027_153938.mp3.pt",
+        "words": " THE TIRE IS COMING BACK NOW. ",
+        "blist": [
+            "TIRE"
+        ]
+    },
+    "LANNOR01_4_20240405_034437.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20240405_034437.mp3.pt",
+        "words": " OKAY, LANDO, WE ARE BOX THIS LAP. ATTACK THE BOX, PLEASE. IT'LL BE LIVE PITSTOP, ENGINE OFF. ",
+        "blist": [
+            "ATTACK",
+            "LAP",
+            "LANDO",
+            "BOX"
+        ]
+    },
+    "YUKTSU01_22_20251121_165021.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20251121_165021.mp3.pt",
+        "words": " YUKI, WE'RE GOING TO BOX THIS LAP, BOX THIS LAP. WE'VE GOT AN ISSUE WITH THE CAR, SO WE'RE GOING TO BOX THIS LAP. ",
+        "blist": [
+            "LAP",
+            "CAR",
+            "BOX",
+            "YUKI"
+        ]
+    },
+    "ANDANT01_12_20251122_203527.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20251122_203527.mp3.pt",
+        "words": " OKAY, KIMI, SO WE HAVE A 5 SECOND PENALTY FOR JUMPSTART. WHAT? HOW? WE DON'T UNDERSTAND, BUT WE'RE INVESTIGATING. ",
+        "blist": [
+            "KIMI",
+            "SECOND",
+            "PENALTY"
+        ]
+    },
+    "OLIBEA01_87_20251121_163123.mp3": {
+        "fbank": "data/audio_features/OLIBEA01_87_20251121_163123.mp3.pt",
+        "words": " YEAH, CONFIRMED. IT'S INTER. ",
+        "blist": [
+            "INTER"
+        ]
+    },
+    "ALEALB01_23_20251121_202013.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20251121_202013.mp3.pt",
+        "words": " STILL A 5 SECOND CROSS FOR FINAL LAP, 5 SECOND CROSS. I'M OTU... YOU'RE TOO MUCH SPEAKING! ",
+        "blist": [
+            "LAP",
+            "SECOND"
+        ]
+    },
+    "ISAHAD01_6_20251122_202314.mp3": {
+        "fbank": "data/audio_features/ISAHAD01_6_20251122_202314.mp3.pt",
+        "words": " LET'S MAKE SURE TO BE AGGRESSIVE GUYS, OKAY? COPY, LOUD AND CLEAR, WE ARE MONITORING A GROUP OF SIX SLOW CARS, SO WE HAVE TO BE CAREFUL NOT TO PIT INTO THEM. ",
+        "blist": [
+            "SLOW",
+            "PIT"
+        ]
+    },
+    "LANNOR01_4_20251121_200059.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20251121_200059.mp3.pt",
+        "words": " KEEP AN EYE ON THE ASTONS THEN WITH ONBOARD AND STUFF. I THINK THE WET COULD WORK PRETTY WELL, ESPECIALLY AT THE BEGINNING. ",
+        "blist": [
+            "WET"
+        ]
+    },
+    "ISAHAD01_6_20251122_202749.mp3": {
+        "fbank": "data/audio_features/ISAHAD01_6_20251122_202749.mp3.pt",
+        "words": " IS HE BEHIND PIASTRI? WE ARE RUNNING BEHIND PIASTRI, 6 BEHIND. ",
+        "blist": [
+            "PIASTRI"
+        ]
+    },
+    "OSCPIA01_81_20251122_203020.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20251122_203020.mp3.pt",
+        "words": " OSCAR, ARE YOU HAPPY WITH FRONT WING? YES. ",
+        "blist": [
+            "WING",
+            "OSCAR"
+        ]
+    },
+    "GEORUS01_63_20251122_202637.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20251122_202637.mp3.pt",
+        "words": " STEERING. STEERING. SAME AGAIN. COPY. **** ",
+        "blist": [
+            "STEERING",
+            "****"
+        ]
+    },
+    "FERALO01_14_20240622_163839.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20240622_163839.mp3.pt",
+        "words": " SO FIRST CAR PUSHING IS HAMILTON 17 SECONDS BACK AND THEN BOTTAS IS 7 BEHIND HIM WITH ZHOU ABOUT... OKAY YOU TELL ME WHICH GAP YOU WILL\u2013. AND THEN BEHIND BOTTAS IS ZHOU ONLY 4 BEHIND HIM SO I THINK BEHIND ZHOU IS GOING TO BE OUR GAP. ",
+        "blist": [
+            "BOTTAS",
+            "HAMILTON",
+            "CAR",
+            "PUSHING",
+            "ZHOU",
+            "GAP"
+        ]
+    },
+    "GEORUS01_63_20241206_175740.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20241206_175740.mp3.pt",
+        "words": " 3 IS JUST MOVING EVERYWHERE. I'M JUST SLIDING A HUGE AMOUNT. ",
+        "blist": [
+            "SLIDING"
+        ]
+    },
+    "MAXVER01_1_20240728_163233.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20240728_163233.mp3.pt",
+        "words": " WELL DONE MAX, IT'S NOT A BAD RESULT, WELL DONE. YEAH, DAMAGE LIMITATION, IT'S JUST TOUGH TO FOLLOW HERE WHEN YOU'RE AT QUITE SIMILAR PACE. YEAH THAT WAS A STRONG DRIVE MAX, WELL DONE MATE, WELL DONE WITH WHAT WE HAD TODAY, THAT WAS I THINK THE OPTIMUM. ",
+        "blist": [
+            "LIMITATION",
+            "MAX",
+            "MATE",
+            "PACE"
+        ]
+    },
+    "MAXVER01_1_20241027_155129.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20241027_155129.mp3.pt",
+        "words": " HARD LUCK, WE'LL HAVE A LOOK AT THAT, PARTICULARLY THAT SECOND SET. I MEAN, ON THE MEDIUM AS WELL, WE HAD JUST NO PACE. REALLY SHOCKING. YEAH, FRUSTRATING RACE TODAY, MAX, BUT YOU GAVE IT EVERYTHING. AND I THOUGHT THE PENALTIES WERE DEFINITELY ON THE HARSHER SIDE. ",
+        "blist": [
+            "SECOND",
+            "SET",
+            "MAX",
+            "PACE",
+            "MEDIUM",
+            "HARD"
+        ]
+    },
+    "LOGSAR01_2_20240621_171844.mp3": {
+        "fbank": "data/audio_features/LOGSAR01_2_20240621_171844.mp3.pt",
+        "words": " OKAY, LOGAN, GOOD JOB ON THE WARM-UP BEFORE. TARGET MINUS 10. WE COPY WHAT WE'VE DONE BEFORE. ",
+        "blist": [
+            "LOGAN"
+        ]
+    },
+    "ALEALB01_23_20240323_015152.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20240323_015152.mp3.pt",
+        "words": " URGENT: BLUE 7, POSITION 5. ",
+        "blist": [
+            "BLUE",
+            "POSITION"
+        ]
+    },
+    "LEWHAM01_44_20241019_013154.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20241019_013154.mp3.pt",
+        "words": " THE VISOR IS BLURRY ",
+        "blist": [
+            "VISOR"
+        ]
+    },
+    "VALBOT01_77_20240405_041704.mp3": {
+        "fbank": "data/audio_features/VALBOT01_77_20240405_041704.mp3.pt",
+        "words": " OKAY, VALTTERI, APPARENTLY MOST CARS ARE ON SOFT, JUST OURSELVES, ZHOU, AND STROLL ON MEDIUM. WE ARE THE FASTEST OF THOSE THREE. ",
+        "blist": [
+            "SOFT",
+            "VALTTERI",
+            "ZHOU",
+            "MEDIUM",
+            "STROLL"
+        ]
+    },
+    "OSCPIA01_81_20240406_040359.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20240406_040359.mp3.pt",
+        "words": " FOCUS ON REAR TIRE RECOVERY NOW. ",
+        "blist": [
+            "TIRE",
+            "REAR"
+        ]
+    },
+    "MAXVER01_1_20241121_204346.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20241121_204346.mp3.pt",
+        "words": " DO YOU WANT ME TO TRY THE TIRES WARMER, OR NOT? ",
+        "blist": [
+            "TIRES"
+        ]
+    },
+    "GEORUS01_63_20241019_023152.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20241019_023152.mp3.pt",
+        "words": " RIDE WAS REALLY POOR THERE. TURN 15, THING'S JUST\u2013 UHH 16, 17, SORRY. ",
+        "blist": [
+            "RIDE"
+        ]
+    },
+    "CHALEC01_16_20240922_211423.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20240922_211423.mp3.pt",
+        "words": " IF YOU KEEP THIS PACE WE SHOULD CATCH HAMILTON AT THE END. ",
+        "blist": [
+            "HAMILTON",
+            "PACE"
+        ]
+    },
+    "GEORUS01_63_20240524_171348.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240524_171348.mp3.pt",
+        "words": " GUYS, THIS VIBRATION, BRAKING TURN 11, IS GETTING INSANE AT THE MOMENT. CAN'T HOLD ONTO A STEERING WHEEL. YEAH, COPY THAT. WE'RE LOOKING INTO THE DATA. ",
+        "blist": [
+            "STEERING"
+        ]
+    },
+    "LANNOR01_4_20240824_122457.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20240824_122457.mp3.pt",
+        "words": " SO LANDO, THEY'VE DELAYED THE RESTART TIME FOR ANOTHER 2 MINUTES. WITH THE FANS IN, WE CAN JUST SIT LIKE THIS. ",
+        "blist": [
+            "LANDO"
+        ]
+    },
+    "GUAZHO01_24_20240922_215342.mp3": {
+        "fbank": "data/audio_features/GUAZHO01_24_20240922_215342.mp3.pt",
+        "words": " AMAZING JOB WITH MANAGEMENT AND WITH THE TOWS WE SAW ALL OF THAT. YOU REALLY PLAYED FOR THE TEAM TODAY. WELL DONE. ZHOU IT'S ALESSANDRO. THANK YOU FOR THE JOB DONE TODAY. YOU HELPED VALTTERI GIVING THE DRS FOR MORE THAN 22 LAPS. THIS IS A GREAT TEAMWORK. VERY GOOD. THANK YOU, ZHOU. GREAT TEAM JOB. YEAH, THAT WAS A BAD EFFORT. I WASN'T ON THE PACE THIS WEEKEND. YEAH, I HAD A LOT MORE PACE AT THAT SAME, BUT I'M HAPPY FOR DOING THE TEAMWORK. YOU'RE THE BEST. ",
+        "blist": [
+            "LAPS",
+            "DRS",
+            "VALTTERI",
+            "ZHOU",
+            "TEAM",
+            "PACE"
+        ]
+    },
+    "OSCPIA01_81_20240720_171407.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20240720_171407.mp3.pt",
+        "words": " AND BE AWARE THAT OTHERS MAY TRY AND RACE YOU ON THE OUTLAP AND WE DO WANT TO START THIS LAP. YEP ",
+        "blist": [
+            "LAP",
+            "OUTLAP"
+        ]
+    },
+    "PIEGAS01_10_20240623_155421.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20240623_155421.mp3.pt",
+        "words": " OKAY, AND BEHIND RUSSELL IS SAINZ, BUT HE'S THREE SECONDS BACK. YEAH, I'M JUST GOING TO LOSE TIME WITH THESE GUYS. ",
+        "blist": [
+            "SAINZ",
+            "RUSSELL"
+        ]
+    },
+    "FERALO01_14_20240419_083326.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20240419_083326.mp3.pt",
+        "words": " YEAH, SOME DROPS OF RAIN, SO NEED TO PUSH. YEP, COPY. ",
+        "blist": [
+            "PUSH"
+        ]
+    },
+    "GEORUS01_63_20240630_142815.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240630_142815.mp3.pt",
+        "words": " WE SAW A 40 KPH TAILWIND GUST INTO TURN 3 THERE. ",
+        "blist": [
+            "TAILWIND"
+        ]
+    },
+    "SERPER01_11_20240419_043654.mp3": {
+        "fbank": "data/audio_features/SERPER01_11_20240419_043654.mp3.pt",
+        "words": " THE TRACTION IN THE LOW SPEED IS NOT GREAT, ESPECIALLY TURN 14. ",
+        "blist": [
+            "TRACTION",
+            "SPEED"
+        ]
+    },
+    "KEVMAG01_20_20240308_174929.mp3": {
+        "fbank": "data/audio_features/KEVMAG01_20_20240308_174929.mp3.pt",
+        "words": " NO WORDS, SORRY, KEV. ",
+        "blist": [
+            "KEV"
+        ]
+    },
+    "FERALO01_14_20240322_015434.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20240322_015434.mp3.pt",
+        "words": " YES, LOST THE CAR IN 10. ",
+        "blist": [
+            "CAR"
+        ]
+    },
+    "LIALAW01_30_20241103_160735.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20241103_160735.mp3.pt",
+        "words": " HARD FIGHT. GOOD DRIVE. AND YEAH, SHAME WE DIDN'T FULLY CAPITALIZE. ALPINE IS P2, P3. YEAH, I MEAN, HONESTLY, I DON'T KNOW. LIKE, I HAD A LOT OF PACE AT THE START OF THE STINT, BUT OBVIOUSLY TOO MUCH, BECAUSE THEN I JUST DROPPED AWAY. YEAH, BUT YOU WERE DEFENDING HARD. LIAM, DON'T FORGET YOU WERE DEFENDING HARD. WELL, I DON'T KNOW, I GAVE CHECO'S PACE AT TURN 1, BUT I DON'T KNOW WHAT HAPPENED IN TURN 2 THERE. YEAH, IT'S ALL OKAY. ",
+        "blist": [
+            "STINT",
+            "P2",
+            "PACE",
+            "P3",
+            "HARD",
+            "ALPINE"
+        ]
+    },
+    "OSCPIA01_81_20241019_172913.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20241019_172913.mp3.pt",
+        "words": " TIRE TEMPS ARE NORMAL, SO NORMAL OUTLAP. ",
+        "blist": [
+            "TIRE",
+            "OUTLAP",
+            "TEMPS"
+        ]
+    },
+    "NICHUL01_27_20241019_020332.mp3": {
+        "fbank": "data/audio_features/NICHUL01_27_20241019_020332.mp3.pt",
+        "words": " JUST FOR INFO, IN TURN 7 WE'RE MUCH QUICKER THAN OTHER PEOPLE AND THEN WE HAVE A LOT OF UNDERSTEER IN 8. ",
+        "blist": [
+            "UNDERSTEER"
+        ]
+    },
+    "KEVMAG01_20_20241027_142239.mp3": {
+        "fbank": "data/audio_features/KEVMAG01_20_20241027_142239.mp3.pt",
+        "words": " JUST REMIND ME THAT WE NEED TO ADJUST THE WING MIRRORS. YOU NEED TO ADJUST THE WING MIRRORS, COPY THAT. ARE YOU DRIVING STRAIGHT THROUGH THIS TIME? YEP, STRAIGHT THROUGH. COPY THAT. ",
+        "blist": [
+            "WING"
+        ]
+    },
+    "PIEGAS01_10_20240609_145123.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20240609_145123.mp3.pt",
+        "words": " MORE RAIN DETECTED IN SECTOR 2. ",
+        "blist": [
+            "SECTOR"
+        ]
+    },
+    "LANSTR01_18_20240302_154352.mp3": {
+        "fbank": "data/audio_features/LANSTR01_18_20240302_154352.mp3.pt",
+        "words": " YEAH, BALANCE IS OKAY. REARS ARE THE BIGGEST LIMITATION, BUT IT'S KIND OF SETTLING. ",
+        "blist": [
+            "LIMITATION",
+            "BALANCE",
+            "REARS"
+        ]
+    },
+    "LIALAW01_30_20241019_170150.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20241019_170150.mp3.pt",
+        "words": " YOUR ON YOUR MINIMUM TIME, KEEP IT SIMPLE AND OPEN THAT GAP. ",
+        "blist": [
+            "GAP"
+        ]
+    },
+    "KEVMAG01_20_20240824_113254.mp3": {
+        "fbank": "data/audio_features/KEVMAG01_20_20240824_113254.mp3.pt",
+        "words": " MODE K2 PLEASE, MODE K2. OR MODE PUSH IN FACT, MODE PUSH. ",
+        "blist": [
+            "PUSH"
+        ]
+    },
+    "GEORUS01_63_20240623_142258.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240623_142258.mp3.pt",
+        "words": " LET'S TAKE SOME BALANCE OUT. OKAY, SO STOP ON YOUR MARKS. KEEP THE ENGINE RUNNING. HOW MUCH? MINUS POINT FOUR. COPY THAT. ",
+        "blist": [
+            "BALANCE",
+            "STOP"
+        ]
+    },
+    "MAXVER01_1_20240302_150926.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20240302_150926.mp3.pt",
+        "words": " RUSSELL HAS BEEN INSTRUCTED TO SETTLE INTO TIRE MANAGEMENT, MAX, BUT I'M NOT SURE HOW FAR HE WILL BE ABLE TO DO THAT WITH LECLERC AND PEREZ BEHIND. ",
+        "blist": [
+            "PEREZ",
+            "MAX",
+            "LECLERC",
+            "TIRE",
+            "RUSSELL"
+        ]
+    },
+    "ALEALB01_23_20240504_211835.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20240504_211835.mp3.pt",
+        "words": " WE'VE GOT TO GET RID OF THE STRATEGY WE'RE DOING WITH THE TYRES. IT'S ROOTING THE TYRES. ",
+        "blist": [
+            "TYRES",
+            "STRATEGY"
+        ]
+    },
+    "JACDOO01_61_20241206_033159.mp3": {
+        "fbank": "data/audio_features/JACDOO01_61_20241206_033159.mp3.pt",
+        "words": " OKAY MATE, WE'RE HOLDING THAT ALL THE WAY DOWN TO TURN 6. ",
+        "blist": [
+            "MATE"
+        ]
+    },
+    "GEORUS01_63_20241201_110401.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20241201_110401.mp3.pt",
+        "words": " VIBRATION IS RETURNING WHAT I HAD IN QUALI. ",
+        "blist": [
+            "QUALI"
+        ]
+    },
+    "CHALEC01_16_20241206_080155.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20241206_080155.mp3.pt",
+        "words": " I THINK WE DID TOO MANY LAPS ON THOSE TYRES BEFORE LONG RUNNING THEM. THEY WERE QUITE A BIT DAMAGED. ",
+        "blist": [
+            "TYRES",
+            "LAPS"
+        ]
+    },
+    "CHALEC01_16_20240301_165254.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20240301_165254.mp3.pt",
+        "words": " THAT WAS A GOOD LAP AND BOX NOW, BOX. ",
+        "blist": [
+            "LAP",
+            "BOX"
+        ]
+    },
+    "CHALEC01_16_20240504_163301.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20240504_163301.mp3.pt",
+        "words": " SO CHECK REAR RIGHT. ALL GOOD. ALL GOOD ON DATA. NOW WE'LL TAKE A GOOD LOOK ON THE CAR. YEAH, WE WILL. ",
+        "blist": [
+            "CAR",
+            "REAR"
+        ]
+    },
+    "ALEALB01_23_20240705_125248.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20240705_125248.mp3.pt",
+        "words": " GENERAL BALANCE IS PRETTY GOOD, JUST A BIT LAZY, CHANGE OF DIRECTION. ",
+        "blist": [
+            "BALANCE"
+        ]
+    },
+    "LEWHAM01_44_20240504_165522.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20240504_165522.mp3.pt",
+        "words": " IS THIS A SURFACE THAT YOU LOSE MORE WITH WHEELSPIN? ",
+        "blist": [
+            "WHEELSPIN",
+            "SURFACE"
+        ]
+    },
+    "ALEALB01_23_20240309_172545.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20240309_172545.mp3.pt",
+        "words": " OH, HE DIDN'T GIVE ME ENOUGH SPACE, SO I WOULD SUGGEST YOU TALK TO THE STEWARDS ABOUT IT. YEAH, I SAW GOT SQUEEZED INTO THE WALL. ",
+        "blist": [
+            "STEWARDS"
+        ]
+    },
+    "YUKTSU01_22_20241018_171608.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20241018_171608.mp3.pt",
+        "words": " I THOUGHT THAT WAS AN OKAY LAP, BUT YEAH. ",
+        "blist": [
+            "LAP"
+        ]
+    },
+    "LANNOR01_4_20240302_153321.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20240302_153321.mp3.pt",
+        "words": " AND LANDO, JUST BE CAREFUL OF OVER PUSHING TURN 1. THE GENERAL WIND SPEED IS REDUCING. ",
+        "blist": [
+            "WIND",
+            "PUSHING",
+            "LANDO",
+            "SPEED"
+        ]
+    },
+    "CARSAI01_55_20240301_170703.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20240301_170703.mp3.pt",
+        "words": " YEAH, DECENT QUALI. NOT QUOTE THERE THERE BUT... YEAH, GOOD EFFORT THERE. ONE TENTH. ",
+        "blist": [
+            "TENTH",
+            "QUALI"
+        ]
+    },
+    "LEWHAM01_44_20241207_052647.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20241207_052647.mp3.pt",
+        "words": " A LOT OF GUYS ON SLOW LAPS IN FRONT OF ME. IN FACT WE'VE GOT THREE CARS, ALONSO, TSUNODA, SAINZ AND NO PRESSURE BEHIND. ",
+        "blist": [
+            "ALONSO",
+            "LAPS",
+            "SLOW",
+            "PRESSURE",
+            "TSUNODA",
+            "SAINZ"
+        ]
+    },
+    "OSCPIA01_81_20240705_160633.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20240705_160633.mp3.pt",
+        "words": " PEREZ 3 AND PURPLE C7 POSITION 5, PURPLE C7 5. ",
+        "blist": [
+            "POSITION",
+            "PEREZ"
+        ]
+    },
+    "MAXVER01_1_20240825_163606.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20240825_163606.mp3.pt",
+        "words": " SO GOOD JOB MAX. WE GOT WHAT WE THOUGHT WE WERE TODAY SO HEAD DOWN. NICE JOB. YEAH, DIFFICULT RACE THAT, BUT IT'S OKAY. YEAH, GOOD DRIVE MAX. WE WEREN'T QUICK ENOUGH TODAY BUT YOU GOT EVERYTHING THAT THERE WAS IN THE CAR SO WELL DONE, DAMAGE LIMITATION. ",
+        "blist": [
+            "LIMITATION",
+            "MAX",
+            "CAR"
+        ]
+    },
+    "LANSTR01_18_20240323_023450.mp3": {
+        "fbank": "data/audio_features/LANSTR01_18_20240323_023450.mp3.pt",
+        "words": " WEIGHBRIDGE, WEIGHBRIDGE, THAT'S AN OFFICIAL CALL TO THE WEIGHBRIDGE, LANCE. ",
+        "blist": [
+            "LANCE",
+            "WEIGHBRIDGE"
+        ]
+    },
+    "FERALO01_14_20240419_085440.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20240419_085440.mp3.pt",
+        "words": " THAT HAAS SHOULD BE LETTING YOU THROUGH. ",
+        "blist": [
+            "HAAS"
+        ]
+    },
+    "MAXVER01_1_20240728_152730.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20240728_152730.mp3.pt",
+        "words": " THE MEDIUM TYRE APPEARANCE WAS EXCELLENT, SO WE DO BELIEVE IT'S A STRONG TYRE FOR THE END OF THE RACE. ",
+        "blist": [
+            "MEDIUM",
+            "TYRE"
+        ]
+    },
+    "MAXVER01_1_20241122_192158.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20241122_192158.mp3.pt",
+        "words": " UHH, GRIP FELT MILES BETTER, MUCH BETTER. ",
+        "blist": [
+            "GRIP"
+        ]
+    },
+    "CARSAI01_55_20240324_041830.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20240324_041830.mp3.pt",
+        "words": " YOU'RE DOING A MEGA JOB OUT THERE. ",
+        "blist": [
+            "MEGA"
+        ]
+    },
+    "MAXVER01_1_20240505_211504.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20240505_211504.mp3.pt",
+        "words": " IT'S QUITE TRICKY WITH THE WIND IN 7, 8, QUITE INCONSISTENT. ",
+        "blist": [
+            "WIND"
+        ]
+    },
+    "GEORUS01_63_20240921_183218.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240921_183218.mp3.pt",
+        "words": " THAT LAST CORNER IS STILL A LIMITATION. ",
+        "blist": [
+            "LIMITATION"
+        ]
+    },
+    "GEORUS01_63_20240921_174829.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240921_174829.mp3.pt",
+        "words": " MY DASH ISN'T UPDATING. VERSTAPPEN 3. VERSTAPPEN 2. ",
+        "blist": [
+            "VERSTAPPEN",
+            "DASH"
+        ]
+    },
+    "GUAZHO01_24_20240621_134235.mp3": {
+        "fbank": "data/audio_features/GUAZHO01_24_20240621_134235.mp3.pt",
+        "words": " I'M STRUGGLING A BIT ON THE BRAKING. I FEEL LIKE THE REAR IS VERY, THE CAR IS VERY HIGH. ",
+        "blist": [
+            "CAR",
+            "REAR"
+        ]
+    },
+    "GEORUS01_63_20240504_220630.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240504_220630.mp3.pt",
+        "words": " OKAY, SO THAT'S A P7. ",
+        "blist": [
+            "P7"
+        ]
+    },
+    "CHALEC01_16_20241020_141028.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20241020_141028.mp3.pt",
+        "words": " AND IF YOU CAN, SLIGHTLY LESS AGGRESSIVE IN CURB RIDING IN THE HIGH SPEED. ",
+        "blist": [
+            "SPEED"
+        ]
+    },
+    "CARSAI01_55_20240825_152902.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20240825_152902.mp3.pt",
+        "words": " AND HAMILTON LAP TIME 6.7 ON SOFT BEHIND GASLY. ",
+        "blist": [
+            "LAP",
+            "GASLY",
+            "SOFT",
+            "HAMILTON"
+        ]
+    },
+    "CARSAI01_55_20240623_161157.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20240623_161157.mp3.pt",
+        "words": " LET'S SAVE SOME PACE NOW. ",
+        "blist": [
+            "SAVE",
+            "PACE"
+        ]
+    },
+    "GEORUS01_63_20241019_011837.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20241019_011837.mp3.pt",
+        "words": " **** ",
+        "blist": [
+            "****"
+        ]
+    },
+    "OLIBEA01_38_20241025_133324.mp3": {
+        "fbank": "data/audio_features/OLIBEA01_38_20241025_133324.mp3.pt",
+        "words": " HE'S SLOWING DOWN. YEAH, I KNOW. WE'VE SEEN. WE'LL OPEN UP THE GAP INTO LAST CORNER. ",
+        "blist": [
+            "GAP"
+        ]
+    },
+    "LANNOR01_4_20240324_044531.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20240324_044531.mp3.pt",
+        "words": " OKAY, LANDO, I KNOW YOU ARE, BUT WE WANT TO TRY AND GET UP BEHIND LECLERC. ",
+        "blist": [
+            "LECLERC",
+            "LANDO"
+        ]
+    },
+    "MAXVER01_1_20241124_001549.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20241124_001549.mp3.pt",
+        "words": " PACE UP FRONT IS A 38.5. JUST KEEP UP THE MANAGEMENT FOR NOW, MAX. ",
+        "blist": [
+            "MAX",
+            "PACE"
+        ]
+    },
+    "SERPER01_11_20240302_152935.mp3": {
+        "fbank": "data/audio_features/SERPER01_11_20240302_152935.mp3.pt",
+        "words": " A BALANCE UPDATE ON THE HARD, HOW IS IT? YEAH, IT'S A LITTLE BIT MORE FRONT LIMITED, MEDIUM AND LOW SPEED. ",
+        "blist": [
+            "BALANCE",
+            "MEDIUM",
+            "HARD",
+            "SPEED"
+        ]
+    },
+    "LANNOR01_4_20240705_165305.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20240705_165305.mp3.pt",
+        "words": " RAIN REPORTED ALL AROUND YOU CAN BOX IF YOU THOUGH I APPRECIATE I'M LATE. ",
+        "blist": [
+            "BOX"
+        ]
+    },
+    "GUAZHO01_24_20240503_214148.mp3": {
+        "fbank": "data/audio_features/GUAZHO01_24_20240503_214148.mp3.pt",
+        "words": " IS THE ALPINE PUSHING OR WHAT? STAY, STAY. YOU TELL ME NEXT TIME IF SOMEBODY'S PUSHING. YEAH, YEAH, COPY. SORRY. ",
+        "blist": [
+            "PUSHING",
+            "ALPINE"
+        ]
+    },
+    "MAXVER01_1_20240721_142025.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20240721_142025.mp3.pt",
+        "words": " YEAH, RADIO CHECK. OKAY, RADIO IS GOOD. NOW FOCUS ON BALANCE. ",
+        "blist": [
+            "BALANCE"
+        ]
+    },
+    "LEWHAM01_44_20240504_210436.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20240504_210436.mp3.pt",
+        "words": " GRIP WAS VERY GOOD. COPY THAT. WE'RE GOING TO HAVE TSUNODA AT 4 SECONDS, SO HE'S ON A LAP. ",
+        "blist": [
+            "GRIP",
+            "TSUNODA",
+            "LAP"
+        ]
+    },
+    "PIEGAS01_10_20240728_142354.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20240728_142354.mp3.pt",
+        "words": " OKAY, PIERRE, SO WE'RE GOING TO DRIVE THROUGH THE PIT LANE, NO START THIS TIME. ",
+        "blist": [
+            "LANE",
+            "PIERRE",
+            "PIT"
+        ]
+    },
+    "SERPER01_11_20240504_213143.mp3": {
+        "fbank": "data/audio_features/SERPER01_11_20240504_213143.mp3.pt",
+        "words": " SECOND SECTOR. ",
+        "blist": [
+            "SECTOR",
+            "SECOND"
+        ]
+    },
+    "GEORUS01_63_20240630_142524.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240630_142524.mp3.pt",
+        "words": " JUST CHECK THE STEERING RIGHT. IT'S LIKE I'VE GOT QUITE A LOT OF PLAY. COPY THAT. SO GEORGE, DATA ON THE STEERING ALL LOOKS GOOD TO US. OBVIOUSLY IT IS VERY WINDY OUT THERE. WE'VE SEEN UP TO 30 KPH. YEAH, I DON'T THINK THAT'S A BIG FACTOR. LET'S JUST GIVE IT A ONCE OVER ON THE GRID. ",
+        "blist": [
+            "GRID",
+            "GEORGE",
+            "STEERING"
+        ]
+    },
+    "YUKTSU01_22_20241207_045759.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20241207_045759.mp3.pt",
+        "words": " I FEEL LIKE THE TYRE GAVE UP QUITE QUICKLY TOWARDS THE END. ",
+        "blist": [
+            "TYRE"
+        ]
+    },
+    "LANNOR01_4_20241201_113249.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20241201_113249.mp3.pt",
+        "words": " STRAT 10, STRAT 10. CAN'T HEAR YOU, MATE. STRAT 10! THAT'S BETTER. ",
+        "blist": [
+            "STRAT",
+            "MATE"
+        ]
+    },
+    "ALEALB01_23_20240229_154846.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20240229_154846.mp3.pt",
+        "words": " SECOND GEAR IS VERY AGGRESSIVE ON THE UPSHIFTS. ",
+        "blist": [
+            "SECOND"
+        ]
+    },
+    "CARSAI01_55_20240728_153709.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20240728_153709.mp3.pt",
+        "words": " I'M THINKING PLAN B FOR MEDIUM, PLAN B FOR MEDIUM. I THINK THEY CANNOT GO TO THE END. LET'S WAIT A COUPLE MORE LAPS. OKAY, COPY. ",
+        "blist": [
+            "MEDIUM",
+            "LAPS"
+        ]
+    },
+    "ESTOCO01_31_20240914_104449.mp3": {
+        "fbank": "data/audio_features/ESTOCO01_31_20240914_104449.mp3.pt",
+        "words": " I GOT A PROBLEM. OKAY, MATE, UNDERSTOOD. DON'T THINK I CAN MAKE IT. ",
+        "blist": [
+            "MATE"
+        ]
+    },
+    "VALBOT01_77_20240920_215718.mp3": {
+        "fbank": "data/audio_features/VALBOT01_77_20240920_215718.mp3.pt",
+        "words": " AND SPARK 4, SPARK 4, AND SPECIAL 2 FOR LAP\u2013 FOR THESE CORNERS. ",
+        "blist": [
+            "LAP"
+        ]
+    },
+    "ALEALB01_23_20240421_080943.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20240421_080943.mp3.pt",
+        "words": " SO, YOU CAN USE THE OVERTAKE BUTTON EARLIER FOR A BIGGER EFFECT. ",
+        "blist": [
+            "OVERTAKE"
+        ]
+    },
+    "ALEALB01_23_20240309_183305.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20240309_183305.mp3.pt",
+        "words": " WE SHOULD HAVE DONE A BIT MORE THAN THAT. I FEEL LIKE, TO BE HONEST, SMART WITH HAAS, WHAT THEY DID, BUT THAT WAS A PAINFUL EVENING. ",
+        "blist": [
+            "HAAS"
+        ]
+    },
+    "GEORUS01_63_20240517_130820.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240517_130820.mp3.pt",
+        "words": " OVER ALL THESE BUMPS I CHANGED THE SWITCH IN THE MIDDLE OF TURN 14, DON'T KNOW WHAT IT WAS? YEAH, WE'LL TAKE A LOOK. IT WAS A GREEN ONE. WE'LL TAKE A LOOK AND LET YOU KNOW. ",
+        "blist": [
+            "SWITCH"
+        ]
+    },
+    "CARSAI01_55_20240721_142642.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20240721_142642.mp3.pt",
+        "words": " NO DOWNSHIFT IN 11. TRY TO KEEP 6TH GEAR. ",
+        "blist": [
+            "DOWNSHIFT"
+        ]
+    },
+    "LIALAW01_30_20241129_210048.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20241129_210048.mp3.pt",
+        "words": " THAT WAS A GOOD LAP MAN. YEAH, THAT WAS A GOOD EFFORT. WE ARE IN MATE. NO WAY. ",
+        "blist": [
+            "LAP",
+            "MATE"
+        ]
+    },
+    "NICHUL01_27_20240920_220335.mp3": {
+        "fbank": "data/audio_features/NICHUL01_27_20240920_220335.mp3.pt",
+        "words": " I DIDN'T PRESS IT YET, YOU DIDN'T ASK ME TO. IT'S OKAY. SORRY, MODE SLOW. TWO BURNOUTS, RIGHT HAND SIDE PLEASE. ",
+        "blist": [
+            "SLOW"
+        ]
+    },
+    "PIEGAS01_10_20240309_165829.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20240309_165829.mp3.pt",
+        "words": " AND JUST AN UPDATE ON WIND, VERY CONSISTENT TO WHAT WE'VE SEEN ALREADY AND WILL CONTINUE TO DIE DOWN. ",
+        "blist": [
+            "WIND"
+        ]
+    },
+    "LANNOR01_4_20240921_181616.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20240921_181616.mp3.pt",
+        "words": " AND LANDO, THOUGHTS ON FRONT WING? I'M DOING FINE. ",
+        "blist": [
+            "WING",
+            "LANDO"
+        ]
+    },
+    "LEWHAM01_44_20240628_164311.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20240628_164311.mp3.pt",
+        "words": " ARE WE OUT? LOOKS LIKE WE ARE SAFE. ",
+        "blist": [
+            "SAFE"
+        ]
+    },
+    "FERALO01_14_20241025_180825.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20241025_180825.mp3.pt",
+        "words": " YOU CAN GO ONE OR TWO CLICKS FORWARD AND BRAKE BALANCE. ",
+        "blist": [
+            "BRAKE",
+            "BALANCE"
+        ]
+    },
+    "GEORUS01_63_20240301_170501.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20240301_170501.mp3.pt",
+        "words": " GOOD JOB, DID A GREAT JOB FROM TESTING TO IMPROVE THE CAR. IMPORTANT ONE TOMORROW. YEAH, AFFIRM? GOOD EFFORT EVERYONE. YEAH, GOT A LOT OF LAPS AHEAD OF US TOMORROW. ",
+        "blist": [
+            "AFFIRM",
+            "CAR",
+            "LAPS"
+        ]
+    },
+    "ALEALB01_23_20240405_035712.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20240405_035712.mp3.pt",
+        "words": " WE ARE OBVIOUSLY BEHIND PLAN SO WE'LL GET THE COAST DOWN OUT OF 14 ON THIS ONE. ",
+        "blist": [
+            "COAST"
+        ]
+    },
+    "ESTOCO01_31_20240920_175507.mp3": {
+        "fbank": "data/audio_features/ESTOCO01_31_20240920_175507.mp3.pt",
+        "words": " THERE'S LESS BUMPS ON THE BRAKES NOW. THERE'S STILL SOME BUMPS IN THE MAIN STRAIGHT BUT LESS ON THE BRAKES. ",
+        "blist": [
+            "BRAKES"
+        ]
+    },
+    "LEWHAM01_44_20240920_182052.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20240920_182052.mp3.pt",
+        "words": " TOO MUCH UNDERSTEER. ",
+        "blist": [
+            "UNDERSTEER"
+        ]
+    },
+    "GUAZHO01_24_20240524_142506.mp3": {
+        "fbank": "data/audio_features/GUAZHO01_24_20240524_142506.mp3.pt",
+        "words": " BY THE WAY THE DRS DOESN'T WORK. ",
+        "blist": [
+            "DRS"
+        ]
+    },
+    "LANNOR01_4_20241201_201840.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20241201_201840.mp3.pt",
+        "words": " FOR WHAT? FAILING SLOW UNDER THE YELLOW FLAG. ",
+        "blist": [
+            "SLOW",
+            "YELLOW"
+        ]
+    },
+    "LEWHAM01_44_20241123_001315.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20241123_001315.mp3.pt",
+        "words": " THIS FIRST SECTOR WAS DOWN. HOW FAR ARE WE OFF? ",
+        "blist": [
+            "SECTOR"
+        ]
+    },
+    "LIALAW01_30_20241122_204010.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20241122_204010.mp3.pt",
+        "words": " OK, GOOD JOB LIAM, THANK YOU. COPY AND TRACK CONDITIONS, PEREZ WENT FOR ONE PUSHLAP AND STRAIGHT BACK IN. HE SAID IT WAS NOWHERE. ",
+        "blist": [
+            "PUSHLAP",
+            "TRACK",
+            "PEREZ"
+        ]
+    },
+    "FERALO01_14_20240609_144013.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20240609_144013.mp3.pt",
+        "words": " YEAH, COPY. THESE TIRES WILL NOT BE OKAY. YEAH, YEAH, COPY MATE. YOU'RE IN THE TOP THREE FASTEST PEOPLE ON TRACK. IT'S JUST HAMILTON IS ALSO SO FAST. ",
+        "blist": [
+            "TIRES",
+            "HAMILTON",
+            "MATE",
+            "TRACK"
+        ]
+    },
+    "NICHUL01_27_20240719_171552.mp3": {
+        "fbank": "data/audio_features/NICHUL01_27_20240719_171552.mp3.pt",
+        "words": " NEXT PUSHING IS ZHOU, 19 BEHIND, AND JUST MAKE SURE YOU GET SOME BRAKE TEMP. ",
+        "blist": [
+            "BRAKE",
+            "PUSHING",
+            "ZHOU",
+            "TEMP"
+        ]
+    },
+    "FERALO01_14_20240519_152052.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20240519_152052.mp3.pt",
+        "words": " THE FRONT BRAKES WERE ON FIRE. COPY, FERNANDO, COPY. ",
+        "blist": [
+            "FERNANDO",
+            "BRAKES"
+        ]
+    },
+    "FERALO01_14_20240623_153546.mp3": {
+        "fbank": "data/audio_features/FERALO01_14_20240623_153546.mp3.pt",
+        "words": " ZHOU AHEAD OF LANCE IS ON 10 LAP OLDER MEDIUMS AND HE DID PUSH VERY HARD AT THE START OF HIS STINT. ",
+        "blist": [
+            "PUSH",
+            "STINT",
+            "LANCE",
+            "MEDIUMS",
+            "ZHOU",
+            "LAP",
+            "HARD"
+        ]
+    },
+    "LEWHAM01_44_20241122_005713.mp3": {
+        "fbank": "data/audio_features/LEWHAM01_44_20241122_005713.mp3.pt",
+        "words": " TIRE HAS DROPPED OFF. OKAY COPY, WE'VE GOT TWO MORE LAPS WHEN YOU CROSS THE LINE. ",
+        "blist": [
+            "TIRE",
+            "LAPS"
+        ]
+    },
+    "ESTOCO01_31_20241129_081909.mp3": {
+        "fbank": "data/audio_features/ESTOCO01_31_20241129_081909.mp3.pt",
+        "words": " THE CAR IS SUPER INCONSISTENT BASICALLY FROM ENTRY TO MID CORNER. IT'S BASICALLY NOT POSSIBLE TO CARRY THE SPEED. OKAY, UNDERSTOOD. SO IS THAT MAINLY FROM THE REAR END QUESTION? WELL, FRONT END, UNDERSTEEER, MID CORNER, AND THEN BASICALLY THE REAR END SNAPS MASSIVELY. OKAY, UNDERSTOOD. SO WE COULD CONSIDER JUST OPENING UP THAT DIFF MID A LITTLE BIT. THAT MIGHT HELP WITH THE MID CORNER. ",
+        "blist": [
+            "DIFF",
+            "CAR",
+            "REAR",
+            "SPEED"
+        ]
+    },
+    "ESTOCO01_31_20241121_205622.mp3": {
+        "fbank": "data/audio_features/ESTOCO01_31_20241121_205622.mp3.pt",
+        "words": " OKAY, SO KEEP RECHARGE OFF TO TURN 12 PLEASE FOR BATTERY TEMPERATURES, RECHARGE OFF ALL THE WAY TO TURN 12. WE'RE BOXING AT THE END OF THIS LAP. ",
+        "blist": [
+            "LAP",
+            "TEMPERATURES",
+            "RECHARGE",
+            "BATTERY"
+        ]
+    },
+    "LANNOR01_4_20240824_123145.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20240824_123145.mp3.pt",
+        "words": " AND THAT'S THE CHECKERED FLAG. SO LANDO, IF YOU WOULD LIKE TO DO A LAUNCH, WE CAN STAY OUT TO DO A LAUNCH. IF IT'S GOING TO AFFECT YOUR REFERENCES FOR A DRY LAUNCH, THEN WE SUGGEST NOT DOING IT. ",
+        "blist": [
+            "LANDO"
+        ]
+    },
+    "ESTOCO01_31_20241124_010111.mp3": {
+        "fbank": "data/audio_features/ESTOCO01_31_20241124_010111.mp3.pt",
+        "words": " OKAY, 16 LAPS TO GO. STICK WITH IT, WE'RE P8 AT THE MOMENT. ",
+        "blist": [
+            "P8",
+            "LAPS"
+        ]
+    },
+    "PIEGAS01_10_20240505_221154.mp3": {
+        "fbank": "data/audio_features/PIEGAS01_10_20240505_221154.mp3.pt",
+        "words": " SO HIS TIRES ARE 10 LAPS NEWER THAN OURS. ",
+        "blist": [
+            "TIRES",
+            "LAPS"
+        ]
+    },
+    "CHALEC01_16_20240726_142828.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20240726_142828.mp3.pt",
+        "words": " IF YOU BOX WE HAVE ONLY 1 LAP. YEAH WE'RE NOT BOXING, I'LL STAY OUT. COPY, WE STAY OUT. NEXT CAR, PEREZ 3. ",
+        "blist": [
+            "LAP",
+            "CAR",
+            "BOX",
+            "PEREZ"
+        ]
+    },
+    "KEVMAG01_20_20240420_080032.mp3": {
+        "fbank": "data/audio_features/KEVMAG01_20_20240420_080032.mp3.pt",
+        "words": " OKAY, IF YOU'RE SURE ABOUT THAT, I'LL DO IT. STAND BY. NO, YOU CAN'T DO THAT. YOU CAN'T DO THAT. YOU CAN'T DO THAT. DO NOT DO THAT. YOU CAN ONLY OVERTAKE AFTER THE LINE. COPY. ",
+        "blist": [
+            "OVERTAKE"
+        ]
+    },
+    "LANNOR01_4_20240323_060821.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20240323_060821.mp3.pt",
+        "words": " OKAY MATE, P4, WELL DONE. ",
+        "blist": [
+            "P4",
+            "MATE"
+        ]
+    },
+    "CARSAI01_55_20240324_051941.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20240324_051941.mp3.pt",
+        "words": " I WOULD HAVE BOXED FOR SAFETY CAR, NO? NO, IT'S CLOSED IT'S CLOSED ",
+        "blist": [
+            "CAR",
+            "SAFETY"
+        ]
+    },
+    "SERPER01_11_20240407_055538.mp3": {
+        "fbank": "data/audio_features/SERPER01_11_20240407_055538.mp3.pt",
+        "words": " WOODY, WHAT DO YOU THINK ON DOING THE DIFF FOR THE FIRST LAPS? ",
+        "blist": [
+            "DIFF",
+            "LAPS"
+        ]
+    },
+    "MAXVER01_1_20240524_135837.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20240524_135837.mp3.pt",
+        "words": " IT'S JUST THE CAR, IT'S ON A KNIFE'S EDGE ",
+        "blist": [
+            "CAR"
+        ]
+    },
+    "LANNOR01_4_20240518_150718.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20240518_150718.mp3.pt",
+        "words": " AND LANDO, THOUGHTS ON THE LAP? PRETTY AVERAGE. ",
+        "blist": [
+            "LAP",
+            "LANDO"
+        ]
+    },
+    "LANNOR01_4_20240901_160239.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20240901_160239.mp3.pt",
+        "words": " THE FERRARIS ARE GOING TO TRY A 1. THEY THINK IT'S DIFFICULT, BUT THEY MIGHT AS WELL TRY. SO THIS IS QUALIFYING NOW. IN THE WORDS OF STU, JUST **** TRY FAST. ",
+        "blist": [
+            "****"
+        ]
+    },
+    "YUKTSU01_22_20240830_141834.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20240830_141834.mp3.pt",
+        "words": " IT'S SO HARD TO DRIVE IN HIGH SPEED. ",
+        "blist": [
+            "HARD",
+            "SPEED"
+        ]
+    },
+    "CHALEC01_16_20241020_143032.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20241020_143032.mp3.pt",
+        "words": " AND CAREFUL WITH MICRO LOCKS INTO TURN 8. DRIVING WELL, TYRES LOOK GOOD. ",
+        "blist": [
+            "TYRES"
+        ]
+    },
+    "ALEALB01_23_20240301_131729.mp3": {
+        "fbank": "data/audio_features/ALEALB01_23_20240301_131729.mp3.pt",
+        "words": " CAN YOU CHECK WHY 6 I HAVE SO MUCH UNDERSTEER SUDDENLY? IS THIS THAT WIND THING? LIKE MY BALANCE SHIFT FROM THE SECOND PHASE ",
+        "blist": [
+            "UNDERSTEER",
+            "SECOND",
+            "BALANCE",
+            "WIND",
+            "SHIFT"
+        ]
+    },
+    "GEORUS01_63_20241130_124903.mp3": {
+        "fbank": "data/audio_features/GEORUS01_63_20241130_124903.mp3.pt",
+        "words": " IT LOOKS LIKE THE WIND HAS DROPPED A LITTLE BIT HERE, 5 TO 10 KPH NOW. ",
+        "blist": [
+            "WIND"
+        ]
+    },
+    "MAXVER01_1_20240504_210633.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20240504_210633.mp3.pt",
+        "words": " THAT DIDN'T SOUND VERY GOOD OUT OF THE PITS, THE CLUTCH. STAND BY WITH THAT. ",
+        "blist": [
+            "PITS"
+        ]
+    },
+    "CARSAI01_55_20240623_150826.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20240623_150826.mp3.pt",
+        "words": " HE TOUCHED ME. COPY. WE COLLIDED AND THAT FORCED ME OFF. HE TOUCHED MY REAR RIGHT, SO I WAS CLEARLY AHEAD. ",
+        "blist": [
+            "REAR"
+        ]
+    },
+    "CHALEC01_16_20241103_160401.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20241103_160401.mp3.pt",
+        "words": " P5, P5. OKAY, WELL REVIEW, ALL THAT. PACE WAS CLEARLY MISSING TODAY, SO INCREDIBLY DIFFICULT TO MATCH. ",
+        "blist": [
+            "P5",
+            "PACE"
+        ]
+    },
+    "GUAZHO01_24_20241020_154645.mp3": {
+        "fbank": "data/audio_features/GUAZHO01_24_20241020_154645.mp3.pt",
+        "words": " YOU KNOW, FIRST THING, THE TIRE WAS NOT TOO BAD, I APOLOGIZE FOR TURN 1. I WENT A LITTLE BIT DEEP THERE. ",
+        "blist": [
+            "TIRE"
+        ]
+    },
+    "ESTOCO01_31_20240406_035426.mp3": {
+        "fbank": "data/audio_features/ESTOCO01_31_20240406_035426.mp3.pt",
+        "words": " NO, LOOK AT THE BOUNCING A LITTLE BIT, I THINK IT'S INCREASED. OKAY, UNDERSTOOD, WE'LL CHECK THAT. ",
+        "blist": [
+            "BOUNCING"
+        ]
+    },
+    "MAXVER01_1_20240517_142111.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20240517_142111.mp3.pt",
+        "words": " YEAH, THAT TURN 11 IS A DISASTER. I HAVE NO ******* BRAKES THERE. FOUR WHEELS? YEAH, I JUST CAN'T BRAKE LATE, BECAUSE THEN THE CAR INITIALLY WANTS TO BOTTOM REALLY BADLY, THEN ON THE ENTRY TO THE A PEX, THERE'S NO ******* FRONTS. ",
+        "blist": [
+            "BRAKES",
+            "CAR",
+            "FRONTS",
+            "*******",
+            "BRAKE"
+        ]
+    },
+    "DANRIC01_3_20240524_134906.mp3": {
+        "fbank": "data/audio_features/DANRIC01_3_20240524_134906.mp3.pt",
+        "words": " AND YOU CAN CONSIDER ENTRY 9 IF YOU NEED MORE STABILITY. ",
+        "blist": [
+            "STABILITY"
+        ]
+    },
+    "OLIBEA01_50_20241101_140237.mp3": {
+        "fbank": "data/audio_features/OLIBEA01_50_20241101_140237.mp3.pt",
+        "words": " YEP, SO YOU FINISHED THAT SESSION P7. REALLY GOOD JOB, OLLIE. WELL DONE, MATE. ",
+        "blist": [
+            "SESSION",
+            "OLLIE",
+            "MATE",
+            "P7"
+        ]
+    },
+    "NICHUL01_27_20241121_203407.mp3": {
+        "fbank": "data/audio_features/NICHUL01_27_20241121_203407.mp3.pt",
+        "words": " PEREZ 4. YOU CAN GO GX3 WHEN YOU CAN. ",
+        "blist": [
+            "PEREZ"
+        ]
+    },
+    "OSCPIA01_81_20241025_131515.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20241025_131515.mp3.pt",
+        "words": " OSCAR, WHAT ARE YOUR THOUGHTS ON HAVING ANOTHER GO VERSUS GETTING MORE CONTINUOUS LAPS IN? I DON'T KNOW, I MEAN IT FEELS PRETTY TERRIBLE STILL. BUT, YEAH, I DON'T REALLY KNOW, TO BE HONEST. ",
+        "blist": [
+            "LAPS",
+            "OSCAR"
+        ]
+    },
+    "CARSAI01_55_20241025_175023.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20241025_175023.mp3.pt",
+        "words": " AND TIRE POSITION 3. ",
+        "blist": [
+            "POSITION",
+            "TIRE"
+        ]
+    },
+    "LANNOR01_4_20251130_191954.mp3": {
+        "fbank": "data/audio_features/LANNOR01_4_20251130_191954.mp3.pt",
+        "words": " SO LANDO, THE GOAL HERE NOW IS REALLY GOOD PACE TO LAP 25. BASICALLY EVERYONE ELSE WILL BE STOPPING ON LAP 32. WE KNOW THAT NOW. ",
+        "blist": [
+            "LAP",
+            "LANDO",
+            "PACE"
+        ]
+    },
+    "MAXVER01_1_20251130_191901.mp3": {
+        "fbank": "data/audio_features/MAXVER01_1_20251130_191901.mp3.pt",
+        "words": " I EXPECT MCLAREN TO PUSH HARD ON THE RESTART TO LAP 25 MAX. OBVIOUSLY THEY'VE GOT TO DO THEIR BEST TO GENERATE AS MUCH OF A GAP AS POSSIBLE TO YOU. AT THE SAME TIME I CAN'T LET THEM GO TOO FAR AWAY. NO, BUT WE JUST NEED THE TWO FASTEST STINTS. ",
+        "blist": [
+            "PUSH",
+            "MAX",
+            "MCLAREN",
+            "LAP",
+            "GAP",
+            "HARD"
+        ]
+    },
+    "CARSAI01_55_20251130_201152.mp3": {
+        "fbank": "data/audio_features/CARSAI01_55_20251130_201152.mp3.pt",
+        "words": " I THINK NORRIS WILL STRUGGLE TO PASS ANTONELLI WITH THE PACE WE ARE DOING. ",
+        "blist": [
+            "NORRIS",
+            "ANTONELLI",
+            "PACE"
+        ]
+    },
+    "CHALEC01_16_20251128_165403.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20251128_165403.mp3.pt",
+        "words": " I CANNOT FEEL A THING, REALLY FRUSTRATING. I DON'T EVEN KNOW WHAT'S THE BALANCE OF THE CAR WITH THESE TIRES. UNDERSTOOD CHARLES, NOTHING WE CAN DO FOR NOW. ",
+        "blist": [
+            "TIRES",
+            "BALANCE",
+            "CAR",
+            "CHARLES"
+        ]
+    },
+    "LIALAW01_30_20251128_172040.mp3": {
+        "fbank": "data/audio_features/LIALAW01_30_20251128_172040.mp3.pt",
+        "words": " MATE, I HAVE **** NO STABILITY. YEP, SAW THAT ",
+        "blist": [
+            "STABILITY",
+            "****",
+            "MATE"
+        ]
+    },
+    "ARTLEC01_39_20251205_142304.mp3": {
+        "fbank": "data/audio_features/ARTLEC01_39_20251205_142304.mp3.pt",
+        "words": " I THINK CHARLES IS DOING SOME BURNOUT FOR THE FANS. YEAH, HE SPUN AT TURN 5. ",
+        "blist": [
+            "CHARLES"
+        ]
+    },
+    "YUKTSU01_22_20251206_185520.mp3": {
+        "fbank": "data/audio_features/YUKTSU01_22_20251206_185520.mp3.pt",
+        "words": " GIVE HIM A REALLY GOOD TOW HERE, REALLY GOOD TOE. WAIT FOR HIM. LOOK IN YOUR MIRRORS. ",
+        "blist": [
+            "TOW"
+        ]
+    },
+    "CHALEC01_16_20251130_194927.mp3": {
+        "fbank": "data/audio_features/CHALEC01_16_20251130_194927.mp3.pt",
+        "words": " CHECK EVERY LAP GEORGE'S LINE IN TURN 10 ENTRY. I'M SURE HE'S OUT. ",
+        "blist": [
+            "LAP"
+        ]
+    },
+    "OSCPIA01_81_20251130_195821.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20251130_195821.mp3.pt",
+        "words": " I NEED TO WEIGH UP WHAT THE BEST IDEA IS, IN TERMS OF TRYING TO GET A SAFETY CAR OR JUST BEATING HIM ON PACE. SO OSCAR, LET'S GO TO TARGET MINUS 1, BEST PACE TO TARGET MINUS 1. ",
+        "blist": [
+            "CAR",
+            "SAFETY",
+            "OSCAR",
+            "PACE"
+        ]
+    },
+    "ANDANT01_12_20251206_184100.mp3": {
+        "fbank": "data/audio_features/ANDANT01_12_20251206_184100.mp3.pt",
+        "words": " MAN, I DON'T UNDERSTAND. I HAVE NO REAR, AGAIN. ",
+        "blist": [
+            "REAR"
+        ]
+    },
+    "RYOHIR01_50_20251205_135353.mp3": {
+        "fbank": "data/audio_features/RYOHIR01_50_20251205_135353.mp3.pt",
+        "words": " I'M BOUNCING TURN 6-7. IT'S A BIT ANNOYING. COPY. ",
+        "blist": [
+            "BOUNCING"
+        ]
+    },
+    "OSCPIA01_81_20251128_170037.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20251128_170037.mp3.pt",
+        "words": " TOGGLE RECHARGE. ",
+        "blist": [
+            "TOGGLE",
+            "RECHARGE"
+        ]
+    },
+    "OSCPIA01_81_20251129_220728.mp3": {
+        "fbank": "data/audio_features/OSCPIA01_81_20251129_220728.mp3.pt",
+        "words": " SO DID WE GET IT? YEP, YOU GOT IT. JUST BECAUSE YOU KEYED UP, OSCAR. POLE POSITION. THEY'RE LIKE BUSES. LET'S GO, BABY. GOOD SESSION, EVERYONE. THAT WAS MEGA. THANKS, EVERYONE. ",
+        "blist": [
+            "POLE",
+            "OSCAR",
+            "SESSION",
+            "MEGA",
+            "POSITION"
+        ]
+    }
+}

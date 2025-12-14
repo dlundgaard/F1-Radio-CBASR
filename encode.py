@@ -23,26 +23,26 @@ seen_biasing_terms = set()
 features = dict()
 for index, example in tqdm(
     list(transcribed.iterrows()),
-    desc="Extracting audio spectrogram features",
+    desc="Building training dataset",
 ):
     utterance = " " + example["human_transcription"].upper().strip() + " "
-    audio = whisper.pad_or_trim(whisper.load_audio(example["file_path"]))
-
-    log_mel_spectra = whisper.log_mel_spectrogram(audio, n_mels=80)
-    feature_dump_filepath = f"""data/audio_features/{example["identifier"]}.pt"""
-    torch.save(log_mel_spectra, feature_dump_filepath)
 
     utterance_words = re.sub(r"[^A-Za-z0-9 *]", "", utterance).split()
     utterance_biasing_terms = list(set([word for word in utterance_words if word in biasing_terms]))
     seen_biasing_terms.update(utterance_biasing_terms)
 
-    features[example["identifier"]] = dict(
-        fbank=feature_dump_filepath,
-        words=utterance,
-        blist=utterance_biasing_terms,
-    )
+    if utterance_biasing_terms:
+        log_mel = whisper.log_mel_spectrogram(whisper.pad_or_trim(whisper.load_audio(example["file_path"])), n_mels=80)
+        feature_dump_filepath = f"""data/audio_features/{example["identifier"]}.pt"""
+        torch.save(log_mel, feature_dump_filepath)
 
-with open("data/transcriptions_with_context.json", mode="w") as file:
+        features[example["identifier"]] = dict(
+            fbank=feature_dump_filepath,
+            words=utterance,
+            blist=utterance_biasing_terms,
+        )
+
+with open("data/training_examples.json", mode="w") as file:
     json.dump(features, file, indent=4)
 
 with open("data/biasing_list_seen.txt", mode="w") as file:
