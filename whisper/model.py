@@ -307,7 +307,7 @@ class WhisperBiasing(nn.Module):
         meeting_KB = self.Bdrop(self.Kproj(meeting_KB))
         KBweight = torch.einsum('ijk,ik->ij', meeting_KB, query)
         KBweight = KBweight / math.sqrt(query.size(-1))
-        KBweight.masked_fill_(meeting_mask.bool(), -1e15)
+        KBweight.masked_fill_(meeting_mask.bool(), -1e9)
         KBweight = torch.nn.functional.softmax(KBweight, dim=-1)
         if meeting_KB.size(1) > 1:
             KBembedding = torch.einsum('ijk,ij->ik', meeting_KB[:,:-1,:], KBweight[:,:-1])
@@ -322,7 +322,7 @@ class WhisperBiasing(nn.Module):
         ptr_gen_complement = (ptr_dist[:,:,-1].reshape(targets.size(0), -1)) * ptr_gen
         # print((ptr_dist[:,:,:-1].reshape(targets.size(0), -1) * ptr_gen).sum(-1).max())
         p_final = ptr_dist[:,:,:-1].reshape(targets.size(0), -1) * ptr_gen + model_dist * (1 - ptr_gen + ptr_gen_complement)
-        p_loss = F.nll_loss(torch.log(p_final + 1e-15), targets, ignore_index=ignore_idx, reduction=reduction_str)
+        p_loss = F.nll_loss(torch.log(p_final + 1e-9), targets, ignore_index=ignore_idx, reduction=reduction_str)
         p_loss = p_loss.sum() / (p_loss != 0).sum()
         return p_loss, p_final
 
