@@ -1,13 +1,14 @@
 #!usr/bin/env/bash
 
 echo "[INFO] running experiment workflow"
+
 source .venv/bin/activate
 
 python3 encode.py
-# python3 decode.py --modeltype="base.en"
-python3 train.py --modeltype="base.en" --runidentifier "TCPGen" --nepochs 15
-python3 decode.py --modeltype="base.en" --modelcheckpoint="base.en_TCPGen.best.pt" --biasing
-# python3 train.py --modeltype="base.en" --runidentifier "TCPGen+GPT2" --useGPT --nepochs 15
-# python3 decode.py --modeltype="base.en" --modelcheckpoint="base.en_TCPGen+GPT2.best.pt" --biasing --useGPT
+
+python3 train.py --modeltype="base.en" --runidentifier "TCPGenWhisper"
+
+python3 decode.py --modeltype="base.en" --modelcheckpoint="TCPGenWhisper"
+python3 decode.py --modeltype="base.en"
 
 echo "[SUCCESS] experiment workflow completed"

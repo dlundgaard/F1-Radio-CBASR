@@ -8,61 +8,38 @@ import pprint
 import torch
 import whisper
 from dataloader import get_dataloader, BiasingProcessor
-from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
 parser = argparse.ArgumentParser(description="Whisper Contextual Biasing")
 
 os.makedirs("exports/", exist_ok=True)
 
 parser.add_argument("--seed", type=int, default=0)
-parser.add_argument("--test_json", type=str, default="data/training_examples.json")
+parser.add_argument("--test_json", type=str, default="data/all_examples.json")
 parser.add_argument("--biasinglist", type=str, default="data/biasing_list.txt")
-parser.add_argument("--biasing", action="store_true")
 parser.add_argument("--modeltype", type=str, default="base.en")
-parser.add_argument("--modelcheckpoint", type=str, default="stock")
+parser.add_argument("--modelcheckpoint", type=str, default="stockWhisper")
 parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
-parser.add_argument("--beamsize", type=int, default=5)
+parser.add_argument("--beamsize", type=int, default=10)
 parser.add_argument("--eval_batch_size", type=int, default=1)
-parser.add_argument("--useGPT", action="store_true")
-parser.add_argument("--lm_weight", type=float, default=0)
 parser.add_argument("--attndim", type=int, default=256)
-parser.add_argument("--maxKBlen", type=int, default=1000)
+parser.add_argument("--maxKBlen", type=int, default=100)
 parser.add_argument("--dropentry", type=float, default=0)
-parser.add_argument("--normalise", action="store_true")
 parser.add_argument("--expdir", type=str, default="exports/")
-parser.add_argument("--logfile", type=str, default="log")
 
 args = parser.parse_args()
 
-def logging(s, logfile, logging_=True, log_=True):
-    print(s)
-    if log_:
-        with open(logfile, "a+") as f_log:
-            f_log.write(s + "\n")
-
-shallowfusion = args.useGPT
-useGPT = None
-GPTtokenizer = None
-logfile = args.logfile if args.logfile != "" else os.path.join(args.expdir, "log.txt")
-if args.useGPT:
-    GPTmodel = GPT2LMHeadModel.from_pretrained("gpt2", output_hidden_states=True).to(args.device)
-    GPThiddim = GPTmodel.config.n_embd
-else:
-    GPTmodel = None
-
-if args.modelcheckpoint != "stock":
-    biasing_model = torch.load(os.path.join(args.expdir, args.modelcheckpoint), weights_only=False)
+if args.modelcheckpoint != "stockWhisper":
+    biasing_model = torch.load(
+        os.path.join(args.expdir, args.modelcheckpoint + ".pt"), 
+        weights_only=False,
+        map_location="cuda" if torch.cuda.is_available() else "cpu",
+    )
     biasing_model.eval()
     model = biasing_model.whisper
-    useGPT = getattr(biasing_model, "useGPT", False)
-    if useGPT or args.useGPT:
-        GPTtokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 else:
     model = whisper.load_model(args.modeltype).eval()
     biasing_model = None
-    useGPT = False
 
-shallowfusion = args.useGPT
 tokenizer = whisper.tokenizer.get_tokenizer(model.is_multilingual, language="en")
 
 ####################
@@ -73,7 +50,7 @@ testloader = get_dataloader(
     args.eval_batch_size,
     loadtarget=False,
     tokenizer=tokenizer,
-    biasing=args.biasing,
+    biasing=biasing_model is not None,
     shuffle=False,
 )
 biasproc = BiasingProcessor(tokenizer, args.biasinglist, ndistractors=args.maxKBlen, drop=args.dropentry)
@@ -89,19 +66,14 @@ for idx, data in tqdm(list(enumerate(testloader)), smoothing=0):
         language="en",
         fp16=False,
         without_timestamps=True,
-        biasing=args.biasing,
+        biasing=biasing_model is not None,
         biasingmodule=biasing_model,
         origtree=origtree,
-        shallowfusion=shallowfusion,
-        useGPT=useGPT,
-        GPT2=GPTmodel,
-        lm_weight=args.lm_weight,
-        GPT2tokenizer=GPTtokenizer,
         beam_size=args.beamsize,
     )
     try:
         batch_results = whisper.decode(model, audio_features, options)
-        with open("exports/transcriptions.tsv", mode="a") as file:
+        with open(f"exports/transcriptions.tsv", mode="a") as file:
             for identifier, result in zip(identifiers, batch_results):
                 file.write("\t".join((
                     str(datetime.now()),
