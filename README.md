@@ -1,18 +1,17 @@
-# Transcribing Formula 1 Radio Message with TCPGen Contextual Biasing 🏎️🎙️📻
+# Transcribing Formula 1 Team Radio with TCPGen Contextual Biasing 🏎️📻
 
-Modern end-to-end automatic speech recognition (ASR) systems are exceptionally adept at transcribing everyday generic human speech to text, but these systems can get tripped up when presented with speech comprising rare, domain-specific language. 
-When encountering utterances that differ markedly from everyday speech by including rare or novel words – so-called out-of-distribution examples – these systems may fail spectacularly because they are so heavily preconditioned to consider any utterance they as an instance of the speech vocabulary it was exposed to during (pre)training.
+![](banner_figure.png)
 
 ## Dependencies
 
 System dependencies: `Python 3.8+` and `ffmpeg`
 Python package dependencies: [`requirements.txt`](requirements.txt)
 
-## Steps to reproduce
+## Running the Experiment
 
-Running the [`setup.sh`](setup.sh) shell script will install `ffmpeg` and use [`uv`](https://github.com/astral-sh/uv) to set up a Python virtual environment satisfying all package dependencies.
+Executing the [`setup.sh`](setup.sh) shell script will install the `ffmpeg` system dependency and use [`uv`](https://github.com/astral-sh/uv) to set up a virtual environment which satisfies all Python package dependencies.
 
-Running [`run.sh`](run.sh) will carry out an experimental workflow generating data for comparing "stock" Whisper against Whisper with TCPGen and Whisper with TCPgen and GPT2.
+Running [`run.sh`](run.sh) will carry out an experimental workflow generating data for comparing "stock" Whisper against Whisper with TCPGen.
 
 ```bash
 $ source setup.sh
@@ -26,10 +25,12 @@ $ source run.sh
 [SUCCESS] experiment workflow completed
 ```
 
+Tested on Ubuntu Linux 24.04.2 with Python 3.12.3, with computation performed on a Xeon Gold 6130 CPU and 48 GB RAM from the UCloud interactive HPC system, which is managed by the eScience Center at the University of Southern Denmark
+
 ## License
 
 Whisper's code and model weights are released under the MIT License. See [LICENSE](https://github.com/openai/whisper/blob/main/LICENSE) for further details.
 
 ## Acknowledgements
 
-The contextual biasing Whisper implementation is courtesy of [BriansIDP/WhisperBiasing](https://github.com/BriansIDP/WhisperBiasing).
+The TCPGen contextual biasing Whisper implementation used here is courtesy of [BriansIDP/WhisperBiasing](https://github.com/BriansIDP/WhisperBiasing).
