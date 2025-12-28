@@ -4,7 +4,7 @@
 
 ## Dependencies
 
-System dependencies: `Python 3.8+` and `ffmpeg`.
+System dependencies: `Python 3.8+` and `ffmpeg`
 
 Python package dependencies: [`requirements.txt`](requirements.txt)
 
