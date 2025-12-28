@@ -1,6 +1,6 @@
 # Transcribing Formula 1 Team Radio with TCPGen Contextual Biasing 🏎️📻
 
-![](banner_figure.png)
+![](assets/banner_figure.png)
 
 ## Dependencies
 
