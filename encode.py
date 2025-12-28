@@ -42,7 +42,7 @@ for index, example in tqdm(
         blist=list(utterance_biasing_terms),
     )
 
-with open("data/all_examples.json", mode="w") as file:
+with open("data/benchmarking_examples.json", mode="w") as file:
     json.dump(examples, file, indent=4)
 
 with open("data/training_examples.json", mode="w") as file:

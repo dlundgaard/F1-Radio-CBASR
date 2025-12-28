@@ -1,8 +1,9 @@
 **/.*
 **/__*
 !.gitignore
-data/radio_messages/*
+data/audio_clips/*
 data/audio_features/*
 data/trans*
 label-studio/
+!label-studio/export
 exports/

@@ -14,7 +14,7 @@ parser = argparse.ArgumentParser(description="Whisper Contextual Biasing")
 os.makedirs("exports/", exist_ok=True)
 
 parser.add_argument("--seed", type=int, default=0)
-parser.add_argument("--test_json", type=str, default="data/all_examples.json")
+parser.add_argument("--test_json", type=str, default="data/benchmarking_examples.json")
 parser.add_argument("--biasinglist", type=str, default="data/biasing_list.txt")
 parser.add_argument("--modeltype", type=str, default="base.en")
 parser.add_argument("--modelcheckpoint", type=str, default="stockWhisper")
