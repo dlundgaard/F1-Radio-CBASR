@@ -4,7 +4,8 @@
 
 ## Dependencies
 
-System dependencies: `Python 3.8+` and `ffmpeg`
+System dependencies: `Python 3.8+` and `ffmpeg`.
+
 Python package dependencies: [`requirements.txt`](requirements.txt)
 
 ## Running the Experiment
@@ -25,7 +26,7 @@ $ source run.sh
 [SUCCESS] experiment workflow completed
 ```
 
-Tested on Ubuntu Linux 24.04.2 with Python 3.12.3, with computation performed on a Xeon Gold 6130 CPU and 48 GB RAM from the UCloud interactive HPC system, which is managed by the eScience Center at the University of Southern Denmark
+Tested on Ubuntu Linux 24.04.2 with Python 3.12.3, with computation performed on a machine with Xeon Gold 6130 CPU and 96 GB RAM from the UCloud interactive HPC system, which is managed by the eScience Center at the University of Southern Denmark.
 
 ## License
 
