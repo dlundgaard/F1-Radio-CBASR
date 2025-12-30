@@ -2,6 +2,7 @@ import os
 import re
 import json
 import torch
+import requests
 import argparse
 import whisper
 import pandas as pd
@@ -24,12 +25,21 @@ seen_biasing_terms = set()
 examples = dict()
 for index, example in tqdm(
     list(transcribed.iterrows()),
-    desc="Building training and evaluation dataset",
+    desc="Downloading audio files and building datasets",
 ):
     clip_identifier = example["identifier"]
+    clip_recording_url = example["recording_url"]
+    audio_clip_filepath = os.path.join("data", "audio_clips", example["identifier"])
+    feature_dump_filepath = os.path.join("data", "audio_features", example["identifier"] + ".pt")
+
+    if not os.path.exists(audio_clip_filepath):
+        try:
+            with open(audio_clip_filepath, mode="wb") as file:
+                file.write(requests.get(clip_recording_url).content)
+        except:
+            print("Failed on", clip_recording_url)
 
     log_mel = whisper.log_mel_spectrogram(whisper.pad_or_trim(whisper.load_audio(example["file_path"])), n_mels=80)
-    feature_dump_filepath = os.path.join("data", "audio_features", example["identifier"] + ".pt")
     torch.save(log_mel, feature_dump_filepath)
 
     utterance = re.sub(r"[^A-Za-z0-9 *]", "", example["human_transcription"]).strip().upper()
