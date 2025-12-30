@@ -5,4 +5,5 @@ data/audio_clips/*
 data/audio_features/*
 data/trans*
 label-studio/
-exports/
+exports/*
+!exports/transcriptions.tsv
