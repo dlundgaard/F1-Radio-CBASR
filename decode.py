@@ -57,7 +57,11 @@ biasproc = BiasingProcessor(tokenizer, args.biasinglist, ndistractors=args.maxKB
 
 print("Decoding with" + "\n" + pprint.pformat(vars(args)))
 start = time.time()
-for idx, data in tqdm(list(enumerate(testloader)), smoothing=0):
+for idx, data in tqdm(
+    list(enumerate(testloader)), 
+    smoothing=0,
+    desc="Transcribing audio clips",
+):
     identifiers, audio_features, target_transcriptions, blist = data
     audio_features = audio_features.to(model.device)
     origtree = biasproc.get_lextree(blist)
