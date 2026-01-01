@@ -6,9 +6,9 @@ source .venv/bin/activate
 
 python3 encode.py
 
-python3 train.py --modeltype="base.en" --runidentifier "TCPGenWhisper"
+python3 train.py --runidentifier "TCPGenWhisper"
 
-python3 decode.py --modeltype="base.en" --modelcheckpoint="TCPGenWhisper"
-python3 decode.py --modeltype="base.en"
+python3 decode.py --modelcheckpoint="TCPGenWhisper"
+python3 decode.py
 
 echo "[SUCCESS] experiment workflow completed"

@@ -16,7 +16,6 @@ os.makedirs("exports/", exist_ok=True)
 parser.add_argument("--seed", type=int, default=0)
 parser.add_argument("--test_json", type=str, default="data/benchmarking_examples.json")
 parser.add_argument("--biasinglist", type=str, default="data/biasing_list.txt")
-parser.add_argument("--modeltype", type=str, default="base.en")
 parser.add_argument("--modelcheckpoint", type=str, default="stockWhisper")
 parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
 parser.add_argument("--beamsize", type=int, default=10)
@@ -37,7 +36,7 @@ if args.modelcheckpoint != "stockWhisper":
     biasing_model.eval()
     model = biasing_model.whisper
 else:
-    model = whisper.load_model(args.modeltype).eval()
+    model = whisper.load_model("base.en").eval()
     biasing_model = None
 
 tokenizer = whisper.tokenizer.get_tokenizer(model.is_multilingual, language="en")
