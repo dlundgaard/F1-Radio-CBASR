@@ -7,3 +7,4 @@ data/trans*
 label-studio/
 exports/*
 !exports/transcriptions.tsv
+!exports/training_log
